@@ -1,0 +1,32 @@
+---
+# Category tags used to filter conferences on the site.
+# `sub` is the identifier used in each conference entry's `sub:` list and in
+# the `?sub=` URL parameter. `color` drives the tag color (see _includes/head.html).
+
+- name: System
+  sub: SYS
+  color: "#2e86de"
+
+- name: Architecture
+  sub: ARCH
+  color: "#ee5253"
+
+- name: ML System
+  sub: MLSYS
+  color: "#8e44ad"
+
+- name: HPC
+  sub: HPC
+  color: "#10ac84"
+
+- name: Database
+  sub: DB
+  color: "#ff9f43"
+
+- name: Network
+  sub: NET
+  color: "#341f97"
+
+- name: To be determined
+  sub: TBD
+  color: "#576574"

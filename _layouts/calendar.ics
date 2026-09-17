@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+VERSION:2.0
+PRODID:-//{{ site.domain }}//cs-system-conf-deadline//EN
+X-PUBLISHED-TTL:PT1H
+{% assign all_conferences = "" %}
+{% assign all_conferences = all_conferences | split: "," %}
+{%- for category in site.data.conferences -%}
+  {%- for conf in category[1] -%}
+    {% assign all_conferences = all_conferences | push: conf %}
+  {%- endfor -%}
+{%- endfor -%}
+{%- for conf in all_conferences -%}
+{%- assign final_tz = conf.timezone -%}
+{%- if conf.timezone == "AoE" -%}
+  {%- assign final_tz = "Etc/GMT+12" -%}
+{%- elsif conf.timezone == "PST" -%}
+  {%- assign final_tz = "Etc/GMT+8" -%}
+{%- elsif conf.timezone == "EST" -%}
+  {%- assign final_tz = "Etc/GMT+5" -%}
+{%- elsif conf.timezone == "UTC" -%}
+  {%- assign final_tz = "Etc/UTC" -%}
+{%- elsif conf.timezone contains "UTC" -%}
+  {%- assign tz_offset = conf.timezone | remove: "UTC" -%}
+  {%- if tz_offset contains "-" -%}
+    {%- assign tz_offset = tz_offset | replace: "-", "+" -%}
+  {%- elsif tz_offset contains "+" -%}
+    {%- assign tz_offset = tz_offset | replace: "+", "-" -%}
+  {%- endif -%}
+  {%- assign final_tz = "Etc/GMT" | append: tz_offset -%}
+{%- endif -%}
+{% if conf.abstract_deadline and conf.abstract_deadline != "TBA" %}
+BEGIN:VEVENT
+SUMMARY:{{ conf.title }} {{ conf.year }} abstract deadline
+ORGANIZER:{{ site.domain }}
+DTSTAMP:{{ site.time | date: "%Y%m%dT%H%M%SZ" }}
+UID:{{ conf.id }}-abstract
+DTSTART;TZID={{ final_tz }}:{{ conf.abstract_deadline | date: "%Y%m%dT%H%M%S" }}
+END:VEVENT
+{% endif %}
+{% if conf.deadline != "TBA" %}BEGIN:VEVENT
+SUMMARY:{{ conf.title }} {{ conf.year }} deadline
+ORGANIZER:{{ site.domain }}
+DTSTAMP:{{ site.time | date: "%Y%m%dT%H%M%SZ" }}
+UID:{{ conf.id }}
+DTSTART;TZID={{ final_tz }}:{{ conf.deadline | date: "%Y%m%dT%H%M%S" }}
+END:VEVENT
+{% endif %}
+{%- endfor -%}END:VCALENDAR

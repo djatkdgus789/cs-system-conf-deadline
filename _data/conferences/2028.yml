@@ -1,0 +1,109 @@
+---
+
+# Conferences whose *event* takes place in 2028. These are the next open
+# submission round for series whose 2027 deadlines have already closed.
+# All of them are projected from the previous edition (`tba: true`) until the
+# official CFP appears.
+
+# ---------------------------------------------------------------- System ----
+
+- title: EuroSys (Spring)
+  year: 2028
+  id: eurosys28spring
+  full_name: European Conference on Computer Systems
+  link: https://www.eurosys.org/
+  abstract_deadline: "2027-05-06 23:59:59"
+  deadline: "2027-05-13 23:59:59"
+  timezone: AoE
+  place: TBD
+  date: Spring 2028
+  sub: [ SYS ]
+  tba: true
+  note: Projected from EuroSys 2027 Spring round (abstract 2026-05-07, paper 2026-05-14). Official CFP not released yet.
+
+- title: NSDI (Spring)
+  year: 2028
+  id: nsdi28spring
+  full_name: USENIX Symposium on Networked Systems Design and Implementation
+  link: https://www.usenix.org/conferences/calls-for-papers
+  abstract_deadline: "2027-04-15 23:59:59"
+  deadline: "2027-04-22 23:59:59"
+  timezone: America/New_York
+  place: TBD
+  date: Spring 2028
+  sub: [ SYS, NET ]
+  tba: true
+  note: Projected from NSDI 2027 Spring round (abstract 2026-04-16, paper 2026-04-23). Official CFP not released yet.
+
+- title: FAST (Spring)
+  year: 2028
+  id: fast28spring
+  full_name: USENIX Conference on File and Storage Technologies
+  link: https://www.usenix.org/conferences/calls-for-papers
+  deadline: "2027-03-16 23:59:00"
+  timezone: AoE
+  place: TBD
+  date: February 2028
+  sub: [ SYS ]
+  tba: true
+  note: Projected from FAST 2027 Spring round (2026-03-17). The FAST 2027 Fall round closed on 2026-09-15. Official CFP not released yet.
+
+# ---------------------------------------------------------- Architecture ----
+
+- title: ASPLOS (Cycle 1)
+  year: 2028
+  id: asplos28c1
+  full_name: ACM International Conference on Architectural Support for Programming Languages and Operating Systems
+  link: https://www.asplos-conference.org/
+  deadline: "2027-04-14 23:59:59"
+  timezone: AoE
+  place: TBD
+  date: Spring 2028
+  sub: [ ARCH, SYS ]
+  tba: true
+  note: Projected from the ASPLOS 2027 April cycle (2026-04-15). The ASPLOS 2027 September cycle closed on 2026-09-09. Official CFP not released yet.
+
+- title: HPCA
+  year: 2028
+  id: hpca28
+  full_name: IEEE International Symposium on High-Performance Computer Architecture
+  link: https://hpca-conf.org/
+  abstract_deadline: "2027-07-23 23:59:59"
+  deadline: "2027-07-30 23:59:59"
+  timezone: AoE
+  place: TBD
+  date: 2028
+  sub: [ ARCH ]
+  tba: true
+  note: Projected from HPCA 2027 (abstract 2026-07-24, paper 2026-07-31). Official CFP not released yet.
+
+# ------------------------------------------------------------------ HPC ----
+
+- title: PPoPP
+  year: 2028
+  id: ppopp28
+  full_name: ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming
+  link: https://ppopp-conference.org/
+  deadline: "2027-08-02 23:59:59"
+  timezone: AoE
+  place: TBD
+  date: 2028
+  sub: [ HPC, ARCH ]
+  tba: true
+  note: Projected from PPoPP 2027 (2026-08-03). Official CFP not released yet.
+
+# ------------------------------------------------------------- Database ----
+
+- title: SIGMOD (Round 1)
+  year: 2028
+  id: sigmod28r1
+  full_name: ACM SIGMOD International Conference on Management of Data
+  link: https://sigmod.org/
+  abstract_deadline: "2027-01-10 23:59:00"
+  deadline: "2027-01-17 23:59:00"
+  timezone: AoE
+  place: TBD
+  date: June 2028
+  sub: [ DB ]
+  tba: true
+  note: First of four quarterly rounds (Jan / Apr / Jul / Oct). Official CFP not released yet.

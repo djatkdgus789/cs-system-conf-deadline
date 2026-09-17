@@ -1,0 +1,23 @@
+title: CS System Conference Deadlines
+description: Countdowns to computer systems, architecture, HPC, database and networking conference deadlines
+author: djatkdgus789
+
+domain: "djatkdgus789.github.io"
+url: "https://djatkdgus789.github.io"
+baseurl: "/cs-system-conf-deadline"
+
+github_username: djatkdgus789
+github_repo: cs-system-conf-deadline
+
+markdown: kramdown
+ga_id:
+
+include: ['_pages']
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - scripts
+  - utils
+  - vendor
