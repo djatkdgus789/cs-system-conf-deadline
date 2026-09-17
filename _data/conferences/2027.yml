@@ -1,28 +1,93 @@
 ---
 
-# Conferences whose *event* takes place in 2027 (file is named after the
-# conference year, not the submission year).
+# Conferences whose *event* takes place in 2027.
+# The file is named after the conference year, not the submission year: a
+# December 2026 deadline for a July 2027 conference belongs here.
+#
+# POLICY: only deadlines from a published call for papers go in this file.
+# Do not add a date extrapolated from a previous edition - if the CFP is not
+# out yet, leave the conference out until it is.
+#
+# Every entry below was cross-checked against the conference's own CFP or
+# important-dates page in September 2026. The `link` points at that page;
+# re-check it before you rely on a date, since organizers do move deadlines.
 #
 # Schema:
-#   - title: SOSP                    # short name shown in the list
+#   - title: OSDI                        # short name shown in the list
 #     year: 2027
-#     id: sosp27                      # unique, lower case, used in URLs/CSS ids
-#     full_name: ...                  # optional, shown on the detail page
-#     link: https://...               # official conference / CFP page
-#     deadline: "YYYY-MM-DD HH:MM:SS" # full paper deadline (or "TBA")
-#     abstract_deadline: "..."        # optional
-#     timezone: AoE                   # AoE, UTC, UTC-4, PST or an IANA name
+#     id: osdi27                          # unique, lower case, used in URLs/CSS ids
+#     full_name: ...                      # optional, shown on the detail page
+#     link: https://...                   # the CFP / important-dates page
+#     abstract_deadline: "..."            # optional, omit when the CFP has none
+#     deadline: "YYYY-MM-DD HH:MM:SS"     # full paper deadline
+#     timezone: AoE                       # AoE, UTC, UTC-4, PST or an IANA name
 #     place: City, Country
-#     date: Month D-D, 2027           # conference dates
-#     sub: [ SYS ]                    # categories, see _data/types.yml
-#     tba: true                       # set when the dates are projected, not official
-#     note: ...                       # optional free text shown under the entry
-#
-# Entries marked `tba: true` use dates projected from the previous edition
-# because the official CFP has not been released yet. Replace them (and drop
-# the flag and the note) once the real CFP is out.
+#     date: Month D-D, 2027               # conference dates
+#     sub: [ SYS ]                        # categories, see _data/types.yml
+#     note: ...                           # optional free text shown under the entry
 
 # ---------------------------------------------------------------- System ----
+
+- title: NSDI (Fall)
+  year: 2027
+  id: nsdi27fall
+  full_name: USENIX Symposium on Networked Systems Design and Implementation
+  link: https://www.usenix.org/conference/nsdi27/call-for-papers
+  abstract_deadline: "2026-09-10 23:59:59"
+  deadline: "2026-09-17 23:59:59"
+  timezone: America/New_York
+  place: Providence, RI, USA
+  date: May 11-13, 2027
+  sub: [ SYS, NET ]
+  note: Second of two rounds. The Spring round closed on 2026-04-23.
+
+- title: EuroSys (Fall)
+  year: 2027
+  id: eurosys27fall
+  full_name: European Conference on Computer Systems
+  link: https://2027.eurosys.org/cfp.html
+  abstract_deadline: "2026-09-17 23:59:59"
+  deadline: "2026-09-24 23:59:59"
+  timezone: AoE
+  place: Rabat, Morocco
+  date: April 19-23, 2027
+  sub: [ SYS ]
+  note: Second of two rounds. The Spring round closed on 2026-05-14.
+
+- title: SIGMETRICS (Fall round)
+  year: 2027
+  id: sigmetrics27fall
+  full_name: ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems
+  link: https://www.sigmetrics.org/sigmetrics2027/call_for_papers.html
+  deadline: "2026-10-09 23:59:59"
+  timezone: AoE
+  place: Atlanta, GA, USA
+  date: June 7-11, 2027
+  sub: [ SYS ]
+  note: Second of three rounds; held as part of ACM FCRC 2027. The summer round has closed.
+
+- title: RTAS
+  year: 2027
+  id: rtas27
+  full_name: IEEE Real-Time and Embedded Technology and Applications Symposium
+  link: https://2027.rtas.org/
+  deadline: "2026-11-05 23:59:59"
+  timezone: AoE
+  place: Boulder, CO, USA
+  date: May 17-20, 2027
+  sub: [ SYS ]
+  note: Firm deadline - RTAS does not extend it.
+
+- title: DSN
+  year: 2027
+  id: dsn27
+  full_name: IEEE/IFIP International Conference on Dependable Systems and Networks
+  link: https://dsn2027-berlin.github.io/call-for-contributions/
+  deadline: "2026-11-25 23:59:59"
+  timezone: AoE
+  place: Berlin, Germany
+  date: June 2027
+  sub: [ SYS ]
 
 - title: OSDI
   year: 2027
@@ -36,198 +101,58 @@
   date: July 7-9, 2027
   sub: [ SYS ]
 
-- title: EuroSys (Fall)
+- title: SIGMETRICS (Winter round)
   year: 2027
-  id: eurosys27fall
-  full_name: European Conference on Computer Systems
-  link: https://2027.eurosys.org/
-  abstract_deadline: "2026-09-17 23:59:59"
-  deadline: "2026-09-24 23:59:59"
+  id: sigmetrics27winter
+  full_name: ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems
+  link: https://www.sigmetrics.org/sigmetrics2027/call_for_papers.html
+  abstract_deadline: "2027-01-04 23:59:59"
+  deadline: "2027-01-11 23:59:59"
   timezone: AoE
-  place: Rabat, Morocco
-  date: April 19-24, 2027
+  place: Atlanta, GA, USA
+  date: June 7-11, 2027
   sub: [ SYS ]
-  note: Second (Fall) of two submission rounds. The Spring round closed on 2026-05-14.
-
-- title: NSDI (Fall)
-  year: 2027
-  id: nsdi27fall
-  full_name: USENIX Symposium on Networked Systems Design and Implementation
-  link: https://www.usenix.org/conference/nsdi27/call-for-papers
-  abstract_deadline: "2026-09-10 23:59:59"
-  deadline: "2026-09-17 23:59:59"
-  timezone: America/New_York
-  place: Providence, RI, USA
-  date: May 11-13, 2027
-  sub: [ SYS, NET ]
-  note: Second (Fall) of two submission rounds. The Spring round closed on 2026-04-23.
-
-- title: SOSP
-  year: 2027
-  id: sosp27
-  full_name: ACM Symposium on Operating Systems Principles
-  link: https://sigops.org/s/conferences/sosp/
-  abstract_deadline: "2027-03-25 23:59:59"
-  deadline: "2027-03-31 23:59:59"
-  timezone: AoE
-  place: TBD
-  date: 2027
-  sub: [ SYS ]
-  tba: true
-  note: Projected from SOSP 2026 (abstract 2026-03-26, paper 2026-04-01). Official CFP not released yet.
-
-- title: SIGOPS ATC
-  year: 2027
-  id: atc27
-  full_name: ACM SIGOPS Annual Technical Conference
-  link: https://sigops.org/s/conferences/atc/
-  deadline: "2027-06-10 23:59:59"
-  timezone: AoE
-  place: TBD
-  date: 2027
-  sub: [ SYS ]
-  tba: true
-  note: Successor to USENIX ATC, run by ACM SIGOPS since 2026. Projected from SIGOPS ATC 2026 (2026-06-11). Official CFP not released yet.
-
-- title: Middleware (Round 1)
-  year: 2027
-  id: middleware27r1
-  full_name: ACM/IFIP International Middleware Conference
-  link: https://middleware-conf.github.io/
-  abstract_deadline: "2026-12-08 23:59:59"
-  deadline: "2026-12-11 23:59:59"
-  timezone: AoE
-  place: TBD
-  date: December 2027
-  sub: [ SYS ]
-  tba: true
-  note: Projected from Middleware 2026 Round 1 (abstract 2025-12-09, paper 2025-12-12). Official CFP not released yet.
-
-- title: SoCC (Round 1)
-  year: 2027
-  id: socc27r1
-  full_name: ACM Symposium on Cloud Computing
-  link: https://acmsocc.org/
-  abstract_deadline: "2027-02-05 23:59:59"
-  deadline: "2027-02-12 23:59:59"
-  timezone: AoE
-  place: TBD
-  date: November 2027
-  sub: [ SYS ]
-  tba: true
-  note: Projected from SoCC 2026 Round 1 (abstract 2026-02-06, paper 2026-02-13). Official CFP not released yet.
-
-- title: HotOS
-  year: 2027
-  id: hotos27
-  full_name: ACM SIGOPS Workshop on Hot Topics in Operating Systems (HotOS XXI)
-  link: https://sigops.org/s/conferences/hotos/2027/
-  deadline: "2027-01-15 23:59:59"
-  timezone: AoE
-  place: Burghausen, Bavaria, Germany
-  date: May 24-26, 2027
-  sub: [ SYS ]
-  tba: true
-  note: Workshop dates and venue are official; the submission deadline is still listed as TBA and the date here is projected from previous editions.
-
-- title: APSys
-  year: 2027
-  id: apsys27
-  full_name: ACM SIGOPS Asia-Pacific Workshop on Systems
-  link: https://sigops.org/s/conferences/apsys/
-  abstract_deadline: "2027-05-12 23:59:59"
-  deadline: "2027-05-19 23:59:59"
-  timezone: AoE
-  place: TBD
-  date: 2027
-  sub: [ SYS ]
-  tba: true
-  note: Projected from APSys 2026 (abstract 2026-05-13, paper 2026-05-20). Official CFP not released yet.
+  note: Last of three rounds; held as part of ACM FCRC 2027.
 
 # ---------------------------------------------------------- Architecture ----
 
-- title: ISCA
+- title: DATE
   year: 2027
-  id: isca27
-  full_name: ACM/IEEE International Symposium on Computer Architecture
-  link: https://iscaconf.org/
-  abstract_deadline: "2026-11-09 23:59:59"
-  deadline: "2026-11-16 23:59:59"
+  id: date27
+  full_name: Design, Automation and Test in Europe Conference
+  link: https://www.date-conference.com/date-2027-call-papers
+  abstract_deadline: "2026-09-13 23:59:59"
+  deadline: "2026-09-20 23:59:59"
   timezone: AoE
-  place: TBD
-  date: June 2027
-  sub: [ ARCH, SYS ]
-  tba: true
-  note: Projected from ISCA 2026 (abstract 2025-11-10, paper 2025-11-17). Official CFP not released yet.
-
-- title: MICRO
-  year: 2027
-  id: micro27
-  full_name: IEEE/ACM International Symposium on Microarchitecture
-  link: https://www.microarch.org/
-  abstract_deadline: "2027-03-30 23:59:59"
-  deadline: "2027-04-06 23:59:59"
-  timezone: AoE
-  place: TBD
-  date: 2027
-  sub: [ ARCH, SYS ]
-  tba: true
-  note: Projected from MICRO 2026 (abstract 2026-03-31, paper 2026-04-07). Official CFP not released yet.
-
-- title: ISPASS
-  year: 2027
-  id: ispass27
-  full_name: IEEE International Symposium on Performance Analysis of Systems and Software
-  link: https://ispass.org/
-  abstract_deadline: "2026-12-04 23:59:59"
-  deadline: "2026-12-11 23:59:59"
-  timezone: AoE
-  place: TBD
-  date: April 2027
+  place: Dresden, Germany
+  date: March 22-24, 2027
   sub: [ ARCH ]
-  tba: true
-  note: Projected from ISPASS 2026 (abstract 2025-12-05, paper 2025-12-12). Official CFP not released yet.
+  note: Papers must be registered (title, abstract, co-authors) by the abstract deadline.
 
-- title: ICS (Cycle 1)
+- title: FPGA
   year: 2027
-  id: ics27c1
-  full_name: ACM International Conference on Supercomputing
-  link: https://www.ics-conference.org/
-  abstract_deadline: "2026-12-08 23:59:59"
-  deadline: "2026-12-15 23:59:59"
+  id: fpga27
+  full_name: ACM/SIGDA International Symposium on Field-Programmable Gate Arrays
+  link: https://www.isfpga.org/call-for-papers/
+  abstract_deadline: "2026-10-01 23:59:59"
+  deadline: "2026-10-08 23:59:59"
   timezone: AoE
-  place: TBD
-  date: 2027
-  sub: [ ARCH, HPC ]
-  tba: true
-  note: Projected from ICS 2026 Cycle 1 (abstract 2025-12-09, paper 2025-12-16). Official CFP not released yet.
-
-- title: PACT
-  year: 2027
-  id: pact27
-  full_name: International Conference on Parallel Architectures and Compilation Techniques
-  link: https://pactconf.org/
-  abstract_deadline: "2027-04-22 23:59:59"
-  deadline: "2027-04-29 23:59:59"
-  timezone: AoE
-  place: TBD
-  date: 2027
+  place: California, USA
+  date: March 2027
   sub: [ ARCH ]
-  tba: true
-  note: Projected from PACT 2026 (abstract 2026-04-23, paper 2026-04-30). Official CFP not released yet.
+  note: Rebuttal period 2026-11-09 to 2026-11-15.
 
-- title: IISWC
+- title: DAC
   year: 2027
-  id: iiswc27
-  full_name: IEEE International Symposium on Workload Characterization
-  link: https://iiswc.org/
-  deadline: "2027-05-13 23:59:59"
+  id: dac27
+  full_name: ACM/IEEE Design Automation Conference
+  link: https://dac.com/2027/program/research-manuscript-submissions
+  deadline: "2026-11-17 23:59:59"
   timezone: AoE
-  place: TBD
-  date: 2027
+  place: San Jose, CA, USA
+  date: July 11-14, 2027
   sub: [ ARCH ]
-  tba: true
-  note: Projected from IISWC 2026 (2026-05-14). Official CFP not released yet.
+  note: Research manuscript track.
 
 # ------------------------------------------------------------ ML System ----
 
@@ -241,20 +166,7 @@
   place: Montréal, Canada
   date: February 16-23, 2027
   sub: [ MLSYS, SYS ]
-  note: Submissions open 2026-10-10.
-
-- title: EuroMLSys
-  year: 2027
-  id: euromlsys27
-  full_name: European Workshop on Machine Learning and Systems
-  link: https://euromlsys.eu/
-  deadline: "2027-01-19 23:59:59"
-  timezone: AoE
-  place: Rabat, Morocco
-  date: April 2027
-  sub: [ MLSYS, SYS ]
-  tba: true
-  note: Co-located with EuroSys 2027. Deadline projected from previous editions; official CFP not released yet.
+  note: Submission site opens 2026-10-10.
 
 # ------------------------------------------------------------------ HPC ----
 
@@ -262,9 +174,9 @@
   year: 2027
   id: ipdps27
   full_name: IEEE International Parallel and Distributed Processing Symposium
-  link: https://www.ipdps.org/
-  abstract_deadline: "2026-10-01 23:59:59"
-  deadline: "2026-10-08 23:59:59"
+  link: http://www.ipdps.org/ipdps2027/2027-call-for-papers.html
+  abstract_deadline: "2026-10-02 23:59:59"
+  deadline: "2026-10-09 23:59:59"
   timezone: AoE
   place: Seattle, WA, USA
   date: June 1-5, 2027
@@ -274,352 +186,31 @@
   year: 2027
   id: ccgrid27
   full_name: IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing
-  link: https://hpcclab.org/ccgrid27/
-  abstract_deadline: "2026-11-24 23:59:59"
-  deadline: "2026-12-01 23:59:59"
+  link: https://hpcclab.org/ccgrid27-call-for-papers/
+  deadline: "2026-12-08 23:59:59"
   timezone: AoE
   place: Dallas-Fort Worth, TX, USA
   date: May 24-27, 2027
   sub: [ HPC ]
 
-- title: HPDC
-  year: 2027
-  id: hpdc27
-  full_name: ACM International Symposium on High-Performance Parallel and Distributed Computing
-  link: https://www.hpdc.org/
-  abstract_deadline: "2027-01-28 23:59:59"
-  deadline: "2027-02-04 23:59:59"
-  timezone: AoE
-  place: TBD
-  date: 2027
-  sub: [ HPC ]
-  tba: true
-  note: Projected from HPDC 2026 (abstract 2026-01-29, paper 2026-02-05). Official CFP not released yet.
-
-- title: ICPP
-  year: 2027
-  id: icpp27
-  full_name: International Conference on Parallel Processing
-  link: https://www.icpp-conf.org/
-  abstract_deadline: "2027-04-23 23:59:59"
-  deadline: "2027-04-30 23:59:59"
-  timezone: AoE
-  place: TBD
-  date: 2027
-  sub: [ HPC ]
-  tba: true
-  note: Projected from ICPP 2026 (abstract 2026-04-24, paper 2026-05-01). Official CFP not released yet.
-
-- title: CLUSTER
-  year: 2027
-  id: cluster27
-  full_name: IEEE International Conference on Cluster Computing
-  link: https://clustercomp.org/
-  deadline: "2027-05-06 23:59:59"
-  timezone: AoE
-  place: TBD
-  date: 2027
-  sub: [ HPC ]
-  tba: true
-  note: Projected from CLUSTER 2026 (2026-05-07). Official CFP not released yet.
-
-- title: SC
-  year: 2027
-  id: sc27
-  full_name: International Conference for High Performance Computing, Networking, Storage and Analysis
-  link: https://supercomputing.org/
-  abstract_deadline: "2027-03-31 23:59:59"
-  deadline: "2027-04-07 23:59:59"
-  timezone: AoE
-  place: TBD
-  date: November 2027
-  sub: [ HPC ]
-  tba: true
-  note: Projected from SC26 (abstract 2026-04-01, paper 2026-04-08). Official CFP not released yet.
-
 # ------------------------------------------------------------- Database ----
-
-- title: SIGMOD (Round 4)
-  year: 2027
-  id: sigmod27r4
-  full_name: ACM SIGMOD International Conference on Management of Data
-  link: https://2027.sigmod.org/calls_papers_sigmod_research.shtml
-  abstract_deadline: "2026-10-10 23:59:00"
-  deadline: "2026-10-17 23:59:00"
-  timezone: AoE
-  place: Huntington Beach, CA, USA
-  date: June 13-19, 2027
-  sub: [ DB ]
-  note: Last of four quarterly rounds for SIGMOD 2027 (rounds close on the 17th of Jan / Apr / Jul / Oct).
-
-- title: ICDE (Round 2)
-  year: 2027
-  id: icde27r2
-  full_name: IEEE International Conference on Data Engineering
-  link: https://icde2027.github.io/
-  deadline: "2026-11-11 17:00:00"
-  timezone: UTC-7
-  place: Copenhagen, Denmark
-  date: May 17-21, 2027
-  sub: [ DB ]
-  note: Second of two submission rounds. The first round closed on 2026-06-11.
 
 - title: VLDB (October round)
   year: 2027
   id: vldb27oct
   full_name: International Conference on Very Large Data Bases
-  link: https://www.vldb.org/2027/
+  link: https://www.vldb.org/2027/important-dates.html
   abstract_deadline: "2026-09-25 17:00:00"
   deadline: "2026-10-01 17:00:00"
   timezone: America/Los_Angeles
   place: Athens, Greece
   date: August 23-27, 2027
   sub: [ DB ]
-  note: PVLDB uses rolling monthly deadlines on the 1st of each month, 17:00 PT, through 2027-03-01.
+  note: PVLDB rolls monthly - paper due the 1st at 17:00 PT, mandatory abstract the 25th of the month before. Final round is 2027-03-01.
 
-- title: VLDB (November round)
+- title: EDBT (Cycle 3)
   year: 2027
-  id: vldb27nov
-  full_name: International Conference on Very Large Data Bases
-  link: https://www.vldb.org/2027/
-  abstract_deadline: "2026-10-25 17:00:00"
-  deadline: "2026-11-01 17:00:00"
-  timezone: America/Los_Angeles
-  place: Athens, Greece
-  date: August 23-27, 2027
-  sub: [ DB ]
-  note: PVLDB uses rolling monthly deadlines on the 1st of each month, 17:00 PT, through 2027-03-01.
-
-- title: VLDB (December round)
-  year: 2027
-  id: vldb27dec
-  full_name: International Conference on Very Large Data Bases
-  link: https://www.vldb.org/2027/
-  abstract_deadline: "2026-11-25 17:00:00"
-  deadline: "2026-12-01 17:00:00"
-  timezone: America/Los_Angeles
-  place: Athens, Greece
-  date: August 23-27, 2027
-  sub: [ DB ]
-  note: PVLDB uses rolling monthly deadlines on the 1st of each month, 17:00 PT, through 2027-03-01.
-
-# -------------------------------------------------------------- Network ----
-
-- title: IMC (Cycle 1)
-  year: 2027
-  id: imc27c1
-  full_name: ACM Internet Measurement Conference
-  link: https://conferences.sigcomm.org/imc/
-  abstract_deadline: "2026-11-12 23:59:59"
-  deadline: "2026-11-19 23:59:59"
-  timezone: AoE
-  place: TBD
-  date: 2027
-  sub: [ NET ]
-  tba: true
-  note: Projected from IMC 2026 Cycle 1 (abstract 2025-11-13, paper 2025-11-20). Official CFP not released yet.
-
-- title: CoNEXT (December cycle)
-  year: 2027
-  id: conext27dec
-  full_name: ACM International Conference on emerging Networking EXperiments and Technologies
-  link: https://conferences.sigcomm.org/co-next/
-  abstract_deadline: "2026-12-04 23:59:59"
-  deadline: "2026-12-11 23:59:59"
-  timezone: AoE
-  place: TBD
-  date: December 2027
-  sub: [ NET ]
-  tba: true
-  note: Projected from CoNEXT 2026 December cycle (abstract 2025-12-05, paper 2025-12-12). Official CFP not released yet.
-
-- title: SIGCOMM
-  year: 2027
-  id: sigcomm27
-  full_name: ACM SIGCOMM Conference
-  link: https://conferences.sigcomm.org/sigcomm/
-  abstract_deadline: "2027-01-29 23:59:59"
-  deadline: "2027-02-05 23:59:59"
-  timezone: AoE
-  place: TBD
-  date: August 2027
-  sub: [ NET ]
-  tba: true
-  note: Projected from SIGCOMM 2026 (abstract 2026-01-30, paper 2026-02-06). Official CFP not released yet.
-
-- title: HotNets
-  year: 2027
-  id: hotnets27
-  full_name: ACM Workshop on Hot Topics in Networks
-  link: https://conferences.sigcomm.org/hotnets/
-  deadline: "2027-07-15 23:59:59"
-  timezone: AoE
-  place: TBD
-  date: November 2027
-  sub: [ NET ]
-  tba: true
-  note: Projected from HotNets 2026 (2026-07-16). Official CFP not released yet.
-
-# ------------------------------------------------- Added conference list ----
-
-- title: DATE
-  year: 2027
-  id: date27
-  full_name: Design, Automation and Test in Europe Conference
-  link: https://www.date-conference.com/date-2027-call-papers
-  abstract_deadline: "2026-09-13 23:59:59"
-  deadline: "2026-09-20 23:59:59"
-  timezone: AoE
-  place: Dresden, Germany
-  date: March 22-24, 2027
-  sub: [ ARCH ]
-
-- title: SIGMETRICS (Fall round)
-  year: 2027
-  id: sigmetrics27fall
-  full_name: ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems
-  link: https://www.sigmetrics.org/sigmetrics2027/
-  abstract_deadline: "2026-10-02 23:59:00"
-  deadline: "2026-10-09 23:59:00"
-  timezone: AoE
-  place: Atlanta, GA, USA
-  date: June 7-11, 2027
-  sub: [ SYS ]
-  note: Second of three rounds (summer / fall / winter). The summer round closed on 2026-07-10.
-
-- title: SIGMETRICS (Winter round)
-  year: 2027
-  id: sigmetrics27winter
-  full_name: ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems
-  link: https://www.sigmetrics.org/sigmetrics2027/
-  abstract_deadline: "2027-01-04 23:59:00"
-  deadline: "2027-01-11 23:59:00"
-  timezone: AoE
-  place: Atlanta, GA, USA
-  date: June 7-11, 2027
-  sub: [ SYS ]
-  note: Last of three rounds (summer / fall / winter).
-
-- title: ICDCS
-  year: 2027
-  id: icdcs27
-  full_name: IEEE International Conference on Distributed Computing Systems
-  link: https://icdcs.org/
-  deadline: "2027-01-20 23:59:59"
-  timezone: AoE
-  place: TBD
-  date: 2027
-  sub: [ SYS ]
-  tba: true
-  note: Projected from ICDCS 2026 (2026-01-21). Official CFP not released yet.
-
-- title: CLOUD
-  year: 2027
-  id: cloud27
-  full_name: IEEE International Conference on Cloud Computing
-  link: https://services.conferences.computer.org/
-  deadline: "2027-03-21 23:00:00"
-  timezone: AoE
-  place: TBD
-  date: July 2027
-  sub: [ SYS ]
-  tba: true
-  note: Projected from CLOUD 2026 (2026-03-22). Official CFP not released yet.
-
-- title: MASCOTS
-  year: 2027
-  id: mascots27
-  full_name: IEEE/ACM International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems
-  link: https://mascots.org/
-  deadline: "2027-05-17 23:59:59"
-  timezone: AoE
-  place: TBD
-  date: October 2027
-  sub: [ SYS ]
-  tba: true
-  note: Projected from MASCOTS 2026 (2026-05-17). Official CFP not released yet.
-
-- title: SYSTOR
-  year: 2027
-  id: systor27
-  full_name: ACM International Systems and Storage Conference
-  link: https://www.systor.org/
-  deadline: "2027-05-24 23:59:59"
-  timezone: AoE
-  place: TBD
-  date: September 2027
-  sub: [ SYS ]
-  tba: true
-  note: Full and Short Papers track. Projected from SYSTOR 2026 (2026-05-25). Official CFP not released yet.
-
-- title: VEE
-  year: 2027
-  id: vee27
-  full_name: ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments
-  link: https://conf.researchr.org/series/vee
-  deadline: "TBA"
-  timezone: AoE
-  place: TBD
-  date: 2027
-  sub: [ SYS ]
-  tba: true
-  note: Recent editions have been co-located with ASPLOS. No CFP announced for 2027 yet.
-
-- title: Euro-Par
-  year: 2027
-  id: europar27
-  full_name: European Conference on Parallel and Distributed Computing
-  link: https://www.euro-par.org/
-  abstract_deadline: "2027-03-05 23:59:59"
-  deadline: "2027-03-12 23:59:59"
-  timezone: AoE
-  place: TBD
-  date: August 2027
-  sub: [ HPC ]
-  tba: true
-  note: Projected from Euro-Par 2026 (abstract 2026-03-06, paper 2026-03-13). Official CFP not released yet.
-
-- title: BigData
-  year: 2027
-  id: bigdata27
-  full_name: IEEE International Conference on Big Data
-  link: https://bigdataieee.org/
-  deadline: "2027-08-20 23:59:59"
-  timezone: AoE
-  place: TBD
-  date: December 2027
-  sub: [ DB ]
-  tba: true
-  note: Projected from BigData 2026 (2026-08-21). Official CFP not released yet.
-
-# --------------------------------- Additional 2027 editions with a live CFP ----
-
-- title: MMSys
-  year: 2027
-  id: mmsys27
-  full_name: ACM Multimedia Systems Conference
-  link: https://2027.acmmmsys.org
-  deadline: "2026-09-17 23:59:59"
-  timezone: AoE
-  place: Ghent, Belgium
-  date: March 30 - April 2, 2027
-  sub: [ SYS, NET ]
-
-- title: FPGA
-  year: 2027
-  id: fpga27
-  full_name: ACM/SIGDA International Symposium on Field-Programmable Gate Arrays
-  link: https://www.isfpga.org/
-  abstract_deadline: "2026-10-01 23:59:59"
-  deadline: "2026-10-08 23:59:59"
-  timezone: UTC-12
-  place: Monterey, CA, USA
-  date: March 14-16, 2027
-  sub: [ ARCH ]
-
-- title: EDBT
-  year: 2027
-  id: edbt27
+  id: edbt27c3
   full_name: International Conference on Extending Database Technology
   link: https://edbticdt2027.github.io/
   deadline: "2026-10-07 23:59:59"
@@ -627,68 +218,65 @@
   place: Lille, France
   date: April 6-9, 2027
   sub: [ DB ]
+  note: Last of three cycles; papers accepted in any cycle are presented at EDBT 2027.
 
-- title: RTAS
+- title: SIGMOD (Round 4)
   year: 2027
-  id: rtas27
-  full_name: IEEE Real-Time and Embedded Technology and Applications Symposium
-  link: https://2027.rtas.org/
-  deadline: "2026-11-05 23:59:59"
+  id: sigmod27r4
+  full_name: ACM SIGMOD International Conference on Management of Data
+  link: https://2027.sigmod.org/calls_papers_important_dates.shtml
+  abstract_deadline: "2026-10-10 23:59:59"
+  deadline: "2026-10-17 23:59:59"
   timezone: AoE
-  place: Boulder, CO, USA
-  date: May 17-20, 2027
-  sub: [ SYS ]
-  note: Firm submission deadline.
-
-- title: SenSys (2nd deadline)
-  year: 2027
-  id: sensys27d2
-  full_name: ACM Conference on Embedded Networked Sensor Systems
-  link: https://sensys.acm.org/2027/
-  deadline: "2026-11-05 23:59:59"
-  timezone: AoE
-  place: Boulder, CO, USA
-  date: May 17-20, 2027
-  sub: [ SYS, NET ]
-
-- title: DAC
-  year: 2027
-  id: dac27
-  full_name: ACM/IEEE Design Automation Conference
-  link: https://dac.com/2027/authors/call-for-contributions
-  deadline: "2026-11-18 23:59:59"
-  timezone: UTC-8
-  place: San Jose, CA, USA
-  date: July 11-14, 2027
-  sub: [ ARCH ]
-
-- title: DASFAA
-  year: 2027
-  id: dasfaa27
-  full_name: International Conference on Database Systems for Advanced Applications
-  link: https://dasfaa2027.github.io/
-  deadline: "2026-11-25 23:59:59"
-  timezone: AoE
-  place: Shenyang, China
-  date: May 27-30, 2027
+  place: Huntington Beach, CA, USA
+  date: June 13-19, 2027
   sub: [ DB ]
+  note: Last of four quarterly rounds for SIGMOD 2027.
 
-- title: DSN
+- title: VLDB (November round)
   year: 2027
-  id: dsn27
-  full_name: IEEE/IFIP International Conference on Dependable Systems and Networks
-  link: https://dsn2027-berlin.github.io/
-  deadline: "2026-12-02 23:59:59"
-  timezone: AoE
-  place: Berlin, Germany
-  date: June 22-25, 2027
-  sub: [ SYS ]
+  id: vldb27nov
+  full_name: International Conference on Very Large Data Bases
+  link: https://www.vldb.org/2027/important-dates.html
+  abstract_deadline: "2026-10-25 17:00:00"
+  deadline: "2026-11-01 17:00:00"
+  timezone: America/Los_Angeles
+  place: Athens, Greece
+  date: August 23-27, 2027
+  sub: [ DB ]
+  note: PVLDB rolls monthly - paper due the 1st at 17:00 PT, mandatory abstract the 25th of the month before.
+
+- title: ICDE (Round 2)
+  year: 2027
+  id: icde27r2
+  full_name: IEEE International Conference on Data Engineering
+  link: https://icde2027.github.io/important-dates.html
+  deadline: "2026-11-11 17:00:00"
+  timezone: America/Los_Angeles
+  place: Copenhagen, Denmark
+  date: May 17-21, 2027
+  sub: [ DB ]
+  note: Second of two rounds. The first round closed on 2026-06-11.
+
+- title: VLDB (December round)
+  year: 2027
+  id: vldb27dec
+  full_name: International Conference on Very Large Data Bases
+  link: https://www.vldb.org/2027/important-dates.html
+  abstract_deadline: "2026-11-25 17:00:00"
+  deadline: "2026-12-01 17:00:00"
+  timezone: America/Los_Angeles
+  place: Athens, Greece
+  date: August 23-27, 2027
+  sub: [ DB ]
+  note: PVLDB rolls monthly - paper due the 1st at 17:00 PT, mandatory abstract the 25th of the month before.
 
 - title: PODS (Cycle 2)
   year: 2027
   id: pods27c2
   full_name: ACM Symposium on Principles of Database Systems
-  link: https://2027.sigmod.org/
+  link: https://2027.sigmod.org/calls_papers_pods_research.shtml
+  abstract_deadline: "2026-12-03 23:59:59"
   deadline: "2026-12-10 23:59:59"
   timezone: AoE
   place: Huntington Beach, CA, USA
@@ -699,37 +287,65 @@
   year: 2027
   id: vldb27jan
   full_name: International Conference on Very Large Data Bases
-  link: https://www.vldb.org/2027/
+  link: https://www.vldb.org/2027/important-dates.html
   abstract_deadline: "2026-12-25 17:00:00"
   deadline: "2027-01-01 17:00:00"
   timezone: America/Los_Angeles
   place: Athens, Greece
   date: August 23-27, 2027
   sub: [ DB ]
-  note: PVLDB uses rolling monthly deadlines on the 1st of each month, 17:00 PT, through 2027-03-01.
+  note: PVLDB rolls monthly - paper due the 1st at 17:00 PT, mandatory abstract the 25th of the month before.
 
 - title: VLDB (February round)
   year: 2027
   id: vldb27feb
   full_name: International Conference on Very Large Data Bases
-  link: https://www.vldb.org/2027/
+  link: https://www.vldb.org/2027/important-dates.html
   abstract_deadline: "2027-01-25 17:00:00"
   deadline: "2027-02-01 17:00:00"
   timezone: America/Los_Angeles
   place: Athens, Greece
   date: August 23-27, 2027
   sub: [ DB ]
-  note: PVLDB uses rolling monthly deadlines on the 1st of each month, 17:00 PT, through 2027-03-01.
+  note: PVLDB rolls monthly - paper due the 1st at 17:00 PT, mandatory abstract the 25th of the month before.
 
 - title: VLDB (March round)
   year: 2027
   id: vldb27mar
   full_name: International Conference on Very Large Data Bases
-  link: https://www.vldb.org/2027/
+  link: https://www.vldb.org/2027/important-dates.html
   abstract_deadline: "2027-02-25 17:00:00"
   deadline: "2027-03-01 17:00:00"
   timezone: America/Los_Angeles
   place: Athens, Greece
   date: August 23-27, 2027
   sub: [ DB ]
-  note: Final PVLDB 2027 round.
+  note: Final PVLDB round for VLDB 2027; later submissions roll over to VLDB 2028.
+
+# -------------------------------------------------------------- Network ----
+
+- title: MMSys (Round 1)
+  year: 2027
+  id: mmsys27r1
+  full_name: ACM Multimedia Systems Conference
+  link: https://2027.acmmmsys.org/deadlines.html
+  abstract_deadline: "2026-09-10 23:59:59"
+  deadline: "2026-09-17 23:59:59"
+  timezone: AoE
+  place: Ghent, Belgium
+  date: March 30 - April 2, 2027
+  sub: [ SYS, NET ]
+  note: First of two rounds. Per-track deadlines differ - check the deadlines page.
+
+- title: MMSys (Round 2)
+  year: 2027
+  id: mmsys27r2
+  full_name: ACM Multimedia Systems Conference
+  link: https://2027.acmmmsys.org/deadlines.html
+  abstract_deadline: "2026-11-12 23:59:59"
+  deadline: "2026-11-19 23:59:59"
+  timezone: AoE
+  place: Ghent, Belgium
+  date: March 30 - April 2, 2027
+  sub: [ SYS, NET ]
+  note: Second of two rounds. Per-track deadlines differ - check the deadlines page.

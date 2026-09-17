@@ -8,34 +8,43 @@ Built on [ai-deadlines](https://github.com/abhshkdz/ai-deadlines) by
 [KAIST CASYS fork](https://github.com/casys-kaist/casys-kaist.github.io). The site machinery is
 the same; the conference list is the part that is specific to this repository.
 
-## What's tracked
+## Only published CFPs
+
+**Every deadline here comes from a conference's own call-for-papers or important-dates page.**
+Nothing is extrapolated from a previous edition — if a conference has not released its CFP, it is
+simply absent until it does. So the list is short by design: it answers "where can I actually
+submit right now", not "what might the calendar look like next year".
+
+Deadlines still move after a CFP is published. The `link` on every entry points at the page the
+date came from — check it before you rely on one.
+
+## What's covered
+
+25 deadlines as of September 2026, all for 2027 editions:
 
 | Category | Tag | Conferences |
 | --- | --- | --- |
-| System | `SYS` | SOSP, OSDI, SIGOPS ATC, EuroSys, NSDI, FAST, SoCC, Middleware, APSys, HotOS, SIGMETRICS, ICDCS, CLOUD, MASCOTS, SYSTOR, VEE, DSN, RTAS, SenSys, MMSys |
-| Architecture | `ARCH` | ISCA, MICRO, ASPLOS, HPCA, PACT, ICS, ISPASS, IISWC, DAC, DATE, FPGA |
-| ML System | `MLSYS` | MLSys, EuroMLSys |
-| HPC | `HPC` | SC, PPoPP, IPDPS, HPDC, ICPP, CLUSTER, CCGrid, Euro-Par |
-| Database | `DB` | SIGMOD, PODS, VLDB, ICDE, EDBT, DASFAA, BigData |
-| Network | `NET` | SIGCOMM, CoNEXT, HotNets, IMC |
+| System | `SYS` | OSDI, EuroSys (Fall), NSDI (Fall), SIGMETRICS (Fall, Winter), DSN, RTAS, MMSys |
+| Architecture | `ARCH` | DATE, DAC, FPGA |
+| ML System | `MLSYS` | MLSys |
+| HPC | `HPC` | IPDPS, CCGrid |
+| Database | `DB` | SIGMOD (R4), PODS (C2), VLDB (6 monthly rounds), ICDE (R2), EDBT (C3) |
+| Network | `NET` | NSDI, MMSys |
 
-The data covers the deadlines that are still open as of September 2026 — mostly the 2027 editions,
-plus the 2028 round for series whose 2027 deadlines have already closed.
+Conferences tracked but currently absent because their 2027/2028 CFP is not out: SOSP, SIGOPS ATC,
+FAST, SoCC, Middleware, APSys, HotOS, ICDCS, CLOUD, MASCOTS, SYSTOR, VEE, SenSys, ISCA, MICRO,
+ASPLOS, HPCA, PACT, ICS, ISPASS, IISWC, SC, PPoPP, HPDC, ICPP, CLUSTER, Euro-Par, EuroMLSys,
+SIGCOMM, CoNEXT, HotNets, IMC, BigData, DASFAA. Add them when their CFP appears.
 
-## Official vs. projected deadlines
-
-Entries carry a `tba: true` flag and a **projected** badge when the official CFP has not been
-released and the date is extrapolated from the previous edition. Those dates move; treat them as a
-planning hint, not a commitment, and **always confirm on the conference website before submitting.**
-Entries without the badge come from a published CFP.
-
-When a real CFP appears, replace the dates, drop `tba: true`, and drop the `note:` line.
+> Note: USENIX ATC ended with the 2025 edition; ACM SIGOPS now runs it as **SIGOPS ATC**.
 
 ## Adding or updating a conference
 
-1. Edit the file under `_data/conferences/` named after the **conference year**, not the submission
+1. Confirm the date on the conference's own CFP page. Third-party deadline aggregators are often
+   off by a day — several entries here had to be corrected against the official pages.
+2. Edit the file under `_data/conferences/` named after the **conference year**, not the submission
    year (`2027.yml` holds a deadline in December 2026 for a conference held in July 2027).
-2. One entry per deadline. A conference with several rounds gets several entries
+3. One entry per deadline. A conference with several rounds gets several entries
    (`EuroSys (Fall)`, `SIGMOD (Round 4)`, …), each with its own unique `id`.
 
 ```yaml
@@ -43,18 +52,21 @@ When a real CFP appears, replace the dates, drop `tba: true`, and drop the `note
   year: 2027                               # conference year
   id: osdi27                               # unique, lower case; used in URLs and CSS ids
   full_name: USENIX Symposium on Operating Systems Design and Implementation
-  link: https://www.usenix.org/conference/osdi27/call-for-papers
-  abstract_deadline: "2026-12-01 17:59:59" # optional
-  deadline: "2026-12-08 17:59:59"          # or "TBA"
+  link: https://www.usenix.org/conference/osdi27/call-for-papers   # the page the date came from
+  abstract_deadline: "2026-12-01 17:59:59" # omit when the CFP has no abstract deadline
+  deadline: "2026-12-08 17:59:59"
   timezone: America/New_York               # AoE, UTC, UTC-4, PST, or an IANA name
   place: Baltimore, MD, USA
   date: July 7-9, 2027                     # conference dates, free text
   sub: [ SYS ]                             # categories, see _data/types.yml
-  # tba: true                              # set when the dates are projected
   # note: ...                              # optional free text under the entry
 ```
 
-3. Validate before opening a pull request:
+Use an IANA timezone (`America/New_York`, `America/Los_Angeles`) rather than a fixed offset when
+the CFP says something like "5pm Pacific" — the offset changes with daylight saving and a fixed
+`UTC-7` will be an hour off for half the year.
+
+4. Validate before opening a pull request:
 
 ```bash
 python3 scripts/validate.py
@@ -66,13 +78,10 @@ from it.
 ## Scripts
 
 ```bash
-python3 scripts/validate.py          # schema, unique ids, categories, timezones, date formats
-python3 scripts/upcoming.py          # every open deadline, soonest first
-python3 scripts/upcoming.py --days 60 --sub SYS --official
+python3 scripts/validate.py                 # schema, unique ids, categories, timezones, date formats
+python3 scripts/upcoming.py                 # every open deadline, soonest first
+python3 scripts/upcoming.py --days 60 --sub SYS
 ```
-
-`--official` hides the projected entries, which is what you want when deciding where to actually
-submit.
 
 ## Local development
 
@@ -82,9 +91,9 @@ bundle exec jekyll serve
 # http://127.0.0.1:4000/cs-system-conf-deadline/
 ```
 
-The site is built and deployed by `.github/workflows/pages.yml` on every push to `main`
-(plain Jekyll, so the plugin in `_plugins/` runs). `.github/workflows/validate.yml` runs the data
-validator on pull requests.
+The site is built and deployed by `.github/workflows/pages.yml` on every push to the default
+branch (plain Jekyll, so the plugin in `_plugins/` runs). `.github/workflows/validate.yml` runs the
+data validator on pull requests.
 
 ## Calendar export
 

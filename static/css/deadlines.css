@@ -328,16 +328,6 @@ footer {
   height: 20px;
 }
 
-.conf-tba {
-  background: #576574;
-  color: #fff;
-  font-size: 11px;
-  padding: 2px 5px;
-  border-radius: 3px;
-  vertical-align: middle;
-  font-weight: 300;
-}
-
 .abstract-deadline {
   font-size: 13px;
   color: #777;
