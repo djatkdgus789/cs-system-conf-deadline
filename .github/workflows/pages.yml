@@ -2,7 +2,7 @@ name: Build and deploy site
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, claude/system-conference-submission-repo-ojngh9 ]
   workflow_dispatch:
 
 permissions:

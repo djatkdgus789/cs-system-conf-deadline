@@ -2,7 +2,7 @@ name: Validate conference data
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, claude/system-conference-submission-repo-ojngh9 ]
   pull_request:
   workflow_dispatch:
 
