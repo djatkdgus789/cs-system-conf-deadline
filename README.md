@@ -20,21 +20,24 @@ date came from — check it before you rely on one.
 
 ## What's covered
 
-25 deadlines as of September 2026, all for 2027 editions:
+27 deadlines, all for 2027 editions (last checked 2026-09-29):
 
 | Category | Tag | Conferences |
 | --- | --- | --- |
-| System | `SYS` | OSDI, EuroSys (Fall), NSDI (Fall), SIGMETRICS (Fall, Winter), DSN, RTAS, MMSys |
+| System | `SYS` | OSDI, EuroSys (Fall), NSDI (Fall), SIGMETRICS (Fall, Winter), DSN, RTAS, SenSys (R2), MMSys |
 | Architecture | `ARCH` | DATE, DAC, FPGA |
 | ML System | `MLSYS` | MLSys |
 | HPC | `HPC` | IPDPS, CCGrid |
-| Database | `DB` | SIGMOD (R4), PODS (C2), VLDB (6 monthly rounds), ICDE (R2), EDBT (C3) |
-| Network | `NET` | NSDI, MMSys |
+| Database | `DB` | SIGMOD (R4), PODS (C2), VLDB (6 monthly rounds), ICDE (R2), EDBT (C3), DASFAA |
+| Network | `NET` | NSDI, SenSys, MMSys |
 
 Conferences tracked but currently absent because their 2027/2028 CFP is not out: SOSP, SIGOPS ATC,
-FAST, SoCC, Middleware, APSys, HotOS, ICDCS, CLOUD, MASCOTS, SYSTOR, VEE, SenSys, ISCA, MICRO,
-ASPLOS, HPCA, PACT, ICS, ISPASS, IISWC, SC, PPoPP, HPDC, ICPP, CLUSTER, Euro-Par, EuroMLSys,
-SIGCOMM, CoNEXT, HotNets, IMC, BigData, DASFAA. Add them when their CFP appears.
+FAST, SoCC, Middleware, APSys, HotOS, ICDCS, CLOUD, MASCOTS, SYSTOR, VEE, ISCA, MICRO, ASPLOS,
+HPCA, PACT, ICS, ISPASS, IISWC, SC, PPoPP, HPDC, ICPP, CLUSTER, Euro-Par, EuroMLSys, SIGCOMM,
+CoNEXT, HotNets, IMC, BigData. Add them when their CFP appears.
+
+Past deadlines stay in the file rather than being deleted — the site moves them to a "Past Events"
+section, which is also the record of what this cycle looked like.
 
 > Note: USENIX ATC ended with the 2025 edition; ACM SIGOPS now runs it as **SIGOPS ATC**.
 
