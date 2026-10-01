@@ -26,7 +26,20 @@
 #     sub: [ SYS ]                        # categories, see _data/types.yml
 #     note: ...                           # optional free text shown under the entry
 
-# ---------------------------------------------------------------- System ----
+# System --------------------------------------------------------------------
+
+- title: MMSys (Round 1)
+  year: 2027
+  id: mmsys27r1
+  full_name: ACM Multimedia Systems Conference
+  link: https://2027.acmmmsys.org/deadlines.html
+  abstract_deadline: "2026-09-10 23:59:59"
+  deadline: "2026-09-17 23:59:59"
+  timezone: AoE
+  place: Ghent, Belgium
+  date: March 30 - April 2, 2027
+  sub: [ SYS, NET ]
+  note: First of two rounds. Per-track deadlines differ - check the deadlines page.
 
 - title: NSDI (Fall)
   year: 2027
@@ -91,6 +104,19 @@
   sub: [ SYS, NET ]
   note: Second of two rounds. The first round closed on 2026-06-05.
 
+- title: MMSys (Round 2)
+  year: 2027
+  id: mmsys27r2
+  full_name: ACM Multimedia Systems Conference
+  link: https://2027.acmmmsys.org/deadlines.html
+  abstract_deadline: "2026-11-12 23:59:59"
+  deadline: "2026-11-19 23:59:59"
+  timezone: AoE
+  place: Ghent, Belgium
+  date: March 30 - April 2, 2027
+  sub: [ SYS, NET ]
+  note: Second of two rounds. Per-track deadlines differ - check the deadlines page.
+
 - title: DSN
   year: 2027
   id: dsn27
@@ -128,7 +154,7 @@
   sub: [ SYS ]
   note: Last of three rounds; held as part of ACM FCRC 2027.
 
-# ---------------------------------------------------------- Architecture ----
+# Architecture --------------------------------------------------------------
 
 - title: DATE
   year: 2027
@@ -169,7 +195,7 @@
   sub: [ ARCH ]
   note: Research manuscript track. Both deadlines are 5 PM Pacific.
 
-# ------------------------------------------------------------ ML System ----
+# ML System -----------------------------------------------------------------
 
 - title: MLSys
   year: 2027
@@ -183,7 +209,7 @@
   sub: [ MLSYS, SYS ]
   note: Submission site opens 2026-10-10 at 12:00 PT.
 
-# ------------------------------------------------------------------ HPC ----
+# HPC -----------------------------------------------------------------------
 
 - title: IPDPS
   year: 2027
@@ -210,7 +236,7 @@
   date: May 24-27, 2027
   sub: [ HPC ]
 
-# ------------------------------------------------------------- Database ----
+# Database ------------------------------------------------------------------
 
 - title: VLDB (October round)
   year: 2027
@@ -275,6 +301,18 @@
   sub: [ DB ]
   note: Second of two rounds. The first round closed on 2026-06-11.
 
+- title: DASFAA
+  year: 2027
+  id: dasfaa27
+  full_name: International Conference on Database Systems for Advanced Applications
+  link: https://dasfaa2027.github.io/CallforResearchTrack/list.htm
+  deadline: "2026-11-25 23:59:59"
+  timezone: AoE
+  place: Shenyang, China
+  date: May 27-30, 2027
+  sub: [ DB ]
+  note: Research track. Firm deadline - no extensions planned.
+
 - title: VLDB (December round)
   year: 2027
   id: vldb27dec
@@ -287,18 +325,6 @@
   date: August 23-27, 2027
   sub: [ DB ]
   note: PVLDB rolls monthly - paper due the 1st at 17:00 PT, mandatory abstract the 25th of the month before.
-
-- title: DASFAA
-  year: 2027
-  id: dasfaa27
-  full_name: International Conference on Database Systems for Advanced Applications
-  link: https://dasfaa2027.github.io/CallforResearchTrack/list.htm
-  deadline: "2026-11-25 23:59:59"
-  timezone: AoE
-  place: Shenyang, China
-  date: May 27-30, 2027
-  sub: [ DB ]
-  note: Research track. Firm deadline - no extensions planned.
 
 - title: PODS (Cycle 2)
   year: 2027
@@ -350,31 +376,3 @@
   date: August 23-27, 2027
   sub: [ DB ]
   note: Final PVLDB round for VLDB 2027; later submissions roll over to VLDB 2028.
-
-# -------------------------------------------------------------- Network ----
-
-- title: MMSys (Round 1)
-  year: 2027
-  id: mmsys27r1
-  full_name: ACM Multimedia Systems Conference
-  link: https://2027.acmmmsys.org/deadlines.html
-  abstract_deadline: "2026-09-10 23:59:59"
-  deadline: "2026-09-17 23:59:59"
-  timezone: AoE
-  place: Ghent, Belgium
-  date: March 30 - April 2, 2027
-  sub: [ SYS, NET ]
-  note: First of two rounds. Per-track deadlines differ - check the deadlines page.
-
-- title: MMSys (Round 2)
-  year: 2027
-  id: mmsys27r2
-  full_name: ACM Multimedia Systems Conference
-  link: https://2027.acmmmsys.org/deadlines.html
-  abstract_deadline: "2026-11-12 23:59:59"
-  deadline: "2026-11-19 23:59:59"
-  timezone: AoE
-  place: Ghent, Belgium
-  date: March 30 - April 2, 2027
-  sub: [ SYS, NET ]
-  note: Second of two rounds. Per-track deadlines differ - check the deadlines page.
