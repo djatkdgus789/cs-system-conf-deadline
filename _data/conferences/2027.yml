@@ -236,6 +236,19 @@
   date: May 24-27, 2027
   sub: [ HPC ]
 
+- title: ICS
+  year: 2027
+  id: ics27
+  full_name: ACM International Conference on Supercomputing
+  link: https://klab-ai3.github.io/ics2027/calls-cfp.html
+  abstract_deadline: "2026-12-01 23:59:59"
+  deadline: "2026-12-07 23:59:59"
+  timezone: AoE
+  place: Atlanta, GA, USA
+  date: June 5-11, 2027
+  sub: [ HPC, ARCH ]
+  note: Single submission cycle, held as part of ACM FCRC 2027.
+
 # Database ------------------------------------------------------------------
 
 - title: VLDB (October round)
@@ -255,13 +268,13 @@
   year: 2027
   id: edbt27c3
   full_name: International Conference on Extending Database Technology
-  link: https://edbticdt2027.github.io/
-  deadline: "2026-10-07 23:59:59"
-  timezone: AoE
+  link: https://edbticdt2027.github.io/contents/important_dates.html
+  deadline: "2026-10-07 17:00:00"
+  timezone: America/Los_Angeles
   place: Lille, France
   date: April 6-9, 2027
   sub: [ DB ]
-  note: Last of three cycles; papers accepted in any cycle are presented at EDBT 2027.
+  note: Last of three research-track cycles. EDBT deadlines are 5 pm Pacific, not AoE.
 
 - title: SIGMOD (Round 4)
   year: 2027

@@ -20,7 +20,7 @@ date came from — check it before you rely on one.
 
 ## What's covered
 
-27 deadlines, all for 2027 editions (last checked 2026-10-01). A struck-through paper deadline has
+28 deadlines, all for 2027 editions (last checked 2026-10-01). A struck-through paper deadline has
 already closed — those entries stay in the data and the site lists them under "Past Events", which
 is the record of what this cycle looked like.
 
@@ -62,13 +62,14 @@ Regenerate this table with `python3 scripts/upcoming.py --markdown`.
 | --- | --- | --- | --- | --- | --- |
 | [IPDPS 2027](http://www.ipdps.org/ipdps2027/2027-call-for-papers.html) | 2026-10-01 | 2026-10-08 | AoE | June 1-5, 2027 | Seattle, WA, USA |
 | [CCGrid 2027](https://hpcclab.org/ccgrid27-call-for-papers/) | 2026-11-24 | 2026-12-01 | AoE | May 24-27, 2027 | Dallas-Fort Worth, TX, USA |
+| [ICS 2027](https://klab-ai3.github.io/ics2027/calls-cfp.html) | 2026-12-01 | 2026-12-07 | AoE | June 5-11, 2027 | Atlanta, GA, USA |
 
 ### Database (`DB`)
 
 | Conference | Abstract | Paper | Timezone | Conference dates | Venue |
 | --- | --- | --- | --- | --- | --- |
 | [VLDB (October round) 2027](https://www.vldb.org/2027/important-dates.html) | 2026-09-25 | 2026-10-01 | America/Los_Angeles | August 23-27, 2027 | Athens, Greece |
-| [EDBT (Cycle 3) 2027](https://edbticdt2027.github.io/) | — | 2026-10-07 | AoE | April 6-9, 2027 | Lille, France |
+| [EDBT (Cycle 3) 2027](https://edbticdt2027.github.io/contents/important_dates.html) | — | 2026-10-07 | America/Los_Angeles | April 6-9, 2027 | Lille, France |
 | [SIGMOD (Round 4) 2027](https://2027.sigmod.org/calls_papers_important_dates.shtml) | 2026-10-10 | 2026-10-17 | AoE | June 13-19, 2027 | Huntington Beach, CA, USA |
 | [VLDB (November round) 2027](https://www.vldb.org/2027/important-dates.html) | 2026-10-25 | 2026-11-01 | America/Los_Angeles | August 23-27, 2027 | Athens, Greece |
 | [ICDE (Round 2) 2027](https://icde2027.github.io/important-dates.html) | — | 2026-11-11 | America/Los_Angeles | May 17-21, 2027 | Copenhagen, Denmark |
@@ -84,7 +85,7 @@ Regenerate this table with `python3 scripts/upcoming.py --markdown`.
 
 Tracked but absent because the 2027/2028 CFP is not out (checked 2026-10-01): SOSP, SIGOPS ATC,
 FAST, SoCC, Middleware, APSys, HotOS, ICDCS, CLOUD, MASCOTS, SYSTOR, VEE, ISCA, MICRO, ASPLOS,
-HPCA, PACT, ICS, ISPASS, IISWC, SC, PPoPP, HPDC, ICPP, CLUSTER, Euro-Par, EuroMLSys, SIGCOMM,
+HPCA, PACT, ISPASS, IISWC, SC, PPoPP, HPDC, ICPP, CLUSTER, Euro-Par, EuroMLSys, SIGCOMM,
 CoNEXT, HotNets, IMC, BigData.
 
 HotOS XXI has its dates (May 24-26, 2027, Burghausen, Germany) but its deadline is still listed as
