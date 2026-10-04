@@ -1,0 +1,203 @@
+---
+
+# Conferences this repository tracks that have no entry in _data/conferences/
+# yet, because their next call for papers has not been published.
+#
+# `scripts/check_updates.py` reads this file weekly and reports when a
+# community dataset starts listing an upcoming deadline for one of them, so
+# somebody can go and confirm it against `cfp` and add a real entry.
+#
+#   name    display name
+#   ccfddl  basename of the file in ccfddl/ccf-deadlines/conference/*/ that
+#           covers this series, or null when the dataset does not track it
+#   cfp     the page to confirm a date against before adding an entry
+#   sub     the category the entry would get
+#   status  what is known as of the last sweep (free text, for humans)
+
+- name: SOSP
+  ccfddl: sosp
+  cfp: https://sigops.org/s/conferences/sosp/
+  sub: [ SYS ]
+  status: SOSP 2027 is in Vancouver, Canada. No deadlines published.
+
+- name: SIGOPS ATC
+  ccfddl: atc
+  cfp: https://sigops.org/s/conferences/atc/
+  sub: [ SYS ]
+  status: Successor to USENIX ATC, which ended with the 2025 edition. No 2027 CFP.
+
+- name: FAST
+  ccfddl: fast
+  cfp: https://www.usenix.org/conferences/calls-for-papers
+  sub: [ SYS ]
+  status: FAST '28 is 2028-02-28 to 03-01 in Seattle. Dates and venue only, no deadlines.
+
+- name: SoCC
+  ccfddl: socc
+  cfp: https://acmsocc.org/
+  sub: [ SYS ]
+  status: No SoCC 2027 site yet.
+
+- name: Middleware
+  ccfddl: middleware
+  cfp: https://middleware-conf.github.io/
+  sub: [ SYS ]
+  status: Series site has no 2027 edition yet.
+
+- name: APSys
+  ccfddl: apsys
+  cfp: https://sigops.org/s/conferences/apsys/
+  sub: [ SYS ]
+  status: No APSys 2027 site yet.
+
+- name: HotOS
+  ccfddl: hotos
+  cfp: https://sigops.org/s/conferences/hotos/2027/cfp.html
+  sub: [ SYS ]
+  status: HotOS XXI is 2027-05-24 to 26 in Burghausen, Germany. The CFP page lists the deadline as TBA.
+
+- name: ICDCS
+  ccfddl: icdcs
+  cfp: https://icdcs.org/
+  sub: [ SYS ]
+  status: No ICDCS 2027 site yet.
+
+- name: CLOUD
+  ccfddl: cloud
+  cfp: https://services.conferences.computer.org/
+  sub: [ SYS ]
+  status: No CLOUD 2027 CFP yet.
+
+- name: MASCOTS
+  ccfddl: null
+  cfp: https://mascots.org/
+  sub: [ SYS ]
+  status: No MASCOTS 2027 CFP yet. Not covered by the ccfddl dataset.
+
+- name: SYSTOR
+  ccfddl: systor
+  cfp: https://www.systor.org/
+  sub: [ SYS ]
+  status: No SYSTOR 2027 site yet.
+
+- name: VEE
+  ccfddl: vee
+  cfp: https://conf.researchr.org/series/vee
+  sub: [ SYS ]
+  status: Recent editions co-located with ASPLOS. No 2027 CFP.
+
+- name: ISCA
+  ccfddl: isca
+  cfp: https://iscaconf.org/
+  sub: [ ARCH, SYS ]
+  status: >
+    ISCA 2027 is at ACM FCRC 2027 in Atlanta, June 2027. Third-party trackers have begun
+    listing a 2026-11-26 deadline, but nothing is on iscaconf.org yet - confirm there first.
+
+- name: MICRO
+  ccfddl: micro
+  cfp: https://www.microarch.org/
+  sub: [ ARCH, SYS ]
+  status: No MICRO 2027 site or venue announced.
+
+- name: ASPLOS
+  ccfddl: asplos
+  cfp: https://www.asplos-conference.org/
+  sub: [ ARCH, SYS ]
+  status: Both ASPLOS 2027 cycles have closed. No ASPLOS 2028 CFP.
+
+- name: HPCA
+  ccfddl: hpca
+  cfp: https://hpca-conf.org/
+  sub: [ ARCH ]
+  status: HPCA 2027 closed 2026-07-31. No HPCA 2028 CFP.
+
+- name: PACT
+  ccfddl: pact
+  cfp: https://pactconf.org/
+  sub: [ ARCH ]
+  status: No PACT 2027 site yet.
+
+- name: ISPASS
+  ccfddl: ispass
+  cfp: https://ispass.org/2027/cfp/
+  sub: [ ARCH ]
+  status: ISPASS 2027 is at NYU, New York City. The CFP page says it is being prepared.
+
+- name: IISWC
+  ccfddl: iiswc
+  cfp: https://iiswc.org/
+  sub: [ ARCH ]
+  status: No IISWC 2027 site yet.
+
+- name: SC
+  ccfddl: sc
+  cfp: https://supercomputing.org/
+  sub: [ HPC ]
+  status: SC26 papers closed 2026-04-08. No SC27 CFP.
+
+- name: PPoPP
+  ccfddl: ppopp
+  cfp: https://ppopp-conference.org/
+  sub: [ HPC, ARCH ]
+  status: PPoPP 2027 closed 2026-08-03. No PPoPP 2028 CFP.
+
+- name: HPDC
+  ccfddl: hpdc
+  cfp: https://www.hpdc.org/
+  sub: [ HPC ]
+  status: HPDC 2027 is at ACM FCRC 2027 in Atlanta, June 5-11. No deadlines published.
+
+- name: ICPP
+  ccfddl: icpp
+  cfp: https://www.icpp-conf.org/
+  sub: [ HPC ]
+  status: An icpp2027 site repository exists but carries no dates.
+
+- name: CLUSTER
+  ccfddl: cluster
+  cfp: https://clustercomp.org/
+  sub: [ HPC ]
+  status: No CLUSTER 2027 site yet.
+
+- name: Euro-Par
+  ccfddl: europar
+  cfp: https://www.euro-par.org/
+  sub: [ HPC ]
+  status: No Euro-Par 2027 site yet.
+
+- name: EuroMLSys
+  ccfddl: null
+  cfp: https://euromlsys.eu/
+  sub: [ MLSYS, SYS ]
+  status: Site still shows the 2026 edition. Not covered by the ccfddl dataset.
+
+- name: SIGCOMM
+  ccfddl: sigcomm
+  cfp: https://conferences.sigcomm.org/sigcomm/2027/
+  sub: [ NET ]
+  status: SIGCOMM 2027 is 2027-08-08 to 12 in Bangkok. Site is up, no CFP deadlines yet.
+
+- name: CoNEXT
+  ccfddl: conext
+  cfp: https://conferences.sigcomm.org/co-next/
+  sub: [ NET ]
+  status: CoNEXT 2027 is Rio de Janeiro, 2027-12-06 to 09 (to be confirmed). No CFP.
+
+- name: HotNets
+  ccfddl: hotnets
+  cfp: https://conferences.sigcomm.org/hotnets/
+  sub: [ NET ]
+  status: No HotNets 2027 site yet.
+
+- name: IMC
+  ccfddl: imc
+  cfp: https://conferences.sigcomm.org/imc/
+  sub: [ NET ]
+  status: No IMC 2027 site yet.
+
+- name: BigData
+  ccfddl: bigdata
+  cfp: https://bigdataieee.org/
+  sub: [ DB ]
+  status: BigData 2026 closed 2026-08-21. No 2027 CFP.

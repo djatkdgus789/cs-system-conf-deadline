@@ -83,14 +83,51 @@ Regenerate this table with `python3 scripts/upcoming.py --markdown`.
 
 ### Not yet listed
 
-Tracked but absent because the 2027/2028 CFP is not out (checked 2026-10-01): SOSP, SIGOPS ATC,
-FAST, SoCC, Middleware, APSys, HotOS, ICDCS, CLOUD, MASCOTS, SYSTOR, VEE, ISCA, MICRO, ASPLOS,
-HPCA, PACT, ISPASS, IISWC, SC, PPoPP, HPDC, ICPP, CLUSTER, Euro-Par, EuroMLSys, SIGCOMM,
-CoNEXT, HotNets, IMC, BigData.
+31 conferences are tracked but have no entry because their next CFP is not out. They live in
+[`_data/watchlist.yml`](_data/watchlist.yml) with the page to confirm against and what is known so
+far — several have announced a venue and dates while withholding deadlines:
 
-HotOS XXI has its dates (May 24-26, 2027, Burghausen, Germany) but its deadline is still listed as
-TBA. ISCA 2027 is the next one likely to open — its deadline has landed in mid-November in recent
-years.
+| Conference | Known as of 2026-10-04 |
+| --- | --- |
+| ISCA 2027 | ACM FCRC, Atlanta, June 2027. Third-party trackers list 2026-11-26; nothing on iscaconf.org yet. |
+| SOSP 2027 | Vancouver, Canada. |
+| SIGCOMM 2027 | Bangkok, August 8-12, 2027. Site up, no deadlines. |
+| HPDC 2027 | ACM FCRC, Atlanta, June 5-11, 2027. |
+| ISPASS 2027 | NYU, New York City. CFP page says it is being prepared. |
+| CoNEXT 2027 | Rio de Janeiro, December 6-9, 2027 (to be confirmed). |
+| FAST '28 | Seattle, February 28 - March 1, 2028. |
+| HotOS XXI | Burghausen, Germany, May 24-26, 2027. Deadline listed as TBA. |
+
+The rest — SIGOPS ATC, SoCC, Middleware, APSys, ICDCS, CLOUD, MASCOTS, SYSTOR, VEE, MICRO,
+ASPLOS, HPCA, PACT, IISWC, SC, PPoPP, ICPP, CLUSTER, Euro-Par, EuroMLSys, HotNets, IMC and
+BigData — have nothing announced for their next edition.
+
+> A conference site is often a GitHub Pages site whose source is a public repository, and search
+> engines index those badly. ICS 2027's CFP was up for weeks while three separate searches for it
+> came back empty; reading `KLab-AI3/klab-ai3.github.io` found it immediately. When a search turns
+> up nothing, look for the site's repository.
+
+## Weekly check
+
+`.github/workflows/check-updates.yml` runs every Monday and compares this repository against the
+[ccf-deadlines](https://github.com/ccfddl/ccf-deadlines) community dataset. When something looks
+worth a look it opens (or comments on) an issue labelled `deadline-check`, listing:
+
+- **NEW** — a watched conference now has an upcoming deadline upstream, so its CFP may be out
+- **CHANGED** — a date here and upstream disagree for the same round
+- **EXPIRED** — a deadline here has closed and no other round of that conference is open
+
+**It never edits the data.** That dataset has been wrong by a day for four of the entries here
+(IPDPS, DAC, DSN, CCGrid), and it does not carry timezones reliably — EDBT's deadline is 5 pm
+Pacific, which read as AoE would be twelve hours late. So the check only produces a list to confirm
+against each conference's own CFP page, by hand or by asking an agent to.
+
+Run it yourself with:
+
+```bash
+python3 scripts/check_updates.py                     # clones the dataset
+python3 scripts/check_updates.py --dataset ../ccf-deadlines --format markdown
+```
 
 > Note: USENIX ATC ended with the 2025 edition; ACM SIGOPS now runs it as **SIGOPS ATC**.
 
@@ -143,6 +180,7 @@ python3 scripts/upcoming.py                 # every open deadline, soonest first
 python3 scripts/upcoming.py --days 60 --sub SYS
 python3 scripts/upcoming.py --all           # include deadlines that have already closed
 python3 scripts/upcoming.py --markdown      # the table in "What's covered" above
+python3 scripts/check_updates.py            # what the weekly check would report
 ```
 
 ## Local development

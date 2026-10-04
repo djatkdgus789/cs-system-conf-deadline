@@ -1,0 +1,59 @@
+name: Weekly deadline check
+
+on:
+  schedule:
+    # Mondays at 09:00 KST (00:00 UTC)
+    - cron: '0 0 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pyyaml
+
+      - name: Look for deadlines that need confirming
+        id: check
+        run: |
+          python3 scripts/check_updates.py --format markdown > report.md
+          echo "empty=$(grep -q 'Nothing to confirm this week.' report.md && echo yes || echo no)" >> "$GITHUB_OUTPUT"
+          cat report.md
+
+      - name: Open an issue when there is something to confirm
+        if: steps.check.outputs.empty == 'no'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = fs.readFileSync('report.md', 'utf8');
+            const title = `Deadline check: ${new Date().toISOString().slice(0, 10)}`;
+            const { data: open } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'deadline-check',
+            });
+            if (open.length) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: open[0].number,
+                body: `### ${title}\n\n${body}`,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+                labels: ['deadline-check'],
+              });
+            }
