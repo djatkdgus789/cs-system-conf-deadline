@@ -91,8 +91,14 @@
   cfp: https://iscaconf.org/
   sub: [ ARCH, SYS ]
   status: >
-    ISCA 2027 is at ACM FCRC 2027 in Atlanta, June 2027. Third-party trackers have begun
-    listing a 2026-11-26 deadline, but nothing is on iscaconf.org yet - confirm there first.
+    ISCA 2027 is at ACM FCRC 2027, Atlanta Hyatt Regency, June 5-11 2027. No CFP as of
+    2026-10-07. Checked: iscaconf.org has nothing for 2027, SIGARCH Call for Contributions
+    and IEEE TCCA have no entry, isca2027.hotcrp.com does not exist while isca2026.hotcrp.com
+    does, and SIGARCH's own feed says "important dates coming soon". Four different deadlines
+    are circulating on third-party trackers - 2026-11-17, 11-22 (marked tentative), 11-26, and
+    abstract 11-10 - which is what pattern-derived guesses look like; 11-17 in particular is
+    ISCA 2026's paper deadline plus a year, and the casys-kaist tracker carries it unflagged.
+    Add nothing until iscaconf.org or SIGARCH publishes it. Expect mid-to-late November 2026.
 
 - name: MICRO
   ccfddl: micro

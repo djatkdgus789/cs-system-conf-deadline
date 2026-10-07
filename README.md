@@ -87,9 +87,9 @@ Regenerate this table with `python3 scripts/upcoming.py --markdown`.
 [`_data/watchlist.yml`](_data/watchlist.yml) with the page to confirm against and what is known so
 far — several have announced a venue and dates while withholding deadlines:
 
-| Conference | Known as of 2026-10-04 |
+| Conference | Known as of 2026-10-07 |
 | --- | --- |
-| ISCA 2027 | ACM FCRC, Atlanta, June 2027. Third-party trackers list 2026-11-26; nothing on iscaconf.org yet. |
+| ISCA 2027 | ACM FCRC, Atlanta, June 5-11, 2027. No CFP as of 2026-10-07 — `isca2027.hotcrp.com` does not exist and SIGARCH says dates are coming soon. Four different deadlines circulate on third-party trackers; none is official. |
 | SOSP 2027 | Vancouver, Canada. |
 | SIGCOMM 2027 | Bangkok, August 8-12, 2027. Site up, no deadlines. |
 | HPDC 2027 | ACM FCRC, Atlanta, June 5-11, 2027. |
