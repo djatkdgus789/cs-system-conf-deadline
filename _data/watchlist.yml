@@ -38,11 +38,6 @@
   sub: [ SYS ]
   status: No SoCC 2027 site yet.
 
-- name: Middleware
-  ccfddl: middleware
-  cfp: https://middleware-conf.github.io/
-  sub: [ SYS ]
-  status: Series site has no 2027 edition yet.
 
 - name: APSys
   ccfddl: apsys

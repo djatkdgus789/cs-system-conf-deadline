@@ -129,6 +129,19 @@
   date: June 22-25, 2027
   sub: [ SYS ]
 
+- title: Middleware (Winter cycle)
+  year: 2027
+  id: middleware27w
+  full_name: ACM/IFIP International Middleware Conference
+  link: https://middleware-conf.github.io/2027/call-for-papers/
+  abstract_deadline: "2026-11-27 23:59:59"
+  deadline: "2026-12-04 23:59:59"
+  timezone: AoE
+  place: Kyoto, Japan
+  date: December 13-17, 2027
+  sub: [ SYS ]
+  note: First of two cycles; firm deadline. Major-revision papers may resubmit to the Summer cycle. The 2027 CFP does not state a timezone yet - AoE is the series' convention (the 2026 site says "All times are Anywhere on Earth"), and AoE is the latest reading, so submit earlier to be safe.
+
 - title: OSDI
   year: 2027
   id: osdi27
@@ -153,6 +166,19 @@
   date: June 7-11, 2027
   sub: [ SYS ]
   note: Last of three rounds; held as part of ACM FCRC 2027.
+
+- title: Middleware (Summer cycle)
+  year: 2027
+  id: middleware27s
+  full_name: ACM/IFIP International Middleware Conference
+  link: https://middleware-conf.github.io/2027/call-for-papers/
+  abstract_deadline: "2027-05-28 23:59:59"
+  deadline: "2027-06-04 23:59:59"
+  timezone: AoE
+  place: Kyoto, Japan
+  date: December 13-17, 2027
+  sub: [ SYS ]
+  note: Second of two cycles; firm deadline. Major revisions from this cycle go to Middleware 2028. The 2027 CFP does not state a timezone yet - AoE is the series' convention (the 2026 site says "All times are Anywhere on Earth"), and AoE is the latest reading, so submit earlier to be safe.
 
 # Architecture --------------------------------------------------------------
 

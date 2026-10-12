@@ -20,7 +20,7 @@ date came from — check it before you rely on one.
 
 ## What's covered
 
-29 deadlines, all for 2027 editions (last checked 2026-10-12). A struck-through paper deadline has already closed. The site
+31 deadlines, all for 2027 editions (last checked 2026-10-12). A struck-through paper deadline has already closed. The site
 hides closed deadlines, but they stay in the data files and in this table as the record of
 the cycle.
 
@@ -39,8 +39,10 @@ Regenerate this table with `python3 scripts/upcoming.py --markdown`.
 | [SenSys (2nd deadline) 2027](https://sensys.acm.org/2027/cfp.html) | 2026-10-29 | 2026-11-05 | AoE | May 17-20, 2027 | Boulder, CO, USA | Merged | ✓ | 우수 |
 | [MMSys (Round 2) 2027](https://2027.acmmmsys.org/deadlines.html) | 2026-11-12 | 2026-11-19 | AoE | March 30 - April 2, 2027 | Ghent, Belgium | A | — | 우수 |
 | [DSN 2027](https://dsn2027-berlin.github.io/call-for-contributions/) | 2026-11-25 | 2026-12-02 | AoE | June 22-25, 2027 | Berlin, Germany | A | — | 우수 |
+| [Middleware (Winter cycle) 2027](https://middleware-conf.github.io/2027/call-for-papers/) | 2026-11-27 | 2026-12-04 | AoE | December 13-17, 2027 | Kyoto, Japan | A | — | 우수 |
 | [OSDI 2027](https://www.usenix.org/conference/osdi27/call-for-papers) | 2026-12-01 | 2026-12-08 | America/New_York | July 7-9, 2027 | Baltimore, MD, USA | A* | ✓ | 최우수 |
 | [SIGMETRICS (Winter round) 2027](https://www.sigmetrics.org/sigmetrics2027/call_for_papers.html) | 2027-01-04 | 2027-01-11 | AoE | June 7-11, 2027 | Atlanta, GA, USA | A* | ✓ | 최우수 |
+| [Middleware (Summer cycle) 2027](https://middleware-conf.github.io/2027/call-for-papers/) | 2027-05-28 | 2027-06-04 | AoE | December 13-17, 2027 | Kyoto, Japan | A | — | 우수 |
 
 ### Architecture (`ARCH`)
 
@@ -84,7 +86,7 @@ Regenerate this table with `python3 scripts/upcoming.py --markdown`.
 
 ### Not yet listed
 
-51 conferences are tracked but have no open entry — either their next CFP is not out, or every
+50 conferences are tracked but have no open entry — either their next CFP is not out, or every
 round of their 2027 edition has closed and the next edition has not opened. They live in
 [`_data/watchlist.yml`](_data/watchlist.yml) with the page to confirm against and what is known so
 far. Several have announced a venue and dates while withholding deadlines:
@@ -103,7 +105,7 @@ far. Several have announced a venue and dates while withholding deadlines:
 
 The rest have nothing announced for their next edition:
 
-- **System**: SIGOPS ATC, SoCC, Middleware, APSys, ICDCS, CLOUD, MASCOTS, SYSTOR, VEE, EMSOFT,
+- **System**: SIGOPS ATC, SoCC, APSys, ICDCS, CLOUD, MASCOTS, SYSTOR, VEE, EMSOFT,
   RTSS, HotStorage, DIMES, PLOS, CHEOPS, and the next EuroSys
 - **Architecture**: MICRO, ASPLOS, HPCA, PACT, IISWC, ICCAD, ISLPED, CASES, CODES+ISSS, CF,
   NVMSA, GPGPU, and the next DATE and FPGA
