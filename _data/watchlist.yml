@@ -240,3 +240,112 @@
   cfp: https://edbticdt2027.github.io/
   sub: [ DB ]
   status: All three EDBT 2027 research cycles have closed. No EDBT 2028 CFP.
+
+# Added 2026-10-12 from a venue list the owner supplied. None has an open,
+# officially published deadline yet - ICPE is the closest.
+
+- name: ICPE
+  ccfddl: null
+  cfp: https://icpe2027.spec.org/
+  sub: [ SYS ]
+  status: >
+    ICPE 2027 is May 24-28, 2027 in Gothenburg, Sweden, and its site is up with a research
+    track page and a note about an upcoming submission deadline. Trackers give abstract
+    2026-11-09 / paper 2026-11-16 AoE, one gives 11-01. The dates sit on the site's
+    "Important Dates" page, which the proxy here cannot read and search does not index -
+    open it, confirm, and add. Likely the next one to open.
+
+- name: EMSOFT
+  ccfddl: emsoft
+  cfp: https://esweek.org/
+  sub: [ SYS ]
+  status: >
+    Part of Embedded Systems Week, which shares one set of deadlines across EMSOFT, CASES and
+    CODES+ISSS. ESWEEK 2026 (Barcelona) closed 2026-03-30. No ESWEEK 2027 CFP yet.
+
+- name: CASES
+  ccfddl: null
+  cfp: https://esweek.org/
+  sub: [ ARCH ]
+  status: ESWEEK 2027 CFP not out; CASES shares its deadlines with EMSOFT and CODES+ISSS.
+
+- name: CODES+ISSS
+  ccfddl: codesisss
+  cfp: https://esweek.org/
+  sub: [ ARCH ]
+  status: ESWEEK 2027 CFP not out; CODES+ISSS shares its deadlines with EMSOFT and CASES.
+
+- name: RTSS
+  ccfddl: rtss
+  cfp: https://rtss.org/
+  sub: [ SYS ]
+  status: RTSS 2026 (Yokohama) closed 2026-05-26. RTSS 2027 deadline listed as TBD.
+
+- name: ICCAD
+  ccfddl: iccad
+  cfp: https://iccad.com/
+  sub: [ ARCH ]
+  status: >
+    ICCAD 2026 (San Jose) closed 2026-04-14. No 2027 CFP. Note that "ICCAD 2027" at
+    iccad-conf.com is a different conference (Control, Automation and Diagnosis) - ignore it.
+
+- name: ISLPED
+  ccfddl: null
+  cfp: https://www.islped.org/
+  sub: [ ARCH ]
+  status: ISLPED 2026 (Chicago) closed 2026-03-09. No 2027 CFP.
+
+- name: CF
+  ccfddl: cf
+  cfp: https://www.computingfrontiers.org/
+  sub: [ ARCH ]
+  status: >
+    Computing Frontiers 2026 (Catania) closed in early 2026. No CF 2027 site yet; the 2026
+    call went up in September 2025, so 2027's may appear any time.
+
+- name: CIDR
+  ccfddl: cidr
+  cfp: https://www.cidrdb.org/
+  sub: [ DB ]
+  status: CIDR 2027 (Amsterdam, January 24-27, 2027) closed 2026-08-04. Next is CIDR 2028.
+
+- name: NVMSA
+  ccfddl: null
+  cfp: https://www.nvmsa.org/
+  sub: [ ARCH ]
+  status: NVMSA 2026 (Qingdao) has closed. No 2027 CFP.
+
+- name: HotStorage
+  ccfddl: hotstorage
+  cfp: https://www.hotstorage.org/
+  sub: [ SYS ]
+  status: HotStorage 2026 (Prague, with SOSP) closed 2026-06-12. No 2027 CFP.
+
+- name: DIMES
+  ccfddl: null
+  cfp: https://sigops.org/s/conferences/sosp/
+  sub: [ SYS ]
+  status: SOSP workshop; DIMES 2026 was in Prague with SOSP 2026. SOSP 2027 workshops not announced.
+
+- name: PLOS
+  ccfddl: null
+  cfp: https://sigops.org/s/conferences/sosp/
+  sub: [ SYS ]
+  status: SOSP workshop; PLOS 2026 was in Prague with SOSP 2026. SOSP 2027 workshops not announced.
+
+- name: GPGPU
+  ccfddl: null
+  cfp: https://www.sigarch.org/call-contributions/
+  sub: [ ARCH, HPC ]
+  status: >
+    GPGPU 2026 was with ASPLOS '26 in Pittsburgh (deadline 2026-01-21). Recent editions have
+    co-located with ASPLOS rather than PPoPP. No 2027 call yet.
+
+- name: CHEOPS
+  ccfddl: null
+  cfp: https://cheops-workshop.github.io/
+  sub: [ SYS ]
+  status: >
+    EuroSys workshop. The site source (cheops-workshop/cheops-workshop.github.io) has pages
+    through 2026 only, and EuroSys 2027 is still selecting workshops (proposals were due
+    2026-10-16).

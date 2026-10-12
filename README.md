@@ -84,13 +84,14 @@ Regenerate this table with `python3 scripts/upcoming.py --markdown`.
 
 ### Not yet listed
 
-36 conferences are tracked but have no open entry — either their next CFP is not out, or every
+51 conferences are tracked but have no open entry — either their next CFP is not out, or every
 round of their 2027 edition has closed and the next edition has not opened. They live in
 [`_data/watchlist.yml`](_data/watchlist.yml) with the page to confirm against and what is known so
 far. Several have announced a venue and dates while withholding deadlines:
 
 | Conference | Known as of 2026-10-12 |
 | --- | --- |
+| ICPE 2027 | Gothenburg, May 24-28, 2027. Site is up and mentions an upcoming deadline; trackers say abstract 11-09 / paper 11-16, but the official important-dates page could not be read from here. **Likely open — confirm on [icpe2027.spec.org](https://icpe2027.spec.org/).** |
 | HotOS XXI | Burghausen, Germany, May 24-26, 2027. CFP lists the deadline as TBA; ccf-deadlines' 2027-02-01 is not on it. |
 | ISPASS 2027 | NYU, New York City, May 9-11, 2027. Submission site not open. |
 | HPDC 2027 | ACM FCRC, Atlanta, June 5-11, 2027. |
@@ -100,9 +101,20 @@ far. Several have announced a venue and dates while withholding deadlines:
 | NSDI '28 | Hyatt Regency Santa Clara, May 9-11, 2028. |
 | FAST '28 | Seattle, February 28 - March 1, 2028. |
 
-The rest — SIGOPS ATC, SoCC, Middleware, APSys, ICDCS, CLOUD, MASCOTS, SYSTOR, VEE, MICRO,
-ASPLOS, HPCA, PACT, IISWC, SC, PPoPP, ICPP, CLUSTER, Euro-Par, EuroMLSys, HotNets, IMC, BigData,
-and the next editions of EuroSys, DATE, FPGA, IPDPS and EDBT — have nothing announced.
+The rest have nothing announced for their next edition:
+
+- **System**: SIGOPS ATC, SoCC, Middleware, APSys, ICDCS, CLOUD, MASCOTS, SYSTOR, VEE, EMSOFT,
+  RTSS, HotStorage, DIMES, PLOS, CHEOPS, and the next EuroSys
+- **Architecture**: MICRO, ASPLOS, HPCA, PACT, IISWC, ICCAD, ISLPED, CASES, CODES+ISSS, CF,
+  NVMSA, GPGPU, and the next DATE and FPGA
+- **HPC**: SC, PPoPP, ICPP, CLUSTER, Euro-Par, and the next IPDPS
+- **ML System**: EuroMLSys
+- **Database**: BigData, CIDR (2028), and the next EDBT
+- **Network**: HotNets, IMC
+
+EMSOFT, CASES and CODES+ISSS share one set of deadlines through Embedded Systems Week, so they
+will open together. DIMES and PLOS are SOSP workshops, CHEOPS is a EuroSys workshop, and GPGPU
+has recently run with ASPLOS — each opens once its host conference picks its workshops.
 
 > **Why this repo waits for the official page.** Before ISCA 2027's CFP went up on 2026-10-08,
 > third-party trackers were showing four different deadlines for it: 11-17, 11-22, 11-26, and an
