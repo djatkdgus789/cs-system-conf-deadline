@@ -66,8 +66,22 @@ NAMES = {"SYS": "System", "ARCH": "Architecture", "MLSYS": "ML System",
          "HPC": "HPC", "DB": "Database", "NET": "Network"}
 
 
+def load_rankings() -> dict:
+    path = os.path.join(ROOT, "_data", "rankings.yml")
+    return (yaml.safe_load(open(path)) or {}) if os.path.exists(path) else {}
+
+
+def rank_cells(entry: dict, rankings: dict) -> tuple[str, str, str]:
+    row = rankings.get(entry["title"].split(" (")[0]) or {}
+    core = row.get("core", "—")
+    csr = {"main": "✓", "next": "next tier"}.get(row.get("csrankings"), "—")
+    kiise = row.get("kiise", "—")
+    return core, csr, kiise
+
+
 def print_markdown(rows, now):
     """Print the per-category tables that README.md carries."""
+    rankings = load_rankings()
     by_cat = {}
     for days, when, entry in rows:
         by_cat.setdefault(entry["sub"][0], []).append((days, when, entry))
@@ -77,15 +91,16 @@ def print_markdown(rows, now):
         if not group:
             continue
         print(f"### {NAMES[cat]} (`{cat}`)\n")
-        print("| Conference | Abstract | Paper | Timezone | Conference dates | Venue |")
-        print("| --- | --- | --- | --- | --- | --- |")
+        print("| Conference | Abstract | Paper | Timezone | Conference dates | Venue | CORE | CSRankings | KIISE |")
+        print("| --- | --- | --- | --- | --- | --- | --- | --- | --- |")
         for days, when, e in sorted(group, key=lambda r: r[1]):
             abstract = str(e.get("abstract_deadline") or "—")[:10]
             paper = str(e["deadline"])[:10]
             if days < 0:
                 paper = f"~~{paper}~~"
             name = f"[{e['title']} {e['year']}]({e['link']})"
-            print(f"| {name} | {abstract} | {paper} | {e['timezone']} | {e['date']} | {e['place']} |")
+            core, csr, kiise = rank_cells(e, rankings)
+            print(f"| {name} | {abstract} | {paper} | {e['timezone']} | {e['date']} | {e['place']} | {core} | {csr} | {kiise} |")
         print()
 
 

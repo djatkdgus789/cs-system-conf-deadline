@@ -1,0 +1,145 @@
+---
+
+# Venue rankings, keyed by conference series. The key is an entry's title up to
+# " (" - "EuroSys (Fall)" looks up "EuroSys" - or a watchlist name.
+#
+#   core        ICORE2026 rank: A*, A, B, C, or one of ICORE's non-letter
+#               categories: "National: USA", "National: Israel", "Journal"
+#               (ICORE does not rank venues whose papers appear in a journal),
+#               "Merged" (folded into another venue, no rank of its own).
+#               Omitted when ICORE does not list the venue.
+#   csrankings  main  - counted by CSRankings by default
+#               next  - a CSRankings "next tier" venue, counted only when the
+#                       next-tier box is ticked
+#               Omitted when CSRankings does not count the venue.
+#   kiise       최우수 or 우수 in KIISE's 2024 top-conference list.
+#               Omitted when the venue is not on that list.
+#   note        Free text shown on the detail page.
+#
+# Sources, checked 2026-10-12:
+#
+#   ICORE2026   The ICORE (formerly CORE) portal, portal.core.edu.au/conf-ranks,
+#               via its per-edition CSV export as mirrored in
+#               rabimba/ConferenceRank (scraper/data/core.json, 2026-10-05).
+#               Spot-checked against the portal for NSDI, SenSys, EDBT and
+#               PPoPP; all four matched.
+#   CSRankings  emeryberger/CSrankings at 2026-09-28: the venue lists in
+#               util/csrankings.py (areadict) and the nextTier table in
+#               src/config.ts.
+#   KIISE       2024년 한국정보과학회 우수학술대회 (개편)목록,
+#               kiise.or.kr/TopConferences/data/SW분야우수학술대회목록_2024.pdf,
+#               as transcribed in gist.github.com/Pusnow/6eb933355b5cb8d31ef1abcb3c3e1206.
+#               The transcription has 73 최우수 and 143 우수 venues once its
+#               oral/poster/spotlight rows are merged, which is exactly the
+#               PDF's own summary (216 = 73 + 143).
+#
+# These lists change on their own schedules (ICORE every few years, KIISE every
+# few years, CSRankings whenever its maintainer decides). Re-check them when a
+# new edition is announced, not on the weekly CFP sweep.
+
+# ---------------------------------------------------------------- System ----
+
+OSDI:        { core: "A*", csrankings: main, kiise: 최우수 }
+SOSP:        { core: "A*", csrankings: main, kiise: 최우수 }
+NSDI:
+  core: "National: USA"
+  csrankings: main
+  kiise: 최우수
+  note: ICORE2026 files NSDI under "National - USA" rather than giving it a letter rank. Comments on the ICORE portal page dispute this.
+EuroSys:     { core: "A",  csrankings: next, kiise: 최우수 }
+FAST:        { core: "A",  csrankings: next, kiise: 최우수 }
+SIGOPS ATC:
+  core: "A"
+  csrankings: next
+  kiise: 최우수
+  note: All three rankings list the conference as USENIX ATC, which ended with the 2025 edition. Whether they carry over to the SIGOPS-run ATC has not been announced.
+SIGMETRICS:  { core: "A*", csrankings: main, kiise: 최우수 }
+DSN:         { core: "A",  kiise: 우수 }
+RTAS:        { core: "A",  csrankings: main, kiise: 최우수 }
+RTSS:        { core: "A",  csrankings: main, kiise: 최우수 }
+EMSOFT:
+  core: "Journal"
+  csrankings: main
+  kiise: 우수
+  note: Papers appear in ACM TECS, so ICORE lists EMSOFT as journal-published rather than ranking it.
+SenSys:
+  core: "Merged"
+  csrankings: main
+  kiise: 우수
+  note: ICORE2026 lists SenSys as merged with IPSN and IoTDI and gives it no rank of its own.
+MMSys:       { core: "A",  kiise: 우수 }
+Middleware:  { core: "A",  kiise: 우수 }
+ICDCS:       { core: "A",  kiise: 우수 }
+HotOS:       { core: "A" }
+SoCC:        { kiise: 우수 }
+CLOUD:       { core: "B",  kiise: 우수 }
+MASCOTS:     { core: "B",  kiise: 우수 }
+ICPE:        { core: "B" }
+SYSTOR:      { core: "National: Israel", kiise: 우수 }
+VEE:         { core: "B" }
+PLOS:        { core: "C" }
+APSys:       {}
+HotStorage:  {}
+DIMES:       {}
+CHEOPS:      {}
+
+# ---------------------------------------------------------- Architecture ----
+
+ISCA:        { core: "A*", csrankings: main, kiise: 최우수 }
+MICRO:       { core: "A*", csrankings: main, kiise: 최우수 }
+ASPLOS:      { core: "A*", csrankings: main, kiise: 최우수 }
+HPCA:        { core: "A*", csrankings: next, kiise: 최우수 }
+DAC:         { core: "A*", csrankings: main, kiise: 최우수 }
+ICCAD:       { core: "A",  csrankings: main, kiise: 우수 }
+DATE:        { core: "A",  kiise: 우수 }
+FPGA:        { core: "A",  kiise: 우수 }
+ISLPED:      { core: "A",  kiise: 우수 }
+PACT:        { core: "B",  kiise: 최우수 }
+ISPASS:      { core: "B",  kiise: 우수 }
+IISWC:       { kiise: 우수 }
+CASES:
+  core: "Journal"
+  kiise: 우수
+  note: Papers appear in ACM TECS, so ICORE lists CASES as journal-published rather than ranking it.
+CODES+ISSS:
+  core: "Journal"
+  kiise: 우수
+  note: Papers appear in ACM TECS, so ICORE lists CODES+ISSS as journal-published rather than ranking it.
+CF:          {}
+NVMSA:       {}
+GPGPU:       {}
+
+# ------------------------------------------------------------ ML System ----
+
+MLSys:       { kiise: 우수 }
+EuroMLSys:   {}
+
+# ------------------------------------------------------------------ HPC ----
+
+SC:          { core: "A",  csrankings: main, kiise: 최우수 }
+HPDC:        { core: "A",  csrankings: main, kiise: 우수 }
+ICS:         { core: "A",  csrankings: main, kiise: 우수 }
+IPDPS:       { core: "A",  kiise: 우수 }
+PPoPP:       { core: "B",  kiise: 최우수 }
+CCGrid:      { core: "B",  kiise: 우수 }
+ICPP:        { core: "B",  kiise: 우수 }
+Euro-Par:    { core: "B",  kiise: 우수 }
+CLUSTER:     { core: "C",  kiise: 우수 }
+
+# ------------------------------------------------------------- Database ----
+
+SIGMOD:      { core: "A*", csrankings: main, kiise: 최우수 }
+VLDB:        { core: "A*", csrankings: main, kiise: 최우수 }
+ICDE:        { core: "A*", csrankings: next, kiise: 최우수 }
+PODS:        { core: "A*", csrankings: next, kiise: 최우수 }
+CIDR:        { core: "A",  kiise: 우수 }
+EDBT:        { core: "B",  kiise: 우수 }
+DASFAA:      { core: "B",  kiise: 우수 }
+BigData:     { core: "B",  kiise: 우수 }
+
+# -------------------------------------------------------------- Network ----
+
+SIGCOMM:     { core: "A*", csrankings: main, kiise: 최우수 }
+IMC:         { core: "A",  csrankings: main, kiise: 우수 }
+CoNEXT:      { core: "A",  kiise: 최우수 }
+HotNets:     { core: "National: USA" }

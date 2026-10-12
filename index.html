@@ -142,6 +142,7 @@
                 {% for sub in conf.sub %}
                 <span title="Click to only show {{sub}} conferences" data-sub="{{sub}}" class="conf-sub {{sub}}-tag"></span>
                 {% endfor %}
+                {% include rank_badges.html title=conf.title %}
               </div>
             </div>
             <hr>

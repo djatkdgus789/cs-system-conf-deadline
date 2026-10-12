@@ -1,0 +1,33 @@
+{%- comment -%}
+  Ranking badges for one conference, from _data/rankings.yml.
+  Usage: {% include rank_badges.html title=conf.title %}
+  The series key is the title up to " (", so "EuroSys (Fall)" reads "EuroSys".
+{%- endcomment -%}
+{%- assign rk_series = include.title | split: " (" | first -%}
+{%- assign rk = site.data.rankings[rk_series] -%}
+{%- if rk -%}
+<span class="rank-badges">
+  {%- if rk.core -%}
+    {%- case rk.core -%}
+      {%- when "A*" -%}{%- assign rk_class = "core-astar" -%}{%- assign rk_text = "CORE A*" -%}
+      {%- when "A" -%}{%- assign rk_class = "core-a" -%}{%- assign rk_text = "CORE A" -%}
+      {%- when "B" -%}{%- assign rk_class = "core-b" -%}{%- assign rk_text = "CORE B" -%}
+      {%- when "C" -%}{%- assign rk_class = "core-c" -%}{%- assign rk_text = "CORE C" -%}
+      {%- when "Journal" -%}{%- assign rk_class = "core-other" -%}{%- assign rk_text = "CORE: journal" -%}
+      {%- when "Merged" -%}{%- assign rk_class = "core-other" -%}{%- assign rk_text = "CORE: merged" -%}
+      {%- else -%}{%- assign rk_class = "core-other" -%}{%- assign rk_text = rk.core | replace: "National: ", "CORE National · " -%}
+    {%- endcase -%}
+    <span class="rank-badge {{ rk_class }}" title="ICORE2026">{{ rk_text }}</span>
+  {%- endif -%}
+  {%- if rk.csrankings == "main" -%}
+    <span class="rank-badge csr" title="Counted by CSRankings">CSRankings</span>
+  {%- elsif rk.csrankings == "next" -%}
+    <span class="rank-badge csr csr-next" title="CSRankings next-tier venue: counted when the next-tier box is ticked">CSRankings · next tier</span>
+  {%- endif -%}
+  {%- if rk.kiise == "최우수" -%}
+    <span class="rank-badge kiise kiise-top" title="KIISE 2024 우수학술대회 목록">KIISE 최우수</span>
+  {%- elsif rk.kiise == "우수" -%}
+    <span class="rank-badge kiise" title="KIISE 2024 우수학술대회 목록">KIISE 우수</span>
+  {%- endif -%}
+</span>
+{%- endif -%}

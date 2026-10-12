@@ -35,6 +35,43 @@ def resolve_tz(name: str):
         return None
 
 
+CORE_VALUES = {"A*", "A", "B", "C", "National: USA", "National: Israel", "Journal", "Merged"}
+
+
+def check_rankings(seen_ids: dict) -> list[str]:
+    """_data/rankings.yml: known values only, and no series left without a row."""
+    path = os.path.join(ROOT, "_data", "rankings.yml")
+    if not os.path.exists(path):
+        return []
+    rankings = yaml.safe_load(open(path)) or {}
+    errors = []
+    for name, row in rankings.items():
+        row = row or {}
+        unknown = set(row) - {"core", "csrankings", "kiise", "note"}
+        if unknown:
+            errors.append(f"rankings.yml: {name}: unknown field(s) {sorted(unknown)}")
+        if "core" in row and row["core"] not in CORE_VALUES:
+            errors.append(f"rankings.yml: {name}: core '{row['core']}' is not one of {sorted(CORE_VALUES)}")
+        if "csrankings" in row and row["csrankings"] not in ("main", "next"):
+            errors.append(f"rankings.yml: {name}: csrankings must be 'main' or 'next'")
+        if "kiise" in row and row["kiise"] not in ("최우수", "우수"):
+            errors.append(f"rankings.yml: {name}: kiise must be '최우수' or '우수'")
+
+    # Every series shown on the site or watched should have a row, even an empty
+    # one, so that adding a conference forces a look at how it is ranked.
+    series = set()
+    for conf_path in glob.glob(os.path.join(ROOT, "_data", "conferences", "*.yml")):
+        for entry in yaml.safe_load(open(conf_path)) or []:
+            series.add(entry["title"].split(" (")[0])
+    watch_path = os.path.join(ROOT, "_data", "watchlist.yml")
+    if os.path.exists(watch_path):
+        for watched in yaml.safe_load(open(watch_path)) or []:
+            series.add(watched["name"])
+    for name in sorted(series - set(rankings)):
+        errors.append(f"rankings.yml: no row for '{name}' (add one, empty if it is unranked everywhere)")
+    return errors
+
+
 def main() -> int:
     types = yaml.safe_load(open(os.path.join(ROOT, "_data", "types.yml")))
     known_subs = {t["sub"] for t in types}
@@ -85,6 +122,8 @@ def main() -> int:
 
             if len(deadlines) == 2 and deadlines["abstract_deadline"] > deadlines["deadline"]:
                 errors.append(f"{label}: abstract_deadline is after deadline")
+
+    errors += check_rankings(seen)
 
     for err in errors:
         print(f"ERROR {err}", file=sys.stderr)

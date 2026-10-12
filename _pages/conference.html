@@ -23,6 +23,12 @@ permalink:  /conference/
         <div class="row">
           <div class="col-sm-12">
             <span id="conf-subs" title="Conference subjects"></span>
+            <span id="conf-ranks"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div id="conf-rank-note" class="rank-note"></div>
           </div>
         </div>
       </div>
@@ -111,7 +117,7 @@ permalink:  /conference/
               $('#conf-title-href').text("{{conf.title}} {{conf.year}}");
               $('#conf-title-href').attr('href', "/conference?id={{conf.id}}");
               // set badges
-              var subs = '{{conf.sub}}'.split(',');
+              var subs = '{{ conf.sub | join: "," }}'.split(',');
               for (let i = 0; i < subs.length; i++) {
                 var sub = subs[i].replace(" ", "");
                 var sub_element = document.createElement('span');
@@ -119,6 +125,16 @@ permalink:  /conference/
                 sub_element.textContent = sub2name[sub];
                 $('#conf-subs').append(sub_element);
               }
+              // ranking badges and note (from _data/rankings.yml)
+              {% capture rank_html %}{% include rank_badges.html title=conf.title %}{% endcapture %}
+              $('#conf-ranks').html({{ rank_html | strip | jsonify }});
+              {% assign rk_series = conf.title | split: " (" | first %}
+              {% assign rk = site.data.rankings[rk_series] %}
+              {% if rk and rk.note %}
+                $('#conf-rank-note').text({{ rk.note | jsonify }});
+              {% else %}
+                $('#conf-rank-note').hide();
+              {% endif %}
               // other
               $('#conf-date').text("{{conf.date}}");
               $('#conf-place').text("{{conf.place}}");
