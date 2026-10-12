@@ -54,7 +54,10 @@
   ccfddl: hotos
   cfp: https://sigops.org/s/conferences/hotos/2027/cfp.html
   sub: [ SYS ]
-  status: HotOS XXI is 2027-05-24 to 26 in Burghausen, Germany. The CFP page lists the deadline as TBA.
+  status: >
+    HotOS XXI is 2027-05-24 to 26 in Burghausen, Germany. As of 2026-10-12 the official
+    CFP still lists the deadline as TBA. ccf-deadlines carries 2027-02-01, which is not on
+    the CFP page - do not add it until sigops.org shows a date.
 
 - name: ICDCS
   ccfddl: icdcs
@@ -86,19 +89,6 @@
   sub: [ SYS ]
   status: Recent editions co-located with ASPLOS. No 2027 CFP.
 
-- name: ISCA
-  ccfddl: isca
-  cfp: https://iscaconf.org/
-  sub: [ ARCH, SYS ]
-  status: >
-    ISCA 2027 is at ACM FCRC 2027, Atlanta Hyatt Regency, June 5-11 2027. No CFP as of
-    2026-10-07. Checked: iscaconf.org has nothing for 2027, SIGARCH Call for Contributions
-    and IEEE TCCA have no entry, isca2027.hotcrp.com does not exist while isca2026.hotcrp.com
-    does, and SIGARCH's own feed says "important dates coming soon". Four different deadlines
-    are circulating on third-party trackers - 2026-11-17, 11-22 (marked tentative), 11-26, and
-    abstract 11-10 - which is what pattern-derived guesses look like; 11-17 in particular is
-    ISCA 2026's paper deadline plus a year, and the casys-kaist tracker carries it unflagged.
-    Add nothing until iscaconf.org or SIGARCH publishes it. Expect mid-to-late November 2026.
 
 - name: MICRO
   ccfddl: micro
@@ -128,7 +118,10 @@
   ccfddl: ispass
   cfp: https://ispass.org/2027/cfp/
   sub: [ ARCH ]
-  status: ISPASS 2027 is at NYU, New York City. The CFP page says it is being prepared.
+  status: >
+    ISPASS 2027 is May 9-11, 2027 at NYU, New York City (from the site source,
+    ispass-org/ispass-org.github.io). The submission site has not opened and no deadlines
+    are posted.
 
 - name: IISWC
   ccfddl: iiswc
@@ -152,7 +145,9 @@
   ccfddl: hpdc
   cfp: https://www.hpdc.org/
   sub: [ HPC ]
-  status: HPDC 2027 is at ACM FCRC 2027 in Atlanta, June 5-11. No deadlines published.
+  status: >
+    HPDC 2027 is at ACM FCRC 2027 in Atlanta, June 5-11. ACM's upcoming-deadlines listing
+    shows an HPDC '27 item in late January 2027, but there is no CFP page with dates yet.
 
 - name: ICPP
   ccfddl: icpp
@@ -207,3 +202,41 @@
   cfp: https://bigdataieee.org/
   sub: [ DB ]
   status: BigData 2026 closed 2026-08-21. No 2027 CFP.
+
+# Series whose 2027 rounds have all closed - watched for their next edition.
+
+- name: NSDI
+  ccfddl: nsdi
+  cfp: https://www.usenix.org/conference/nsdi28
+  sub: [ SYS, NET ]
+  status: NSDI '28 is May 9-11, 2028 at the Hyatt Regency Santa Clara. No deadlines yet.
+
+- name: EuroSys
+  ccfddl: eurosys
+  cfp: https://www.eurosys.org/
+  sub: [ SYS ]
+  status: Both EuroSys 2027 rounds closed (2026-05-14, 2026-09-24). No EuroSys 2028 CFP.
+
+- name: DATE
+  ccfddl: date
+  cfp: https://www.date-conference.com/
+  sub: [ ARCH ]
+  status: DATE 2027 closed 2026-09-20. No DATE 2028 CFP.
+
+- name: FPGA
+  ccfddl: fpga
+  cfp: https://www.isfpga.org/
+  sub: [ ARCH ]
+  status: FPGA 2027 closed 2026-10-08. No FPGA 2028 CFP.
+
+- name: IPDPS
+  ccfddl: ipdps
+  cfp: https://www.ipdps.org/
+  sub: [ HPC ]
+  status: IPDPS 2027 closed 2026-10-08. No IPDPS 2028 CFP.
+
+- name: EDBT
+  ccfddl: edbt
+  cfp: https://edbticdt2027.github.io/
+  sub: [ DB ]
+  status: All three EDBT 2027 research cycles have closed. No EDBT 2028 CFP.

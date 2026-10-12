@@ -127,7 +127,9 @@ def main() -> int:
                 + f" - confirm at {watched['cfp']}",
             ))
 
-    # EXPIRED: a deadline has passed and no other round of the same series is open.
+    # EXPIRED: a deadline has passed, no other round of the same series is open,
+    # and nobody has put the series on the watchlist yet.
+    watched_series = {w.get("ccfddl") for w in watchlist if w.get("ccfddl")}
     open_series = {
         series_of(e)
         for e in ours
@@ -143,6 +145,8 @@ def main() -> int:
             continue
         if series_of(entry) in open_series:
             continue  # another round of this conference is still open
+        if series_of(entry) in watched_series:
+            continue  # already on the watchlist; NEW will fire for its next edition
         findings.append((
             "EXPIRED",
             f"{entry['title']} {entry['year']}",

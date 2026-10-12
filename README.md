@@ -20,7 +20,7 @@ date came from — check it before you rely on one.
 
 ## What's covered
 
-28 deadlines, all for 2027 editions (last checked 2026-10-01). A struck-through paper deadline has
+29 deadlines, all for 2027 editions (last checked 2026-10-12). A struck-through paper deadline has
 already closed — those entries stay in the data and the site lists them under "Past Events", which
 is the record of what this cycle looked like.
 
@@ -34,7 +34,7 @@ Regenerate this table with `python3 scripts/upcoming.py --markdown`.
 | [NSDI (Fall) 2027](https://www.usenix.org/conference/nsdi27/call-for-papers) | 2026-09-10 | ~~2026-09-17~~ | America/New_York | May 11-13, 2027 | Providence, RI, USA |
 | [MMSys (Round 1) 2027](https://2027.acmmmsys.org/deadlines.html) | 2026-09-10 | ~~2026-09-17~~ | AoE | March 30 - April 2, 2027 | Ghent, Belgium |
 | [EuroSys (Fall) 2027](https://2027.eurosys.org/cfp.html) | 2026-09-17 | ~~2026-09-24~~ | AoE | April 19-23, 2027 | Rabat, Morocco |
-| [SIGMETRICS (Fall round) 2027](https://www.sigmetrics.org/sigmetrics2027/call_for_papers.html) | — | 2026-10-09 | AoE | June 7-11, 2027 | Atlanta, GA, USA |
+| [SIGMETRICS (Fall round) 2027](https://www.sigmetrics.org/sigmetrics2027/call_for_papers.html) | — | ~~2026-10-09~~ | AoE | June 7-11, 2027 | Atlanta, GA, USA |
 | [RTAS 2027](https://2027.rtas.org/) | — | 2026-11-05 | AoE | May 17-20, 2027 | Boulder, CO, USA |
 | [SenSys (2nd deadline) 2027](https://sensys.acm.org/2027/cfp.html) | 2026-10-29 | 2026-11-05 | AoE | May 17-20, 2027 | Boulder, CO, USA |
 | [MMSys (Round 2) 2027](https://2027.acmmmsys.org/deadlines.html) | 2026-11-12 | 2026-11-19 | AoE | March 30 - April 2, 2027 | Ghent, Belgium |
@@ -47,7 +47,8 @@ Regenerate this table with `python3 scripts/upcoming.py --markdown`.
 | Conference | Abstract | Paper | Timezone | Conference dates | Venue |
 | --- | --- | --- | --- | --- | --- |
 | [DATE 2027](https://www.date-conference.com/date-2027-call-papers) | 2026-09-13 | ~~2026-09-20~~ | AoE | March 22-24, 2027 | Dresden, Germany |
-| [FPGA 2027](https://www.isfpga.org/call-for-papers/) | 2026-10-01 | 2026-10-08 | AoE | March 2027 | California, USA |
+| [FPGA 2027](https://www.isfpga.org/call-for-papers/) | 2026-10-01 | ~~2026-10-08~~ | AoE | March 2027 | California, USA |
+| [ISCA 2027](https://iscaconf.org/isca2027/submit/callforpapers.php) | 2026-11-09 | 2026-11-16 | AoE | June 5-9, 2027 | Atlanta, GA, USA |
 | [DAC 2027](https://dac.com/2027/program/research-manuscript-submissions) | 2026-11-11 | 2026-11-18 | America/Los_Angeles | July 11-14, 2027 | San Jose, CA, USA |
 
 ### ML System (`MLSYS`)
@@ -60,7 +61,7 @@ Regenerate this table with `python3 scripts/upcoming.py --markdown`.
 
 | Conference | Abstract | Paper | Timezone | Conference dates | Venue |
 | --- | --- | --- | --- | --- | --- |
-| [IPDPS 2027](http://www.ipdps.org/ipdps2027/2027-call-for-papers.html) | 2026-10-01 | 2026-10-08 | AoE | June 1-5, 2027 | Seattle, WA, USA |
+| [IPDPS 2027](http://www.ipdps.org/ipdps2027/2027-call-for-papers.html) | 2026-10-01 | ~~2026-10-08~~ | AoE | June 1-5, 2027 | Seattle, WA, USA |
 | [CCGrid 2027](https://hpcclab.org/ccgrid27-call-for-papers/) | 2026-11-24 | 2026-12-01 | AoE | May 24-27, 2027 | Dallas-Fort Worth, TX, USA |
 | [ICS 2027](https://klab-ai3.github.io/ics2027/calls-cfp.html) | 2026-12-01 | 2026-12-07 | AoE | June 5-11, 2027 | Atlanta, GA, USA |
 
@@ -68,8 +69,8 @@ Regenerate this table with `python3 scripts/upcoming.py --markdown`.
 
 | Conference | Abstract | Paper | Timezone | Conference dates | Venue |
 | --- | --- | --- | --- | --- | --- |
-| [VLDB (October round) 2027](https://www.vldb.org/2027/important-dates.html) | 2026-09-25 | 2026-10-01 | America/Los_Angeles | August 23-27, 2027 | Athens, Greece |
-| [EDBT (Cycle 3) 2027](https://edbticdt2027.github.io/contents/important_dates.html) | — | 2026-10-07 | America/Los_Angeles | April 6-9, 2027 | Lille, France |
+| [VLDB (October round) 2027](https://www.vldb.org/2027/important-dates.html) | 2026-09-25 | ~~2026-10-01~~ | America/Los_Angeles | August 23-27, 2027 | Athens, Greece |
+| [EDBT (Cycle 3) 2027](https://edbticdt2027.github.io/contents/important_dates.html) | — | ~~2026-10-07~~ | America/Los_Angeles | April 6-9, 2027 | Lille, France |
 | [SIGMOD (Round 4) 2027](https://2027.sigmod.org/calls_papers_important_dates.shtml) | 2026-10-10 | 2026-10-17 | AoE | June 13-19, 2027 | Huntington Beach, CA, USA |
 | [VLDB (November round) 2027](https://www.vldb.org/2027/important-dates.html) | 2026-10-25 | 2026-11-01 | America/Los_Angeles | August 23-27, 2027 | Athens, Greece |
 | [ICDE (Round 2) 2027](https://icde2027.github.io/important-dates.html) | — | 2026-11-11 | America/Los_Angeles | May 17-21, 2027 | Copenhagen, Denmark |
@@ -83,24 +84,31 @@ Regenerate this table with `python3 scripts/upcoming.py --markdown`.
 
 ### Not yet listed
 
-31 conferences are tracked but have no entry because their next CFP is not out. They live in
+36 conferences are tracked but have no open entry — either their next CFP is not out, or every
+round of their 2027 edition has closed and the next edition has not opened. They live in
 [`_data/watchlist.yml`](_data/watchlist.yml) with the page to confirm against and what is known so
-far — several have announced a venue and dates while withholding deadlines:
+far. Several have announced a venue and dates while withholding deadlines:
 
-| Conference | Known as of 2026-10-07 |
+| Conference | Known as of 2026-10-12 |
 | --- | --- |
-| ISCA 2027 | ACM FCRC, Atlanta, June 5-11, 2027. No CFP as of 2026-10-07 — `isca2027.hotcrp.com` does not exist and SIGARCH says dates are coming soon. Four different deadlines circulate on third-party trackers; none is official. |
+| HotOS XXI | Burghausen, Germany, May 24-26, 2027. CFP lists the deadline as TBA; ccf-deadlines' 2027-02-01 is not on it. |
+| ISPASS 2027 | NYU, New York City, May 9-11, 2027. Submission site not open. |
+| HPDC 2027 | ACM FCRC, Atlanta, June 5-11, 2027. |
 | SOSP 2027 | Vancouver, Canada. |
 | SIGCOMM 2027 | Bangkok, August 8-12, 2027. Site up, no deadlines. |
-| HPDC 2027 | ACM FCRC, Atlanta, June 5-11, 2027. |
-| ISPASS 2027 | NYU, New York City. CFP page says it is being prepared. |
 | CoNEXT 2027 | Rio de Janeiro, December 6-9, 2027 (to be confirmed). |
+| NSDI '28 | Hyatt Regency Santa Clara, May 9-11, 2028. |
 | FAST '28 | Seattle, February 28 - March 1, 2028. |
-| HotOS XXI | Burghausen, Germany, May 24-26, 2027. Deadline listed as TBA. |
 
 The rest — SIGOPS ATC, SoCC, Middleware, APSys, ICDCS, CLOUD, MASCOTS, SYSTOR, VEE, MICRO,
-ASPLOS, HPCA, PACT, IISWC, SC, PPoPP, ICPP, CLUSTER, Euro-Par, EuroMLSys, HotNets, IMC and
-BigData — have nothing announced for their next edition.
+ASPLOS, HPCA, PACT, IISWC, SC, PPoPP, ICPP, CLUSTER, Euro-Par, EuroMLSys, HotNets, IMC, BigData,
+and the next editions of EuroSys, DATE, FPGA, IPDPS and EDBT — have nothing announced.
+
+> **Why this repo waits for the official page.** Before ISCA 2027's CFP went up on 2026-10-08,
+> third-party trackers were showing four different deadlines for it: 11-17, 11-22, 11-26, and an
+> abstract on 11-10. The real ones are **abstract 11-09, paper 11-16**. Every one of the guesses
+> was late, and the most widely copied (11-17, ISCA 2026's date plus a year) would have had people
+> submitting a day after the cutoff.
 
 > A conference site is often a GitHub Pages site whose source is a public repository, and search
 > engines index those badly. ICS 2027's CFP was up for weeks while three separate searches for it

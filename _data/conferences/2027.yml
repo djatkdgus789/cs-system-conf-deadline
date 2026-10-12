@@ -182,6 +182,19 @@
   sub: [ ARCH ]
   note: Rebuttal period 2026-11-09 to 2026-11-15.
 
+- title: ISCA
+  year: 2027
+  id: isca27
+  full_name: ACM/IEEE International Symposium on Computer Architecture
+  link: https://iscaconf.org/isca2027/submit/callforpapers.php
+  abstract_deadline: "2026-11-09 23:59:59"
+  deadline: "2026-11-16 23:59:59"
+  timezone: AoE
+  place: Atlanta, GA, USA
+  date: June 5-9, 2027
+  sub: [ ARCH, SYS ]
+  note: Main track, at ACM FCRC 2027. Titles, abstracts and author lists are final at abstract registration; at most 8 submissions per author. Industry track dates still TBA.
+
 - title: DAC
   year: 2027
   id: dac27
