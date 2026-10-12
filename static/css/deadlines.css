@@ -368,3 +368,9 @@ footer {
   color: #777;
   margin-top: 6px;
 }
+
+/* Ranking badges in the right-hand column of the countdown list, where the
+   per-deadline calendar buttons used to be. */
+.conf-ranks {
+  margin-top: 8px;
+}

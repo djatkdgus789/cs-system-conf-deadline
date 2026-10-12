@@ -134,7 +134,9 @@
                   </div>
                   {% endif %}
                 </div>
-                <div class="calendar"></div>
+                <div class="conf-ranks">
+                  {% include rank_badges.html title=conf.title %}
+                </div>
               </div>
             </div>
             <div class="row">
@@ -142,7 +144,6 @@
                 {% for sub in conf.sub %}
                 <span title="Click to only show {{sub}} conferences" data-sub="{{sub}}" class="conf-sub {{sub}}-tag"></span>
                 {% endfor %}
-                {% include rank_badges.html title=conf.title %}
               </div>
             </div>
             <hr>
@@ -214,15 +215,6 @@
             console.log("Error converting to local timezone.");
           }
 
-          // add calendar button
-          var myCalendar = createCalendarFromObject({
-            id:  '{{conf.id}}',
-            title: '{{conf.title}} {{conf.year}} deadline',
-            date: confDate.toDate(),
-            duration: 60,
-          })
-          document.querySelector('#{{conf.id}} .calendar').appendChild(myCalendar);
-
           // check if date has passed, add 'past' class to it
           var today = moment();
           diff = today.diff(confDate);
@@ -233,7 +225,6 @@
             $('#{{conf.id}}').appendTo($("#past_confs"))
             $('#{{conf.id}} .timer').replaceWith($('#{{conf.id}} .deadline'));
             $('#{{conf.id}} .timer-small').replaceWith($('#{{conf.id}} .deadline'));
-            $('#{{conf.id}} .calendar').remove();
           }
         {% endif %}
         {% endfor %}
