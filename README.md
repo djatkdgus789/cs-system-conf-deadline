@@ -20,9 +20,9 @@ date came from — check it before you rely on one.
 
 ## What's covered
 
-29 deadlines, all for 2027 editions (last checked 2026-10-12). A struck-through paper deadline has
-already closed — those entries stay in the data and the site lists them under "Past Events", which
-is the record of what this cycle looked like.
+29 deadlines, all for 2027 editions (last checked 2026-10-12). A struck-through paper deadline has already closed. The site
+hides closed deadlines, but they stay in the data files and in this table as the record of
+the cycle.
 
 Regenerate this table with `python3 scripts/upcoming.py --markdown`.
 
@@ -175,6 +175,28 @@ These lists change on their own schedules, so they are not part of the weekly CF
 them when a new ICORE edition (next expected 2028-2029), a new KIISE list, or a CSRankings venue
 change is announced. `scripts/validate.py` fails if a tracked conference has no row in
 `rankings.yml`, so adding a conference means deciding how it is ranked.
+
+## Acceptance history
+
+Next to each deadline on the front page is a small chart of the conference's last ten years
+(2017–2026): **submissions as bars on the left axis** and **acceptance rate as a line on the
+right axis**. The rate axis is fixed at 0–60% for every conference, so lines can be compared
+across rows; only the submissions axis scales per conference. A missing year is a gap, not a
+zero. Hovering a year shows its numbers, and each conference's detail page has the same data as
+a table with a link to the source of each year.
+
+The data is [`_data/acceptance.yml`](_data/acceptance.yml), merged from two public datasets:
+
+- [`emeryberger/csconferences`](https://github.com/emeryberger/csconferences), used first, with
+  every round of a multi-round conference summed into its year
+- [`ccfddl/ccf-deadlines`](https://github.com/ccfddl/ccf-deadlines) `accept_rates/`, filling
+  the years and conferences csconferences lacks, each row with its own source link
+
+Where both had the same year and disagreed — 14 cases — the value backed by the more official
+document was kept (PC chairs' message or proceedings front matter first); the file header lists
+each decision. 46 of the 67 tracked conferences have at least one year of data, and every
+conference currently on the site does. Coverage before 2021 is thin outside the core systems
+venues.
 
 ## Adding or updating a conference
 

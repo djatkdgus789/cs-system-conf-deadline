@@ -76,6 +76,12 @@ permalink:  /conference/
                 <span class="deadline-local-time"></span>
               </div>
           </div>
+        <div id="conf-acceptance-block" class="row">
+          <div class="col-12">
+            <h5 style="margin-top: 1em;">Submissions and acceptance, 2017–2026</h5>
+            <div id="conf-acceptance"></div>
+          </div>
+        </div>
         <div id="conf-deadline-timer" class="row">
           <div id="conf-timer" class="col-12">
           </div>
@@ -135,6 +141,38 @@ permalink:  /conference/
               {% else %}
                 $('#conf-rank-note').hide();
               {% endif %}
+              // acceptance history as a table (the front-page chart's numbers)
+              (function () {
+                var rows = {{ site.data.acceptance[rk_series] | jsonify }};
+                var box = document.getElementById('conf-acceptance');
+                if (!rows || !rows.length) {
+                  box.textContent = 'No public acceptance data.';
+                  return;
+                }
+                var table = document.createElement('table');
+                table.className = 'acc-table';
+                var head = table.insertRow();
+                ['Year', 'Submitted', 'Accepted', 'Rate', 'Source'].forEach(function (h) {
+                  var th = document.createElement('th'); th.textContent = h; head.appendChild(th);
+                });
+                rows.forEach(function (d) {
+                  var tr = table.insertRow();
+                  [String(d.year), d.submitted.toLocaleString(), d.accepted.toLocaleString(),
+                   (100 * d.accepted / d.submitted).toFixed(1) + '%'].forEach(function (v) {
+                    tr.insertCell().textContent = v;
+                  });
+                  var src = tr.insertCell();
+                  if (d.source) {
+                    var a = document.createElement('a');
+                    a.href = d.source; a.target = '_blank'; a.rel = 'noopener';
+                    a.textContent = 'link';
+                    src.appendChild(a);
+                  } else {
+                    src.textContent = 'csconferences';
+                  }
+                });
+                box.appendChild(table);
+              })();
               // other
               $('#conf-date').text("{{conf.date}}");
               $('#conf-place').text("{{conf.place}}");

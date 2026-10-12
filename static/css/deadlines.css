@@ -374,3 +374,99 @@ footer {
 .conf-ranks {
   margin-top: 8px;
 }
+
+/* Acceptance chart beside each deadline: submissions (bars, left axis) and
+   acceptance rate (line, right axis). Colours are categorical slots 1 and 2,
+   validated together against the white page (CVD dE 24.7). Text stays in
+   ink colours; only the marks carry the series colours. */
+.acc-chart {
+  min-height: 132px;
+  margin-top: 4px;
+}
+
+.acc-legend {
+  font-size: 11px;
+  color: #52514e;
+  line-height: 16px;
+}
+.acc-legend > span { margin-right: 12px; white-space: nowrap; }
+.acc-legend-key {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.acc-legend-key.acc-key-bar  { width: 8px; height: 10px; border-radius: 2px 2px 0 0; background: #2a78d6; }
+.acc-legend-key.acc-key-line { width: 14px; height: 2px; border-radius: 1px; background: #eb6834; }
+
+.acc-svg { display: block; overflow: visible; }
+.acc-grid     { stroke: #e1e0d9; stroke-width: 1; }
+.acc-baseline { stroke: #c3c2b7; stroke-width: 1; }
+.acc-tick {
+  font-size: 10px;
+  fill: #898781;
+  font-variant-numeric: tabular-nums;
+}
+.acc-axis-title {
+  font-size: 10px;
+  fill: #52514e;
+}
+.acc-bar { fill: #2a78d6; }
+.acc-bar.acc-active { fill: #5598e7; }
+.acc-line {
+  fill: none;
+  stroke: #eb6834;
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.acc-dot { fill: #eb6834; stroke: #fff; stroke-width: 2; }
+.acc-direct {
+  font-size: 10px;
+  font-weight: 600;
+  fill: #0b0b0b;
+  /* a white halo keeps the label legible where it crosses a bar */
+  paint-order: stroke;
+  stroke: #fff;
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+.acc-hit { fill: transparent; cursor: default; }
+
+.acc-empty {
+  font-size: 12px;
+  color: #898781;
+  padding-top: 8px;
+}
+
+#acc-tooltip {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  pointer-events: none;
+  background: #fff;
+  border: 1px solid rgba(11, 11, 11, 0.10);
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  padding: 6px 8px;
+  font-size: 12px;
+  color: #52514e;
+  white-space: nowrap;
+}
+.acc-tip-year { font-weight: 600; color: #0b0b0b; margin-bottom: 2px; }
+.acc-tip-row strong { color: #0b0b0b; font-weight: 600; }
+.acc-tip-key {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 10px;
+  height: 2px;
+}
+.acc-tip-key.acc-key-bar  { height: 8px; width: 6px; background: #2a78d6; border-radius: 1px; }
+.acc-tip-key.acc-key-line { background: #eb6834; }
+
+/* Detail page: the acceptance chart's numbers as a table. */
+.acc-table { font-size: 13px; margin-top: 6px; }
+.acc-table th, .acc-table td { padding: 2px 12px 2px 0; text-align: right; font-variant-numeric: tabular-nums; }
+.acc-table th:first-child, .acc-table td:first-child { text-align: left; }
+.acc-table th { color: #52514e; font-weight: 600; border-bottom: 1px solid #e1e0d9; }
+.acc-table a { color: #898781; }

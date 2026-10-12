@@ -78,6 +78,8 @@
           {% for conf in all_conferences %}
 
           <div id="{{conf.id}}" class="ConfItem {% for sub in conf.sub %} {{sub}}-conf {% endfor %}">
+            <div class="row">
+            <div class="col-12 col-md-8">
             <div class="row conf-row">
                 <div class="col-6">
                   <span class="conf-title">
@@ -139,6 +141,11 @@
                 </div>
               </div>
             </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="acc-chart" data-series="{{ conf.title | split: ' (' | first }}"></div>
+            </div>
+            </div>
             <div class="row">
               <div class="col-12">
                 {% for sub in conf.sub %}
@@ -149,12 +156,6 @@
             <hr>
           </div>
           {% endfor %}
-        </div>
-        <div id="past_confs">
-          <h1 id="past-events-title">Past Events</h1>
-          <div id="sort-order-checkbox">
-                <label for="sort-order"><input type="checkbox" id="sort-order" name="sort-order" checked>Most recent first</label>
-            </div>
         </div>
       </div>
       <footer>
@@ -221,29 +222,25 @@
 
           $('#{{conf.id}}').attr("diff", diff)
           if (diff > 0) {
-            $('#{{conf.id}}').addClass('past');
-            $('#{{conf.id}}').appendTo($("#past_confs"))
-            $('#{{conf.id}} .timer').replaceWith($('#{{conf.id}} .deadline'));
-            $('#{{conf.id}} .timer-small').replaceWith($('#{{conf.id}} .deadline'));
+            // Closed deadlines are not shown; they stay in the data files.
+            $('#{{conf.id}}').remove();
           }
         {% endif %}
         {% endfor %}
 
-        // Sort coming_confs and past_confs
+        // Soonest deadline first
         $("#coming_confs .ConfItem").sort(function (a, b) {
           return $(b).attr('diff') - $(a).attr('diff');
         }).appendTo($("#coming_confs"));
 
-        $("#sort-order-checkbox input").on("click", function() {
-          if ($("#sort-order-checkbox input").is(":checked")) {
-            $("#past_confs .ConfItem").sort(function (a, b) {
-              return $(a).attr('diff') - $(b).attr('diff');
-            }).appendTo($("#past_confs"));
-          } else {
-            $("#past_confs .ConfItem").sort(function (a, b) {
-              return $(b).attr('diff') - $(a).attr('diff');
-            }).appendTo($("#past_confs"));
-          }
+        // Acceptance charts, drawn after sorting so each knows its final
+        // width; redrawn when the layout width changes.
+        {% include acceptance_chart.js %}
+        drawAllAcceptanceCharts();
+        var accResize;
+        $(window).on("resize", function () {
+          clearTimeout(accResize);
+          accResize = setTimeout(drawAllAcceptanceCharts, 150);
         });
 
         {% include handle_url_retrieval.js %}

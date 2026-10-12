@@ -72,6 +72,31 @@ def check_rankings(seen_ids: dict) -> list[str]:
     return errors
 
 
+def check_acceptance() -> list[str]:
+    """_data/acceptance.yml: sane counts, plausible years, known series."""
+    path = os.path.join(ROOT, "_data", "acceptance.yml")
+    if not os.path.exists(path):
+        return []
+    data = yaml.safe_load(open(path)) or {}
+    rankings = yaml.safe_load(open(os.path.join(ROOT, "_data", "rankings.yml"))) or {}
+    errors = []
+    for name, rows in data.items():
+        if name not in rankings:
+            errors.append(f"acceptance.yml: '{name}' is not a tracked series (no row in rankings.yml)")
+        seen_years = set()
+        for row in rows or []:
+            y, sub, acc = row.get("year"), row.get("submitted"), row.get("accepted")
+            label = f"acceptance.yml: {name} {y}"
+            if not isinstance(y, int) or not 2000 <= y <= 2100:
+                errors.append(f"{label}: bad year")
+            if y in seen_years:
+                errors.append(f"{label}: year listed twice")
+            seen_years.add(y)
+            if not (isinstance(sub, int) and isinstance(acc, int) and 0 < acc <= sub):
+                errors.append(f"{label}: need 0 < accepted <= submitted, got {acc}/{sub}")
+    return errors
+
+
 def main() -> int:
     types = yaml.safe_load(open(os.path.join(ROOT, "_data", "types.yml")))
     known_subs = {t["sub"] for t in types}
@@ -124,6 +149,7 @@ def main() -> int:
                 errors.append(f"{label}: abstract_deadline is after deadline")
 
     errors += check_rankings(seen)
+    errors += check_acceptance()
 
     for err in errors:
         print(f"ERROR {err}", file=sys.stderr)
