@@ -23,7 +23,8 @@
 #   targeted search  2026-10-14: years neither dataset had, filled one by one
 #                   from documents that state the counts - proceedings front
 #                   matter and chairs' messages, ACM DL acceptance tables,
-#                   official programs and history/statistics pages. Each
+#                   official programs and history/statistics pages, and the
+#                   submitted/accepted counts on a year's HotCRP front page. Each
 #                   such row links its document in `source`.
 #   sysconf         eitanf/sysconf (Frachtenberg's dataset of 2017 systems
 #                   conferences, compiled from proceedings) for 2017 only,
@@ -57,6 +58,7 @@ APSys:
   - { year: 2017, submitted: 51, accepted: 27, source: "https://dl.acm.org/conference/apsys/proceedings" }
   - { year: 2018, submitted: 48, accepted: 18, source: "https://dl.acm.org/conference/apsys/proceedings" }
   - { year: 2019, submitted: 36, accepted: 15, source: "https://dl.acm.org/conference/apsys/proceedings" }
+  - { year: 2020, submitted: 41, accepted: 16, source: "https://apsys20.hotcrp.com/" }
   - { year: 2021, submitted: 43, accepted: 19, source: "https://apsys21.hotcrp.com/" }
   - { year: 2022, submitted: 19, accepted: 10, source: "https://apsys22.hotcrp.com/" }
   - { year: 2023, submitted: 32, accepted: 13, source: "https://apsys23.hotcrp.com/" }
@@ -84,11 +86,14 @@ BigData:
   - { year: 2023, rate: 0.174, source: "https://bigdataieee.org/BigData2025/files/BigData2025-call-for-papers.pdf" }
   - { year: 2024, rate: 0.184, source: "https://bigdataieee.org/BigData2025/files/BigData2025-call-for-papers.pdf" }
   - { year: 2025, rate: 0.18, source: "https://bigdataieee.org/BigData2026/calls/papers/" }
+CASES:
+  - { year: 2025, submitted: 71, accepted: 20, source: "https://ieeexplore.ieee.org/abstract/document/11363086/" }
 CCGrid:
   - { year: 2017, submitted: 286, accepted: 59, source: "https://github.com/eitanf/sysconf/blob/master/data/conf/CCGrid.json" }
   - { year: 2020, submitted: 234, accepted: 66, source: "https://ieeexplore.ieee.org/document/9139662/" }
   - { year: 2021, submitted: 230, accepted: 60, source: "https://clouds.cis.unimelb.edu.au/ccgrid2021/CCGrid%202021-Proceeding-FrontMatter.pdf" }
   - { year: 2022, submitted: 302, accepted: 75, source: "https://ieeexplore.ieee.org/document/9826053/" }
+  - { year: 2023, submitted: 275, accepted: 58, source: "https://ccgrid2023.iisc.ac.in/" }
   - { year: 2024, submitted: 194, accepted: 51, source: "https://www.computer.org/csdl/pds/api/csdl/proceedings/download-article/20ShbtyJMZy/pdf" }
 CF:
   - { year: 2017, submitted: 87, accepted: 43, source: "https://dl.acm.org/doi/proceedings/10.1145/3075564" }
@@ -97,14 +102,19 @@ CF:
   - { year: 2024, submitted: 105, accepted: 33, source: "https://dl.acm.org/doi/proceedings/10.1145/3649153" }
 CHEOPS:
   - { year: 2021, submitted: 8, accepted: 6, source: "https://dl.acm.org/doi/proceedings/10.1145/3439839" }
+  - { year: 2023, submitted: 9, accepted: 5, source: "https://cheops23.hotcrp.com/" }
   - { year: 2026, submitted: 16, accepted: 8, source: "https://github.com/cheops-workshop/cheops-workshop.github.io/blob/main/talks2026/cheops26-intro.pdf" }
 CIDR:
   - { year: 2017, submitted: 78, accepted: 32, source: "https://github.com/eitanf/sysconf/blob/master/data/conf/CIDR.json" }
 CLOUD:
+  - { year: 2017, rate: 0.18, source: "https://conferences.computer.org/cloud/2018/about/" }
+  - { year: 2018, submitted: 253, accepted: 48, source: "https://conferences.computer.org/services/2019/history/" }
   - { year: 2021, submitted: 105, accepted: 25, source: "https://conferences.computer.org/services/2021/programs/2021ServicesProgram_final.pdf" }
   - { year: 2022, submitted: 192, accepted: 43, source: "https://conferences.computer.org/services/2022/2022_services_program.pdf" }
 CLUSTER:
   - { year: 2017, submitted: 216, accepted: 41, source: "https://lists.mcs.anl.gov/pipermail/hpc-announce/2017-July/003880.html" }
+"CODES+ISSS":
+  - { year: 2025, submitted: 92, accepted: 25, source: "https://ieeexplore.ieee.org/abstract/document/11363086/" }
 CoNEXT:
   - { year: 2017, submitted: 171, accepted: 33, source: "https://www.sigcomm.org/events/conext-conference" }
   - { year: 2018, submitted: 142, accepted: 28, source: "https://www.sigcomm.org/events/conext-conference" }
@@ -113,6 +123,8 @@ CoNEXT:
   - { year: 2021, submitted: 120, accepted: 27, source: "https://www.sigcomm.org/events/conext-conference" }
   - { year: 2022, submitted: 125, accepted: 28, source: "https://www.sigcomm.org/events/conext-conference" }
   - { year: 2023, submitted: 157, accepted: 29, source: "https://www.sigcomm.org/events/conext-conference" }
+  - { year: 2024, submitted: 184, accepted: 28, source: "https://dl.acm.org/action/showFmPdf?doi=10.1145/3680121" }
+  - { year: 2025, submitted: 175, accepted: 38, source: "https://dl.acm.org/doi/proceedings/10.1145/3765515" }
 DAC:
   - { year: 2018, submitted: 691, accepted: 168, source: "https://www.businesswire.com/news/home/20180730005544/en" }
   - { year: 2019, submitted: 1068, accepted: 202, source: "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3316781" }
@@ -142,6 +154,7 @@ DATE:
 DIMES:
   - { year: 2023, submitted: 17, accepted: 8, source: "https://dl.acm.org/doi/proceedings/10.1145/3609308" }
   - { year: 2024, submitted: 10, accepted: 7, source: "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3698783" }
+  - { year: 2025, submitted: 11, accepted: 8, source: "https://dimes25.hotcrp.com/" }
 DSN:
   - { year: 2017, submitted: 221, accepted: 54, source: "https://www.dependability.org/?page_id=808" }
   - { year: 2018, submitted: 228, accepted: 62, source: "https://www.dependability.org/?page_id=808" }
@@ -218,12 +231,18 @@ HotNets:
   - { year: 2021, submitted: 101, accepted: 31, source: "https://hotnets21.hotcrp.com/" }
   - { year: 2022, submitted: 104, accepted: 32, source: "https://hotnets22.hotcrp.com/" }
   - { year: 2023, submitted: 143, accepted: 40, source: "https://hotnets23.hotcrp.com/" }
+  - { year: 2024, submitted: 158, accepted: 44, source: "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3772356" }
   - { year: 2025, submitted: 178, accepted: 50, source: "https://hotnets25.hotcrp.com/" }
   - { year: 2026, submitted: 188, accepted: 43, source: "https://hotnets26.hotcrp.com/" }
 HotOS:
   - { year: 2017, submitted: 94, accepted: 29, source: "https://github.com/eitanf/sysconf/blob/master/data/conf/HotOS.json" }
+  - { year: 2019, submitted: 125, accepted: 30, source: "https://hotos19.hotcrp.com/" }
+  - { year: 2023, submitted: 117, accepted: 31, source: "https://hotos23.hotcrp.com/" }
+  - { year: 2025, submitted: 150, accepted: 31, source: "https://hotos25.hotcrp.com/" }
 HotStorage:
   - { year: 2017, submitted: 58, accepted: 21, source: "https://github.com/eitanf/sysconf/blob/master/data/conf/HotStorage.json" }
+  - { year: 2018, submitted: 60, accepted: 22, source: "https://hotstorage18.usenix.hotcrp.com/" }
+  - { year: 2019, submitted: 54, accepted: 22, source: "https://hotstorage19.usenix.hotcrp.com/" }
   - { year: 2021, submitted: 40, accepted: 15, source: "https://hotstorage21.hotcrp.com/" }
   - { year: 2022, submitted: 47, accepted: 19, source: "https://www.hotstorage.org/2022/camera-ready/frontmatter.pdf" }
   - { year: 2024, submitted: 46, accepted: 18, source: "https://hotstorage24.hotcrp.com/" }
@@ -277,11 +296,15 @@ ICPE:
   - { year: 2021, submitted: 61, accepted: 16, source: "https://dl.acm.org/doi/proceedings/10.1145/3427921" }
   - { year: 2022, submitted: 58, accepted: 14, source: "https://dl.acm.org/doi/proceedings/10.1145/3489525" }
   - { year: 2023, submitted: 46, accepted: 15, source: "https://dl.acm.org/doi/10.1145/3578244.3583727" }
+  - { year: 2024, rate: 0.346, source: "https://icpe.spec.org/past-conferences/" }
+  - { year: 2025, submitted: 49, accepted: 17, source: "https://research.spec.org/f/newsletter/SPEC_RG_Newsletter_2025.pdf" }
   - { year: 2026, submitted: 81, accepted: 23, source: "https://dl.acm.org/doi/proceedings/10.1145/3777884" }
 ICPP:
   - { year: 2017, submitted: 210, accepted: 60, source: "https://github.com/eitanf/sysconf/blob/master/data/conf/ICPP.json" }
   - { year: 2018, submitted: 313, accepted: 91, source: "https://dl.acm.org/doi/proceedings/10.1145/3225058" }
 ICS:
+  - { year: 2018, submitted: 197, accepted: 38, source: "https://ics18.hotcrp.com/" }
+  - { year: 2019, submitted: 167, accepted: 45, source: "https://ics19.hotcrp.com/" }
   - { year: 2021, submitted: 157, accepted: 39, source: "https://ics21.hotcrp.com/" }
   - { year: 2022, submitted: 161, accepted: 39, source: "https://ics22.hotcrp.com/" }
   - { year: 2023, submitted: 136, accepted: 40, source: "https://acm-ics23.hotcrp.com/" }
@@ -299,6 +322,7 @@ IMC:
   - { year: 2022, submitted: 143, accepted: 38, source: "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3517745" }
   - { year: 2023, submitted: 137, accepted: 38, source: "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3618257#page=4.08" }
   - { year: 2024, submitted: 253, accepted: 55, source: "https://imc2024.hotcrp.com/" }
+  - { year: 2025, submitted: 305, accepted: 72, source: "https://dl.acm.org/doi/proceedings/10.1145/3730567" }
 IPDPS:
   - { year: 2017, submitted: 508, accepted: 116, source: "https://github.com/eitanf/sysconf/blob/master/data/conf/IPDPS.json" }
   - { year: 2021, submitted: 462, accepted: 105, source: "https://tc.computer.org/tcpp/2021/10/08/ipdps-20201/" }
@@ -342,6 +366,7 @@ Middleware:
   - { year: 2020, rate: 0.2521, source: "https://middleware-conf.github.io/history/" }
   - { year: 2021, submitted: 103, accepted: 29, source: "https://github.com/middleware-conf/2021/blob/master/pdf/mw-conference-guide.pdf" }
   - { year: 2022, rate: 0.325, source: "https://middleware-conf.github.io/history/" }
+  - { year: 2024, submitted: 167, accepted: 39, source: "https://middleware2024r2.hotcrp.com/" }
 MLSys:
   - { year: 2021, submitted: 221, accepted: 52, source: "https://mlsys.org/virtual/2021/remarks/1556" }
   - { year: 2023, submitted: 207, accepted: 46, source: "https://mlsys.org/virtual/2023/calendar" }
@@ -391,6 +416,7 @@ PODS:
   - { year: 2023, submitted: 85, accepted: 29 }
   - { year: 2024, submitted: 110, accepted: 39 }
   - { year: 2025, submitted: 127, accepted: 45, source: "https://2025.sigmod.org/pods-welcome.pdf" }
+  - { year: 2026, submitted: 121, accepted: 41, source: "https://dl.acm.org/conference/pods/proceedings" }
 PPoPP:
   - { year: 2017, submitted: 132, accepted: 29 }
   - { year: 2018, submitted: 139, accepted: 28 }
@@ -440,6 +466,7 @@ SenSys:
   - { year: 2023, submitted: 179, accepted: 34, source: "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3625687" }
   - { year: 2024, submitted: 313, accepted: 58, source: "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3666025" }
   - { year: 2025, submitted: 235, accepted: 45, source: "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3715014" }
+  - { year: 2026, submitted: 257, accepted: 48, source: "https://sensys26.hotcrp.com/" }
 SIGCOMM:
   - { year: 2017, submitted: 250, accepted: 36 }
   - { year: 2018, submitted: 222, accepted: 40 }
@@ -449,6 +476,7 @@ SIGCOMM:
   - { year: 2022, submitted: 279, accepted: 55 }
   - { year: 2023, submitted: 323, accepted: 71 }
   - { year: 2024, submitted: 366, accepted: 62 }
+  - { year: 2026, submitted: 513, accepted: 109, source: "https://dl.acm.org/doi/proceedings/10.1145/3789240" }
 SIGMETRICS:
   - { year: 2017, submitted: 203, accepted: 27 }
   - { year: 2018, submitted: 269, accepted: 54 }
@@ -482,8 +510,12 @@ SIGMOD:
   - { year: 2024, submitted: 488, accepted: 77 }
   - { year: 2025, submitted: 634, accepted: 100 }
 SoCC:
+  - { year: 2017, submitted: 203, accepted: 48, source: "https://socc17.hotcrp.com/" }
+  - { year: 2018, submitted: 160, accepted: 39, source: "https://socc18.hotcrp.com/" }
   - { year: 2019, submitted: 157, accepted: 39, source: "https://www.cs.ucla.edu/professor-netravali-awarded-best-paper-in-2019-acm-socc/" }
   - { year: 2020, submitted: 143, accepted: 35, source: "https://dl.acm.org/doi/proceedings/10.1145/3419111" }
+  - { year: 2021, submitted: 145, accepted: 46, source: "https://socc2021.hotcrp.com/" }
+  - { year: 2022, submitted: 155, accepted: 38, source: "https://socc2022.hotcrp.com/" }
 SOSP:
   - { year: 2017, submitted: 241, accepted: 39 }
   - { year: 2019, submitted: 276, accepted: 38 }
@@ -495,6 +527,7 @@ SOSP:
 SYSTOR:
   - { year: 2017, submitted: 47, accepted: 16, source: "https://dl.acm.org/doi/proceedings/10.1145/3078468" }
   - { year: 2018, submitted: 44, accepted: 10, source: "https://dl.acm.org/doi/proceedings/10.1145/3211890" }
+  - { year: 2019, submitted: 44, accepted: 16, source: "https://systor19.hotcrp.com/" }
   - { year: 2020, submitted: 30, accepted: 9, source: "https://dl.acm.org/doi/proceedings/10.1145/3383669" }
   - { year: 2021, submitted: 63, accepted: 19, source: "https://systor21.hotcrp.com/" }
   - { year: 2022, submitted: 41, accepted: 12, source: "https://systor22.hotcrp.com/" }
@@ -504,6 +537,8 @@ SYSTOR:
   - { year: 2026, submitted: 37, accepted: 11, source: "https://dl.acm.org/doi/proceedings/10.1145/3793230" }
 VEE:
   - { year: 2017, submitted: 43, accepted: 18, source: "https://dl.acm.org/conference/vee/proceedings" }
+  - { year: 2019, submitted: 33, accepted: 15, source: "https://vee19.hotcrp.com/" }
+  - { year: 2020, submitted: 34, accepted: 14, source: "https://vee20.hotcrp.com/" }
   - { year: 2021, submitted: 27, accepted: 15, source: "https://vee21.hotcrp.com/" }
 VLDB:
   - { year: 2017, submitted: 559, accepted: 104 }

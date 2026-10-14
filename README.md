@@ -196,14 +196,15 @@ then filled year by year from the documents themselves:
 - [`ccfddl/ccf-deadlines`](https://github.com/ccfddl/ccf-deadlines) `accept_rates/`, filling
   the years and conferences csconferences lacks, each row with its own source link
 - for years neither had, proceedings front matter, PC chairs' messages, ACM DL acceptance
-  tables, official programs and steering-committee history pages, each row linking its document
+  tables, official programs, steering-committee history pages and the conference's HotCRP front
+  page, each row linking its document
 - for 2017 only, Frachtenberg's [`sysconf`](https://github.com/eitanf/sysconf) dataset of that
   year's systems conferences, where nothing first-party turned up
 
 Where both had the same year and disagreed — 14 cases — the value backed by the more official
 document was kept (PC chairs' message or proceedings front matter first); the file header lists
-each decision. 63 of the 67 tracked conferences have at least one year (398 conference-years, 13 of them rate only); 22 have nine or ten of the ten years.
-Every conference currently on the front page has some. No usable figures were found for PLOS, CASES, CODES+ISSS, NVMSA.
+each decision. 65 of the 67 tracked conferences have at least one year (430 conference-years, 15 of them rate only); 25 have nine or ten of the ten years.
+Every conference currently on the front page has some. No usable figures were found for PLOS, NVMSA.
 
 ## Adding or updating a conference
 
