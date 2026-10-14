@@ -8,6 +8,10 @@
 # Drawn as the small chart beside each deadline on the front page. A series
 # with no row here gets no chart; a missing year is a gap, not a zero.
 #
+# Where the only official source gives a percentage and no counts, the row
+# is `{ year, rate, source }` with rate as a fraction (0.2353 = 23.53%); it
+# is drawn as a point on the rate line with no bar.
+#
 # Sources, merged 2026-10-12:
 #
 #   csconferences   emeryberger/csconferences, csconferences.csv (2026-07-07).
@@ -206,6 +210,13 @@ MICRO:
   - { year: 2023, submitted: 434, accepted: 101 }
   - { year: 2024, submitted: 497, accepted: 113, source: "https://www.computer.org/csdl/proceedings-article/micro/2024/505700z026/22nivdpvBba" }
   - { year: 2025, submitted: 597, accepted: 124, source: "https://dl.acm.org/doi/proceedings/10.1145/3725843" }
+Middleware:
+  - { year: 2017, rate: 0.2353, source: "https://middleware-conf.github.io/history/" }
+  - { year: 2018, rate: 0.2316, source: "https://middleware-conf.github.io/history/" }
+  - { year: 2019, rate: 0.2403, source: "https://middleware-conf.github.io/history/" }
+  - { year: 2020, rate: 0.2521, source: "https://middleware-conf.github.io/history/" }
+  - { year: 2021, rate: 0.281, source: "https://middleware-conf.github.io/history/" }
+  - { year: 2022, rate: 0.325, source: "https://middleware-conf.github.io/history/" }
 MLSys:
   - { year: 2021, submitted: 221, accepted: 52, source: "https://mlsys.org/virtual/2021/remarks/1556" }
   - { year: 2025, submitted: 271, accepted: 61, source: "https://slideslive.com/39042971/opening-remarks" }

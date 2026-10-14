@@ -85,15 +85,23 @@ def check_acceptance() -> list[str]:
             errors.append(f"acceptance.yml: '{name}' is not a tracked series (no row in rankings.yml)")
         seen_years = set()
         for row in rows or []:
-            y, sub, acc = row.get("year"), row.get("submitted"), row.get("accepted")
+            y, sub, acc, rate = row.get("year"), row.get("submitted"), row.get("accepted"), row.get("rate")
             label = f"acceptance.yml: {name} {y}"
             if not isinstance(y, int) or not 2000 <= y <= 2100:
                 errors.append(f"{label}: bad year")
             if y in seen_years:
                 errors.append(f"{label}: year listed twice")
             seen_years.add(y)
-            if not (isinstance(sub, int) and isinstance(acc, int) and 0 < acc <= sub):
+            if sub is None and acc is None:
+                # Rate-only row: the source publishes a percentage, not counts.
+                if not (isinstance(rate, (int, float)) and 0 < rate <= 1):
+                    errors.append(f"{label}: need counts, or a rate between 0 and 1, got {rate}")
+                if not row.get("source"):
+                    errors.append(f"{label}: a rate-only row needs a source")
+            elif not (isinstance(sub, int) and isinstance(acc, int) and 0 < acc <= sub):
                 errors.append(f"{label}: need 0 < accepted <= submitted, got {acc}/{sub}")
+            elif rate is not None:
+                errors.append(f"{label}: give counts or a rate, not both")
     return errors
 
 

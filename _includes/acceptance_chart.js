@@ -4,7 +4,8 @@
 //
 // The rate axis is fixed at 0-60% for every conference, so lines can be
 // compared across rows; only the submissions axis scales per conference.
-// A missing year is a gap in both bars and line, never a zero.
+// A missing year is a gap in both bars and line, never a zero. A row with
+// only a published `rate` (no counts) gets a point on the line and no bar.
 
 var ACCEPTANCE = {{ site.data.acceptance | jsonify }};
 
@@ -17,6 +18,10 @@ var ACC = {
   barMax: 14,
   svgNS: "http://www.w3.org/2000/svg"
 };
+
+function accRate(d) {
+  return d.submitted ? d.accepted / d.submitted : d.rate;
+}
 
 function accEl(tag, attrs, parent) {
   var el = document.createElementNS(ACC.svgNS, tag);
@@ -66,8 +71,8 @@ function accShowTip(evt, d) {
   head.className = "acc-tip-year";
   head.textContent = String(d.year);
   tip.appendChild(head);
-  [["acc-key-bar", d.submitted.toLocaleString(), "submitted"],
-   ["acc-key-line", (100 * d.accepted / d.submitted).toFixed(1) + "%", "accepted (" + d.accepted.toLocaleString() + ")"]
+  [["acc-key-bar", d.submitted ? d.submitted.toLocaleString() : "\u2014", d.submitted ? "submitted" : "submitted (not published)"],
+   ["acc-key-line", (100 * accRate(d)).toFixed(1) + "%", d.submitted ? "accepted (" + d.accepted.toLocaleString() + ")" : "accepted"]
   ].forEach(function (row) {
     var line = document.createElement("div");
     line.className = "acc-tip-row";
@@ -115,7 +120,9 @@ function drawAcceptanceChart(holder) {
   // Legend above the plot: two series, so it is always shown.
   var legend = document.createElement("div");
   legend.className = "acc-legend";
-  [["acc-key-bar", "Submitted"], ["acc-key-line", "Acceptance rate"]].forEach(function (item) {
+  var anyCounts = rows.some(function (d) { return d.submitted; });
+  (anyCounts ? [["acc-key-bar", "Submitted"], ["acc-key-line", "Acceptance rate"]]
+             : [["acc-key-line", "Acceptance rate (counts not published)"]]).forEach(function (item) {
     var span = document.createElement("span");
     var key = document.createElement("span");
     key.className = "acc-legend-key " + item[0];
@@ -134,6 +141,7 @@ function drawAcceptanceChart(holder) {
 
   var maxSub = 0;
   rows.forEach(function (d) { if (d.submitted > maxSub) maxSub = d.submitted; });
+  var hasCounts = maxSub > 0;
   var subMax = accNiceMax(maxSub);
   var ySub = function (v) { return m.top + plotH - (v / subMax) * plotH; };
   var yRate = function (v) { return m.top + plotH - (Math.min(v, ACC.rateMax) / ACC.rateMax) * plotH; };
@@ -144,7 +152,7 @@ function drawAcceptanceChart(holder) {
     width: width, height: ACC.height, viewBox: "0 0 " + width + " " + ACC.height,
     role: "img", "class": "acc-svg",
     "aria-label": series + ": submissions and acceptance rate, " + rows[0].year + "-" + latest.year +
-      ". Latest: " + latest.submitted + " submitted, " + (100 * latest.accepted / latest.submitted).toFixed(1) + "% accepted."
+      ". Latest: " + (latest.submitted ? latest.submitted + " submitted, " : "") + (100 * accRate(latest)).toFixed(1) + "% accepted."
   }, holder);
 
   // Hairline grid at the three shared tick positions; both axes tick at the
@@ -152,8 +160,10 @@ function drawAcceptanceChart(holder) {
   [0, 0.5, 1].forEach(function (f) {
     var gy = m.top + plotH - f * plotH;
     accEl("line", { x1: m.left, x2: m.left + plotW, y1: gy, y2: gy, "class": f === 0 ? "acc-baseline" : "acc-grid" }, svg);
-    var l = accEl("text", { x: m.left - 5, y: gy + 3.5, "text-anchor": "end", "class": "acc-tick" }, svg);
-    l.textContent = accCompact(Math.round(subMax * f));
+    if (hasCounts) {
+      var l = accEl("text", { x: m.left - 5, y: gy + 3.5, "text-anchor": "end", "class": "acc-tick" }, svg);
+      l.textContent = accCompact(Math.round(subMax * f));
+    }
     var r = accEl("text", { x: m.left + plotW + 5, y: gy + 3.5, "text-anchor": "start", "class": "acc-tick" }, svg);
     r.textContent = Math.round(ACC.rateMax * f * 100) + "%";
   });
@@ -162,9 +172,11 @@ function drawAcceptanceChart(holder) {
   // colour). With two y-axes, these and the legend are what say which scale
   // belongs to the bars and which to the line.
   var midY = m.top + plotH / 2;
-  var yl = accEl("text", { x: 0, y: 0, "text-anchor": "middle", "class": "acc-axis-title",
-    transform: "translate(9," + midY + ") rotate(-90)" }, svg);
-  yl.textContent = "Submitted";
+  if (hasCounts) {
+    var yl = accEl("text", { x: 0, y: 0, "text-anchor": "middle", "class": "acc-axis-title",
+      transform: "translate(9," + midY + ") rotate(-90)" }, svg);
+    yl.textContent = "Submitted";
+  }
   var yr2 = accEl("text", { x: 0, y: 0, "text-anchor": "middle", "class": "acc-axis-title",
     transform: "translate(" + (width - 7) + "," + midY + ") rotate(90)" }, svg);
   yr2.textContent = "Acceptance rate";
@@ -180,7 +192,7 @@ function drawAcceptanceChart(holder) {
   // Bars: submissions.
   years.forEach(function (yr, i) {
     var d = byYear[yr];
-    if (!d) return;
+    if (!d || !d.submitted) return;
     var top = ySub(d.submitted);
     accEl("path", { d: accBarPath(xMid(i) - barW / 2, top, barW, m.top + plotH - top), "class": "acc-bar", "data-year": yr }, svg);
   });
@@ -194,18 +206,18 @@ function drawAcceptanceChart(holder) {
   years.forEach(function (yr, i) {
     var d = byYear[yr];
     if (!d) { flush(); return; }
-    seg.push(xMid(i) + "," + yRate(d.accepted / d.submitted));
+    seg.push(xMid(i) + "," + yRate(accRate(d)));
   });
   flush();
   years.forEach(function (yr, i) {
     var d = byYear[yr];
     if (!d) return;
-    accEl("circle", { cx: xMid(i), cy: yRate(d.accepted / d.submitted), r: 3.5, "class": "acc-dot" }, svg);
+    accEl("circle", { cx: xMid(i), cy: yRate(accRate(d)), r: 3.5, "class": "acc-dot" }, svg);
   });
 
   // One direct label: the latest rate, at the end of the line.
   var li = years.indexOf(latest.year);
-  var lr = latest.accepted / latest.submitted;
+  var lr = accRate(latest);
   var lab = accEl("text", { x: xMid(li), y: yRate(lr) - 7, "text-anchor": "middle", "class": "acc-direct" }, svg);
   lab.textContent = Math.round(lr * 100) + "%";
 

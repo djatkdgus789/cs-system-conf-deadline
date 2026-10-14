@@ -184,7 +184,8 @@ Next to each deadline on the front page is a small chart of the conference's las
 (2017–2026): **submissions as bars on the left axis** and **acceptance rate as a line on the
 right axis**. The rate axis is fixed at 0–60% for every conference, so lines can be compared
 across rows; only the submissions axis scales per conference. A missing year is a gap, not a
-zero. Hovering a year shows its numbers, and each conference's detail page has the same data as
+zero. Where the only official source publishes a percentage without counts (Middleware's
+history page, for one), that year is a point on the line with no bar. Hovering a year shows its numbers, and each conference's detail page has the same data as
 a table with a link to the source of each year.
 
 The data is [`_data/acceptance.yml`](_data/acceptance.yml), merged from two public datasets:
