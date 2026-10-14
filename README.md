@@ -202,8 +202,8 @@ then filled year by year from the documents themselves:
 
 Where both had the same year and disagreed — 14 cases — the value backed by the more official
 document was kept (PC chairs' message or proceedings front matter first); the file header lists
-each decision. 58 of the 67 tracked conferences have at least one year (333 conference-years, 4 of them rate only); 18 have nine or ten of the ten years.
-Every conference currently on the front page has some. No usable figures were found for SoCC, PLOS, ISLPED, CASES, CODES+ISSS, NVMSA, GPGPU, CLUSTER, BigData.
+each decision. 63 of the 67 tracked conferences have at least one year (398 conference-years, 13 of them rate only); 22 have nine or ten of the ten years.
+Every conference currently on the front page has some. No usable figures were found for PLOS, CASES, CODES+ISSS, NVMSA.
 
 ## Adding or updating a conference
 
