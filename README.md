@@ -188,18 +188,22 @@ zero. Where the only official source publishes a percentage without counts (Midd
 history page, for one), that year is a point on the line with no bar. Hovering a year shows its numbers, and each conference's detail page has the same data as
 a table with a link to the source of each year.
 
-The data is [`_data/acceptance.yml`](_data/acceptance.yml), merged from two public datasets:
+The data is [`_data/acceptance.yml`](_data/acceptance.yml), merged from two public datasets and
+then filled year by year from the documents themselves:
 
 - [`emeryberger/csconferences`](https://github.com/emeryberger/csconferences), used first, with
   every round of a multi-round conference summed into its year
 - [`ccfddl/ccf-deadlines`](https://github.com/ccfddl/ccf-deadlines) `accept_rates/`, filling
   the years and conferences csconferences lacks, each row with its own source link
+- for years neither had, proceedings front matter, PC chairs' messages, ACM DL acceptance
+  tables, official programs and steering-committee history pages, each row linking its document
+- for 2017 only, Frachtenberg's [`sysconf`](https://github.com/eitanf/sysconf) dataset of that
+  year's systems conferences, where nothing first-party turned up
 
 Where both had the same year and disagreed — 14 cases — the value backed by the more official
 document was kept (PC chairs' message or proceedings front matter first); the file header lists
-each decision. 46 of the 67 tracked conferences have at least one year of data, and every
-conference currently on the site does. Coverage before 2021 is thin outside the core systems
-venues.
+each decision. 58 of the 67 tracked conferences have at least one year (333 conference-years, 4 of them rate only); 18 have nine or ten of the ten years.
+Every conference currently on the front page has some. No usable figures were found for SoCC, PLOS, ISLPED, CASES, CODES+ISSS, NVMSA, GPGPU, CLUSTER, BigData.
 
 ## Adding or updating a conference
 
