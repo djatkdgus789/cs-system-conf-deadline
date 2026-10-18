@@ -94,8 +94,8 @@
 - title: SenSys (2nd deadline)
   year: 2027
   id: sensys27d2
-  full_name: ACM Conference on Embedded Networked Sensor Systems
-  link: https://sensys.acm.org/2027/cfp.html
+  full_name: ACM/IEEE International Conference on Embedded Artificial Intelligence and Sensing Systems
+  link: https://sensys.acm.org/2027/
   abstract_deadline: "2026-10-29 23:59:59"
   deadline: "2026-11-05 23:59:59"
   timezone: AoE
@@ -246,7 +246,7 @@
   place: Bellevue, WA, USA
   date: June 21-25, 2027
   sub: [ MLSYS, SYS ]
-  note: Submission site opens 2026-10-10 at 12:00 PT.
+  note: OpenReview submissions open 2026-10-19 at 12:00 PT. The Dates page says noon PT; the Call for Papers says 20:00 UTC (13:00 PDT) - the earlier time is shown here.
 
 # HPC -----------------------------------------------------------------------
 
