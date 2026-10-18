@@ -9,7 +9,7 @@
 # out yet, leave the conference out until it is.
 #
 # Every entry below was cross-checked against the conference's own CFP or
-# important-dates page in September 2026. The `link` points at that page;
+# important-dates page (last full re-check 2026-10-18). The `link` points at that page;
 # re-check it before you rely on a date, since organizers do move deadlines.
 #
 # Schema:
@@ -167,6 +167,18 @@
   sub: [ SYS ]
   note: Last of three rounds; held as part of ACM FCRC 2027.
 
+- title: HotOS
+  year: 2027
+  id: hotos27
+  full_name: ACM SIGOPS Workshop on Hot Topics in Operating Systems (HotOS XXI)
+  link: https://sigops.org/s/conferences/hotos/2027/cfp.html
+  deadline: "2027-02-01 23:59:59"
+  timezone: AoE
+  place: Burghausen, Germany
+  date: May 24-26, 2027
+  sub: [ SYS ]
+  note: Hard deadline for research and position papers (and panel proposals). The CFP gives the date, Monday 2027-02-01, but no time or timezone - end of day AoE, the latest reading, is shown here, so submit earlier to be safe. Notifications 2027-04-09.
+
 - title: Middleware (Summer cycle)
   year: 2027
   id: middleware27s
@@ -233,6 +245,19 @@
   date: July 11-14, 2027
   sub: [ ARCH ]
   note: Research manuscript track. Both deadlines are 5 PM Pacific.
+
+- title: ISPASS
+  year: 2027
+  id: ispass27
+  full_name: IEEE International Symposium on Performance Analysis of Systems and Software
+  link: https://ispass.org/2027/cfp/
+  abstract_deadline: "2026-12-11 23:59:59"
+  deadline: "2026-12-18 23:59:59"
+  timezone: AoE
+  place: New York City, NY, USA
+  date: May 9-11, 2027
+  sub: [ ARCH ]
+  note: An abstract is required before a full paper can be submitted. Hosted by NYU; accepted papers must be presented in person.
 
 # ML System -----------------------------------------------------------------
 
