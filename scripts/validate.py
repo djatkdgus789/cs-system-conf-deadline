@@ -47,7 +47,7 @@ def check_rankings(seen_ids: dict) -> list[str]:
     errors = []
     for name, row in rankings.items():
         row = row or {}
-        unknown = set(row) - {"core", "csrankings", "kiise", "note"}
+        unknown = set(row) - {"core", "csrankings", "kiise", "bk21", "note"}
         if unknown:
             errors.append(f"rankings.yml: {name}: unknown field(s) {sorted(unknown)}")
         if "core" in row and row["core"] not in CORE_VALUES:
@@ -56,6 +56,8 @@ def check_rankings(seen_ids: dict) -> list[str]:
             errors.append(f"rankings.yml: {name}: csrankings must be 'main' or 'next'")
         if "kiise" in row and row["kiise"] not in ("최우수", "우수"):
             errors.append(f"rankings.yml: {name}: kiise must be '최우수' or '우수'")
+        if "bk21" in row and row["bk21"] not in (1, 2, 3, 4):
+            errors.append(f"rankings.yml: {name}: bk21 must be 1, 2, 3 or 4")
 
     # Every series shown on the site or watched should have a row, even an empty
     # one, so that adding a conference forces a look at how it is ranked.

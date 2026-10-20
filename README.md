@@ -29,61 +29,61 @@ Regenerate this table with `python3 scripts/upcoming.py --markdown`.
 <!-- BEGIN conference-table -->
 ### System (`SYS`)
 
-| Conference | Abstract | Paper | Timezone | Notification | Conference dates | Venue | CORE | CSRankings | KIISE |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [NSDI (Fall) 2027](https://www.usenix.org/conference/nsdi27/call-for-papers) | 2026-09-10 | ~~2026-09-17~~ | America/New_York | 2026-12-08 | May 11-13, 2027 | Providence, RI, USA | National: USA | ✓ | 최우수 |
-| [MMSys (Round 1) 2027](https://2027.acmmmsys.org/deadlines.html) | 2026-09-10 | ~~2026-09-17~~ | AoE | 2026-10-24 | March 30 - April 2, 2027 | Ghent, Belgium | A | — | 우수 |
-| [EuroSys (Fall) 2027](https://2027.eurosys.org/cfp.html) | 2026-09-17 | ~~2026-09-24~~ | AoE | 2027-01-29 | April 19-23, 2027 | Rabat, Morocco | A | next tier | 최우수 |
-| [SIGMETRICS (Fall round) 2027](https://www.sigmetrics.org/sigmetrics2027/pages/cfp.html) | — | ~~2026-10-09~~ | AoE | 2026-12-09 | June 7-11, 2027 | Atlanta, GA, USA | A* | ✓ | 최우수 |
-| [RTAS 2027](https://2027.rtas.org/) | — | 2026-11-05 | AoE | 2027-01-28 | May 17-20, 2027 | Boulder, CO, USA | A | ✓ | 최우수 |
-| [SenSys (2nd deadline) 2027](https://sensys.acm.org/2027/) | 2026-10-29 | 2026-11-05 | AoE | 2027-01-28 | May 17-20, 2027 | Boulder, CO, USA | Merged | ✓ | 우수 |
-| [MMSys (Round 2) 2027](https://2027.acmmmsys.org/deadlines.html) | 2026-11-12 | 2026-11-19 | AoE | 2026-12-22 | March 30 - April 2, 2027 | Ghent, Belgium | A | — | 우수 |
-| [DSN 2027](https://dsn2027-berlin.github.io/call-for-contributions/) | 2026-11-25 | 2026-12-02 | AoE | 2027-03-18 | June 22-25, 2027 | Berlin, Germany | A | — | 우수 |
-| [Middleware (Winter cycle) 2027](https://middleware-conf.github.io/2027/call-for-papers/) | 2026-11-27 | 2026-12-04 | AoE | 2027-03-29 | December 13-17, 2027 | Kyoto, Japan | A | — | 우수 |
-| [OSDI 2027](https://www.usenix.org/conference/osdi27/call-for-papers) | 2026-12-01 | 2026-12-08 | America/New_York | 2027-03-16 | July 7-9, 2027 | Baltimore, MD, USA | A* | ✓ | 최우수 |
-| [SIGMETRICS (Winter round) 2027](https://www.sigmetrics.org/sigmetrics2027/pages/cfp.html) | 2027-01-04 | 2027-01-11 | AoE | 2027-03-10 | June 7-11, 2027 | Atlanta, GA, USA | A* | ✓ | 최우수 |
-| [HotOS 2027](https://sigops.org/s/conferences/hotos/2027/cfp.html) | — | 2027-02-01 | AoE | 2027-04-09 | May 24-26, 2027 | Burghausen, Germany | A | — | — |
-| [Middleware (Summer cycle) 2027](https://middleware-conf.github.io/2027/call-for-papers/) | 2027-05-28 | 2027-06-04 | AoE | 2027-09-13 | December 13-17, 2027 | Kyoto, Japan | A | — | 우수 |
+| Conference | Abstract | Paper | Timezone | Notification | Conference dates | Venue | CORE | CSRankings | KIISE | BK21 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [NSDI (Fall) 2027](https://www.usenix.org/conference/nsdi27/call-for-papers) | 2026-09-10 | ~~2026-09-17~~ | America/New_York | 2026-12-08 | May 11-13, 2027 | Providence, RI, USA | National: USA | ✓ | 최우수 | 4 |
+| [MMSys (Round 1) 2027](https://2027.acmmmsys.org/deadlines.html) | 2026-09-10 | ~~2026-09-17~~ | AoE | 2026-10-24 | March 30 - April 2, 2027 | Ghent, Belgium | A | — | 우수 | — |
+| [EuroSys (Fall) 2027](https://2027.eurosys.org/cfp.html) | 2026-09-17 | ~~2026-09-24~~ | AoE | 2027-01-29 | April 19-23, 2027 | Rabat, Morocco | A | next tier | 최우수 | 2 |
+| [SIGMETRICS (Fall round) 2027](https://www.sigmetrics.org/sigmetrics2027/pages/cfp.html) | — | ~~2026-10-09~~ | AoE | 2026-12-09 | June 7-11, 2027 | Atlanta, GA, USA | A* | ✓ | 최우수 | 3 |
+| [RTAS 2027](https://2027.rtas.org/) | — | 2026-11-05 | AoE | 2027-01-28 | May 17-20, 2027 | Boulder, CO, USA | A | ✓ | 최우수 | 2 |
+| [SenSys (2nd deadline) 2027](https://sensys.acm.org/2027/) | 2026-10-29 | 2026-11-05 | AoE | 2027-01-28 | May 17-20, 2027 | Boulder, CO, USA | Merged | ✓ | 우수 | 3 |
+| [MMSys (Round 2) 2027](https://2027.acmmmsys.org/deadlines.html) | 2026-11-12 | 2026-11-19 | AoE | 2026-12-22 | March 30 - April 2, 2027 | Ghent, Belgium | A | — | 우수 | — |
+| [DSN 2027](https://dsn2027-berlin.github.io/call-for-contributions/) | 2026-11-25 | 2026-12-02 | AoE | 2027-03-18 | June 22-25, 2027 | Berlin, Germany | A | — | 우수 | 2 |
+| [Middleware (Winter cycle) 2027](https://middleware-conf.github.io/2027/call-for-papers/) | 2026-11-27 | 2026-12-04 | AoE | 2027-03-29 | December 13-17, 2027 | Kyoto, Japan | A | — | 우수 | 2 |
+| [OSDI 2027](https://www.usenix.org/conference/osdi27/call-for-papers) | 2026-12-01 | 2026-12-08 | America/New_York | 2027-03-16 | July 7-9, 2027 | Baltimore, MD, USA | A* | ✓ | 최우수 | 4 |
+| [SIGMETRICS (Winter round) 2027](https://www.sigmetrics.org/sigmetrics2027/pages/cfp.html) | 2027-01-04 | 2027-01-11 | AoE | 2027-03-10 | June 7-11, 2027 | Atlanta, GA, USA | A* | ✓ | 최우수 | 3 |
+| [HotOS 2027](https://sigops.org/s/conferences/hotos/2027/cfp.html) | — | 2027-02-01 | AoE | 2027-04-09 | May 24-26, 2027 | Burghausen, Germany | A | — | — | — |
+| [Middleware (Summer cycle) 2027](https://middleware-conf.github.io/2027/call-for-papers/) | 2027-05-28 | 2027-06-04 | AoE | 2027-09-13 | December 13-17, 2027 | Kyoto, Japan | A | — | 우수 | 2 |
 
 ### Architecture (`ARCH`)
 
-| Conference | Abstract | Paper | Timezone | Notification | Conference dates | Venue | CORE | CSRankings | KIISE |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [DATE 2027](https://www.date-conference.com/date-2027-call-papers) | 2026-09-13 | ~~2026-09-20~~ | AoE | 2026-11-23 | March 22-24, 2027 | Dresden, Germany | A | — | 우수 |
-| [FPGA 2027](https://www.isfpga.org/call-for-papers/) | 2026-10-01 | ~~2026-10-08~~ | AoE | 2026-12-08 | March 2027 | California, USA | A | — | 우수 |
-| [ISCA 2027](https://iscaconf.org/isca2027/submit/callforpapers.php) | 2026-11-09 | 2026-11-16 | AoE | 2027-03-26 | June 5-9, 2027 | Atlanta, GA, USA | A* | ✓ | 최우수 |
-| [DAC 2027](https://dac.com/2027/program/research-manuscript-submissions) | 2026-11-11 | 2026-11-18 | America/Los_Angeles | 2027-03-08 | July 11-14, 2027 | San Jose, CA, USA | A* | ✓ | 최우수 |
-| [ISPASS 2027](https://ispass.org/2027/cfp/) | 2026-12-11 | 2026-12-18 | AoE | 2027-03-08 | May 9-11, 2027 | New York City, NY, USA | B | — | 우수 |
+| Conference | Abstract | Paper | Timezone | Notification | Conference dates | Venue | CORE | CSRankings | KIISE | BK21 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [DATE 2027](https://www.date-conference.com/date-2027-call-papers) | 2026-09-13 | ~~2026-09-20~~ | AoE | 2026-11-23 | March 22-24, 2027 | Dresden, Germany | A | — | 우수 | 2 |
+| [FPGA 2027](https://www.isfpga.org/call-for-papers/) | 2026-10-01 | ~~2026-10-08~~ | AoE | 2026-12-08 | March 2027 | California, USA | A | — | 우수 | — |
+| [ISCA 2027](https://iscaconf.org/isca2027/submit/callforpapers.php) | 2026-11-09 | 2026-11-16 | AoE | 2027-03-26 | June 5-9, 2027 | Atlanta, GA, USA | A* | ✓ | 최우수 | 4 |
+| [DAC 2027](https://dac.com/2027/program/research-manuscript-submissions) | 2026-11-11 | 2026-11-18 | America/Los_Angeles | 2027-03-08 | July 11-14, 2027 | San Jose, CA, USA | A* | ✓ | 최우수 | 3 |
+| [ISPASS 2027](https://ispass.org/2027/cfp/) | 2026-12-11 | 2026-12-18 | AoE | 2027-03-08 | May 9-11, 2027 | New York City, NY, USA | B | — | 우수 | 1 |
 
 ### ML System (`MLSYS`)
 
-| Conference | Abstract | Paper | Timezone | Notification | Conference dates | Venue | CORE | CSRankings | KIISE |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [MLSys 2027](https://mlsys.org/Conferences/2027/Dates) | — | 2026-10-30 | America/Los_Angeles | 2027-02-28 | June 21-25, 2027 | Bellevue, WA, USA | — | — | 우수 |
+| Conference | Abstract | Paper | Timezone | Notification | Conference dates | Venue | CORE | CSRankings | KIISE | BK21 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [MLSys 2027](https://mlsys.org/Conferences/2027/Dates) | — | 2026-10-30 | America/Los_Angeles | 2027-02-28 | June 21-25, 2027 | Bellevue, WA, USA | — | — | 우수 | — |
 
 ### HPC (`HPC`)
 
-| Conference | Abstract | Paper | Timezone | Notification | Conference dates | Venue | CORE | CSRankings | KIISE |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [IPDPS 2027](http://www.ipdps.org/ipdps2027/2027-call-for-papers.html) | 2026-10-01 | ~~2026-10-08~~ | AoE | 2027-02-02 | June 1-5, 2027 | Seattle, WA, USA | A | — | 우수 |
-| [CCGrid 2027](https://hpcclab.org/ccgrid27-call-for-papers/) | 2026-11-24 | 2026-12-01 | AoE | 2027-02-01 | May 24-27, 2027 | Dallas-Fort Worth, TX, USA | B | — | 우수 |
-| [ICS 2027](https://klab-ai3.github.io/ics2027/calls-cfp.html) | 2026-12-01 | 2026-12-07 | AoE | 2027-03-12 | June 5-11, 2027 | Atlanta, GA, USA | A | ✓ | 우수 |
+| Conference | Abstract | Paper | Timezone | Notification | Conference dates | Venue | CORE | CSRankings | KIISE | BK21 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [IPDPS 2027](http://www.ipdps.org/ipdps2027/2027-call-for-papers.html) | 2026-10-01 | ~~2026-10-08~~ | AoE | 2027-02-02 | June 1-5, 2027 | Seattle, WA, USA | A | — | 우수 | 2 |
+| [CCGrid 2027](https://hpcclab.org/ccgrid27-call-for-papers/) | 2026-11-24 | 2026-12-01 | AoE | 2027-02-01 | May 24-27, 2027 | Dallas-Fort Worth, TX, USA | B | — | 우수 | 1 |
+| [ICS 2027](https://klab-ai3.github.io/ics2027/calls-cfp.html) | 2026-12-01 | 2026-12-07 | AoE | 2027-03-12 | June 5-11, 2027 | Atlanta, GA, USA | A | ✓ | 우수 | 2 |
 
 ### Database (`DB`)
 
-| Conference | Abstract | Paper | Timezone | Notification | Conference dates | Venue | CORE | CSRankings | KIISE |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [VLDB (October round) 2027](https://www.vldb.org/2027/important-dates.html) | 2026-09-25 | ~~2026-10-01~~ | America/Los_Angeles | 2026-11-15 | August 23-27, 2027 | Athens, Greece | A* | ✓ | 최우수 |
-| [EDBT (Cycle 3) 2027](https://edbticdt2027.github.io/contents/important_dates.html) | — | ~~2026-10-07~~ | America/Los_Angeles | 2026-12-05 | April 6-9, 2027 | Lille, France | B | — | 우수 |
-| [SIGMOD (Round 4) 2027](https://2027.sigmod.org/calls_papers_important_dates.shtml) | 2026-10-10 | ~~2026-10-17~~ | AoE | 2027-01-19 | June 13-19, 2027 | Huntington Beach, CA, USA | A* | ✓ | 최우수 |
-| [VLDB (November round) 2027](https://www.vldb.org/2027/important-dates.html) | 2026-10-25 | 2026-11-01 | America/Los_Angeles | 2026-12-15 | August 23-27, 2027 | Athens, Greece | A* | ✓ | 최우수 |
-| [ICDE (Round 2) 2027](https://icde2027.github.io/important-dates.html) | — | 2026-11-11 | America/Los_Angeles | 2027-02-10 | May 17-21, 2027 | Copenhagen, Denmark | A* | next tier | 최우수 |
-| [DASFAA 2027](https://dasfaa2027.github.io/CallforResearchTrack/list.htm) | — | 2026-11-25 | AoE | 2027-01-25 | May 27-30, 2027 | Shenyang, China | B | — | 우수 |
-| [VLDB (December round) 2027](https://www.vldb.org/2027/important-dates.html) | 2026-11-25 | 2026-12-01 | America/Los_Angeles | 2027-01-15 | August 23-27, 2027 | Athens, Greece | A* | ✓ | 최우수 |
-| [PODS (Cycle 2) 2027](https://2027.sigmod.org/calls_papers_pods_research.shtml) | 2026-12-03 | 2026-12-10 | AoE | 2027-02-08 | June 13-19, 2027 | Huntington Beach, CA, USA | A* | next tier | 최우수 |
-| [VLDB (January round) 2027](https://www.vldb.org/2027/important-dates.html) | 2026-12-25 | 2027-01-01 | America/Los_Angeles | 2027-02-15 | August 23-27, 2027 | Athens, Greece | A* | ✓ | 최우수 |
-| [VLDB (February round) 2027](https://www.vldb.org/2027/important-dates.html) | 2027-01-25 | 2027-02-01 | America/Los_Angeles | 2027-03-15 | August 23-27, 2027 | Athens, Greece | A* | ✓ | 최우수 |
-| [VLDB (March round) 2027](https://www.vldb.org/2027/important-dates.html) | 2027-02-25 | 2027-03-01 | America/Los_Angeles | 2027-04-15 | August 23-27, 2027 | Athens, Greece | A* | ✓ | 최우수 |
+| Conference | Abstract | Paper | Timezone | Notification | Conference dates | Venue | CORE | CSRankings | KIISE | BK21 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [VLDB (October round) 2027](https://www.vldb.org/2027/important-dates.html) | 2026-09-25 | ~~2026-10-01~~ | America/Los_Angeles | 2026-11-15 | August 23-27, 2027 | Athens, Greece | A* | ✓ | 최우수 | 4 |
+| [EDBT (Cycle 3) 2027](https://edbticdt2027.github.io/contents/important_dates.html) | — | ~~2026-10-07~~ | America/Los_Angeles | 2026-12-05 | April 6-9, 2027 | Lille, France | B | — | 우수 | 2 |
+| [SIGMOD (Round 4) 2027](https://2027.sigmod.org/calls_papers_important_dates.shtml) | 2026-10-10 | ~~2026-10-17~~ | AoE | 2027-01-19 | June 13-19, 2027 | Huntington Beach, CA, USA | A* | ✓ | 최우수 | 4 |
+| [VLDB (November round) 2027](https://www.vldb.org/2027/important-dates.html) | 2026-10-25 | 2026-11-01 | America/Los_Angeles | 2026-12-15 | August 23-27, 2027 | Athens, Greece | A* | ✓ | 최우수 | 4 |
+| [ICDE (Round 2) 2027](https://icde2027.github.io/important-dates.html) | — | 2026-11-11 | America/Los_Angeles | 2027-02-10 | May 17-21, 2027 | Copenhagen, Denmark | A* | next tier | 최우수 | 3 |
+| [DASFAA 2027](https://dasfaa2027.github.io/CallforResearchTrack/list.htm) | — | 2026-11-25 | AoE | 2027-01-25 | May 27-30, 2027 | Shenyang, China | B | — | 우수 | 1 |
+| [VLDB (December round) 2027](https://www.vldb.org/2027/important-dates.html) | 2026-11-25 | 2026-12-01 | America/Los_Angeles | 2027-01-15 | August 23-27, 2027 | Athens, Greece | A* | ✓ | 최우수 | 4 |
+| [PODS (Cycle 2) 2027](https://2027.sigmod.org/calls_papers_pods_research.shtml) | 2026-12-03 | 2026-12-10 | AoE | 2027-02-08 | June 13-19, 2027 | Huntington Beach, CA, USA | A* | next tier | 최우수 | 3 |
+| [VLDB (January round) 2027](https://www.vldb.org/2027/important-dates.html) | 2026-12-25 | 2027-01-01 | America/Los_Angeles | 2027-02-15 | August 23-27, 2027 | Athens, Greece | A* | ✓ | 최우수 | 4 |
+| [VLDB (February round) 2027](https://www.vldb.org/2027/important-dates.html) | 2027-01-25 | 2027-02-01 | America/Los_Angeles | 2027-03-15 | August 23-27, 2027 | Athens, Greece | A* | ✓ | 최우수 | 4 |
+| [VLDB (March round) 2027](https://www.vldb.org/2027/important-dates.html) | 2027-02-25 | 2027-03-01 | America/Los_Angeles | 2027-04-15 | August 23-27, 2027 | Athens, Greece | A* | ✓ | 최우수 | 4 |
 <!-- END conference-table -->
 
 ### Not yet listed
@@ -157,7 +157,7 @@ python3 scripts/check_updates.py --dataset ../ccf-deadlines --format markdown
 
 ## Rankings
 
-Each conference carries up to three badges on the site, from
+Each conference carries up to four badges on the site, from
 [`_data/rankings.yml`](_data/rankings.yml):
 
 | Badge | Meaning | Source |
@@ -165,6 +165,7 @@ Each conference carries up to three badges on the site, from
 | **CORE A\* / A / B / C** | ICORE2026 rank. Some venues get a non-letter category instead — *National* (NSDI, HotNets, SYSTOR), *journal* (EMSOFT, CASES and CODES+ISSS, whose papers appear in ACM TECS), or *merged* (SenSys, now combined with IPSN and IoTDI). | [ICORE portal](https://portal.core.edu.au/conf-ranks/) |
 | **CSRankings** | Counted by CSRankings by default. A dashed **next tier** badge means the venue counts only when CSRankings' next-tier box is ticked: HPCA, EuroSys, FAST, ICDE, PODS and USENIX ATC. | [`emeryberger/CSrankings`](https://github.com/emeryberger/CSrankings) — `util/csrankings.py`, `src/config.ts` |
 | **KIISE 최우수 / 우수** | 한국정보과학회 2024 우수학술대회 목록. | [KIISE 2024 목록 (PDF)](https://www.kiise.or.kr/TopConferences/data/SW%EB%B6%84%EC%95%BC%EC%9A%B0%EC%88%98%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C%EB%AA%A9%EB%A1%9D_2024.pdf) |
+| **BK21 IF 1–4** | 인정 IF in the BK21 Computer Science 우수국제학술대회 목록 — the BK21플러스 list (applied from 2018-03-01) that 4단계 BK21 departments still use. IF 4 is shown filled. | [KIISE BK21플러스 목록 (PDF)](http://www.kiise.or.kr/TopConferences/data/BK21%ED%94%8C%EB%9F%AC%EC%8A%A4%EC%82%AC%EC%97%85_CS%EB%B6%84%EC%95%BC_%EC%9A%B0%EC%88%98%EA%B5%AD%EC%A0%9C%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C%EB%AA%A9%EB%A1%9D_2018.pdf) |
 
 A missing badge means the venue is not on that list. A few things worth knowing:
 
@@ -172,11 +173,14 @@ A missing badge means the venue is not on that list. A few things worth knowing:
   portal page dispute. It is still a main CSRankings venue and KIISE 최우수.
 - **SIGOPS ATC** shows USENIX ATC's rankings (CORE A, CSRankings next tier, KIISE 최우수). None of
   the three lists has said yet whether that carries over to the SIGOPS-run conference.
+- **BK21** scores USENIX venues differently from KIISE: OSDI and NSDI are IF 4 but FAST and
+  USENIX ATC are 3, and EuroSys is 2 though KIISE lists it 최우수. Newer venues (MLSys, CIDR,
+  BigData, HotOS, FPGA, ICPE, ...) are not on the 2018 list at all.
 - ICORE2026 moved several systems venues: DAC and MICRO are now A\*, DATE went up to A, while RTSS
   went down to A, EDBT to B and CLUSTER to C. PPoPP has been B since 2023.
 
 These lists change on their own schedules, so they are not part of the weekly CFP check. Re-check
-them when a new ICORE edition (next expected 2028-2029), a new KIISE list, or a CSRankings venue
+them when a new ICORE edition (next expected 2028-2029), a new KIISE or BK21 list, or a CSRankings venue
 change is announced. `scripts/validate.py` fails if a tracked conference has no row in
 `rankings.yml`, so adding a conference means deciding how it is ranked.
 

@@ -29,5 +29,8 @@
   {%- elsif rk.kiise == "우수" -%}
     <span class="rank-badge kiise" title="KIISE 2024 우수학술대회 목록">KIISE 우수</span>
   {%- endif -%}
+  {%- if rk.bk21 -%}
+    <span class="rank-badge bk21{% if rk.bk21 == 4 %} bk21-top{% endif %}" title="BK21 CS 우수국제학술대회 목록 인정 IF (1-4)">BK21 IF {{ rk.bk21 }}</span>
+  {%- endif -%}
 </span>
 {%- endif -%}

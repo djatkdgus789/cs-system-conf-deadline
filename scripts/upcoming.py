@@ -71,12 +71,13 @@ def load_rankings() -> dict:
     return (yaml.safe_load(open(path)) or {}) if os.path.exists(path) else {}
 
 
-def rank_cells(entry: dict, rankings: dict) -> tuple[str, str, str]:
+def rank_cells(entry: dict, rankings: dict) -> tuple[str, str, str, str]:
     row = rankings.get(entry["title"].split(" (")[0]) or {}
     core = row.get("core", "—")
     csr = {"main": "✓", "next": "next tier"}.get(row.get("csrankings"), "—")
     kiise = row.get("kiise", "—")
-    return core, csr, kiise
+    bk21 = str(row.get("bk21", "—"))
+    return core, csr, kiise, bk21
 
 
 def print_markdown(rows, now):
@@ -91,17 +92,17 @@ def print_markdown(rows, now):
         if not group:
             continue
         print(f"### {NAMES[cat]} (`{cat}`)\n")
-        print("| Conference | Abstract | Paper | Timezone | Notification | Conference dates | Venue | CORE | CSRankings | KIISE |")
-        print("| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |")
+        print("| Conference | Abstract | Paper | Timezone | Notification | Conference dates | Venue | CORE | CSRankings | KIISE | BK21 |")
+        print("| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |")
         for days, when, e in sorted(group, key=lambda r: r[1]):
             abstract = str(e.get("abstract_deadline") or "—")[:10]
             paper = str(e["deadline"])[:10]
             if days < 0:
                 paper = f"~~{paper}~~"
             name = f"[{e['title']} {e['year']}]({e['link']})"
-            core, csr, kiise = rank_cells(e, rankings)
+            core, csr, kiise, bk21 = rank_cells(e, rankings)
             notif = str(e.get("notification") or "—")[:10]
-            print(f"| {name} | {abstract} | {paper} | {e['timezone']} | {notif} | {e['date']} | {e['place']} | {core} | {csr} | {kiise} |")
+            print(f"| {name} | {abstract} | {paper} | {e['timezone']} | {notif} | {e['date']} | {e['place']} | {core} | {csr} | {kiise} | {bk21} |")
         print()
 
 
