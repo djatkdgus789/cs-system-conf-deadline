@@ -135,6 +135,11 @@
                     Abstract: {{ conf.abstract_deadline }} ({{ conf.timezone }})
                   </div>
                   {% endif %}
+                  {% if conf.notification %}
+                  <div class="notification-date">
+                    Notification: {{ conf.notification | date: "%a %b %-d, %Y" }}
+                  </div>
+                  {% endif %}
                 </div>
                 <div class="conf-ranks">
                   {% include rank_badges.html title=conf.title %}

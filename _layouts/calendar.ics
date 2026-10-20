@@ -38,6 +38,15 @@ UID:{{ conf.id }}-abstract
 DTSTART;TZID={{ final_tz }}:{{ conf.abstract_deadline | date: "%Y%m%dT%H%M%S" }}
 END:VEVENT
 {% endif %}
+{% if conf.notification %}
+BEGIN:VEVENT
+SUMMARY:{{ conf.title }} {{ conf.year }} notification
+ORGANIZER:{{ site.domain }}
+DTSTAMP:{{ site.time | date: "%Y%m%dT%H%M%SZ" }}
+UID:{{ conf.id }}-notification
+DTSTART;VALUE=DATE:{{ conf.notification | date: "%Y%m%d" }}
+END:VEVENT
+{% endif %}
 {% if conf.deadline != "TBA" %}BEGIN:VEVENT
 SUMMARY:{{ conf.title }} {{ conf.year }} deadline
 ORGANIZER:{{ site.domain }}

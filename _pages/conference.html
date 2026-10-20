@@ -38,6 +38,10 @@ permalink:  /conference/
             <img src="{{site.baseurl}}/static/img/084-calendar.svg" class="badge-link" />
             <span id="conf-date"></span>.
           </div>
+          <div id="conf-notification-div" class="col-12">
+            <img src="{{site.baseurl}}/static/img/084-calendar.svg" class="badge-link" />
+            Author notification: <span id="conf-notification"></span>.
+          </div>
           <div class="col-12">
             <img src="{{site.baseurl}}/static/img/072-location.svg" class="badge-link" />
             <a id="conf-place" target="_blank" nohref></a>.
@@ -177,6 +181,11 @@ permalink:  /conference/
               })();
               // other
               $('#conf-date').text("{{conf.date}}");
+              {% if conf.notification %}
+                $('#conf-notification').text("{{ conf.notification | date: '%A, %B %-d, %Y' }}");
+              {% else %}
+                $('#conf-notification-div').hide();
+              {% endif %}
               $('#conf-place').text("{{conf.place}}");
               $('#conf-place').attr('href', "https://maps.google.com/?q={{conf.place}}")
               $('#conf-website').text("{{conf.link}}");

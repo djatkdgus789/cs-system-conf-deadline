@@ -21,6 +21,7 @@
 #     abstract_deadline: "..."            # optional, omit when the CFP has none
 #     deadline: "YYYY-MM-DD HH:MM:SS"     # full paper deadline
 #     timezone: AoE                       # AoE, UTC, UTC-4, PST or an IANA name
+#     notification: "YYYY-MM-DD"          # optional: author notification date from the CFP
 #     place: City, Country
 #     date: Month D-D, 2027               # conference dates
 #     sub: [ SYS ]                        # categories, see _data/types.yml
@@ -254,6 +255,7 @@
   abstract_deadline: "2026-12-11 23:59:59"
   deadline: "2026-12-18 23:59:59"
   timezone: AoE
+  notification: "2027-03-08"
   place: New York City, NY, USA
   date: May 9-11, 2027
   sub: [ ARCH ]

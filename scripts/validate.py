@@ -156,6 +156,15 @@ def main() -> int:
             if len(deadlines) == 2 and deadlines["abstract_deadline"] > deadlines["deadline"]:
                 errors.append(f"{label}: abstract_deadline is after deadline")
 
+            if entry.get("notification") is not None:
+                raw = str(entry["notification"])
+                try:
+                    notif = datetime.strptime(raw, "%Y-%m-%d")
+                    if "deadline" in deadlines and notif.date() <= deadlines["deadline"].date():
+                        errors.append(f"{label}: notification {raw} is not after the deadline")
+                except ValueError:
+                    errors.append(f"{label}: notification '{raw}' is not 'YYYY-MM-DD'")
+
     errors += check_rankings(seen)
     errors += check_acceptance()
 

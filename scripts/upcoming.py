@@ -91,8 +91,8 @@ def print_markdown(rows, now):
         if not group:
             continue
         print(f"### {NAMES[cat]} (`{cat}`)\n")
-        print("| Conference | Abstract | Paper | Timezone | Conference dates | Venue | CORE | CSRankings | KIISE |")
-        print("| --- | --- | --- | --- | --- | --- | --- | --- | --- |")
+        print("| Conference | Abstract | Paper | Timezone | Notification | Conference dates | Venue | CORE | CSRankings | KIISE |")
+        print("| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |")
         for days, when, e in sorted(group, key=lambda r: r[1]):
             abstract = str(e.get("abstract_deadline") or "—")[:10]
             paper = str(e["deadline"])[:10]
@@ -100,7 +100,8 @@ def print_markdown(rows, now):
                 paper = f"~~{paper}~~"
             name = f"[{e['title']} {e['year']}]({e['link']})"
             core, csr, kiise = rank_cells(e, rankings)
-            print(f"| {name} | {abstract} | {paper} | {e['timezone']} | {e['date']} | {e['place']} | {core} | {csr} | {kiise} |")
+            notif = str(e.get("notification") or "—")[:10]
+            print(f"| {name} | {abstract} | {paper} | {e['timezone']} | {notif} | {e['date']} | {e['place']} | {core} | {csr} | {kiise} |")
         print()
 
 

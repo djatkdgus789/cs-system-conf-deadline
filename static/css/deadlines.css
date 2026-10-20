@@ -328,7 +328,8 @@ footer {
   height: 20px;
 }
 
-.abstract-deadline {
+.abstract-deadline,
+.notification-date {
   font-size: 13px;
   color: #777;
 }
