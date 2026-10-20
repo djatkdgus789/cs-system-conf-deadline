@@ -37,6 +37,7 @@
   abstract_deadline: "2026-09-10 23:59:59"
   deadline: "2026-09-17 23:59:59"
   timezone: AoE
+  notification: "2026-10-24"
   place: Ghent, Belgium
   date: March 30 - April 2, 2027
   sub: [ SYS, NET ]
@@ -50,6 +51,7 @@
   abstract_deadline: "2026-09-10 23:59:59"
   deadline: "2026-09-17 23:59:59"
   timezone: America/New_York
+  notification: "2026-12-08"
   place: Providence, RI, USA
   date: May 11-13, 2027
   sub: [ SYS, NET ]
@@ -63,6 +65,7 @@
   abstract_deadline: "2026-09-17 23:59:59"
   deadline: "2026-09-24 23:59:59"
   timezone: AoE
+  notification: "2027-01-29"
   place: Rabat, Morocco
   date: April 19-23, 2027
   sub: [ SYS ]
@@ -72,9 +75,10 @@
   year: 2027
   id: sigmetrics27fall
   full_name: ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems
-  link: https://www.sigmetrics.org/sigmetrics2027/call_for_papers.html
+  link: https://www.sigmetrics.org/sigmetrics2027/pages/cfp.html
   deadline: "2026-10-09 23:59:59"
   timezone: AoE
+  notification: "2026-12-09"
   place: Atlanta, GA, USA
   date: June 7-11, 2027
   sub: [ SYS ]
@@ -87,10 +91,11 @@
   link: https://2027.rtas.org/
   deadline: "2026-11-05 23:59:59"
   timezone: AoE
+  notification: "2027-01-28"
   place: Boulder, CO, USA
   date: May 17-20, 2027
   sub: [ SYS ]
-  note: Firm deadline - RTAS does not extend it.
+  note: Firm deadline - RTAS does not extend it. The CFP marks the notification date as tentative.
 
 - title: SenSys (2nd deadline)
   year: 2027
@@ -100,10 +105,11 @@
   abstract_deadline: "2026-10-29 23:59:59"
   deadline: "2026-11-05 23:59:59"
   timezone: AoE
+  notification: "2027-01-28"
   place: Boulder, CO, USA
   date: May 17-20, 2027
   sub: [ SYS, NET ]
-  note: Second of two rounds. The first round closed on 2026-06-05.
+  note: Second of two rounds. The first round closed on 2026-06-05. Early notification 2026-12-17; full review results 2027-01-28 (shown).
 
 - title: MMSys (Round 2)
   year: 2027
@@ -113,6 +119,7 @@
   abstract_deadline: "2026-11-12 23:59:59"
   deadline: "2026-11-19 23:59:59"
   timezone: AoE
+  notification: "2026-12-22"
   place: Ghent, Belgium
   date: March 30 - April 2, 2027
   sub: [ SYS, NET ]
@@ -126,9 +133,11 @@
   abstract_deadline: "2026-11-25 23:59:59"
   deadline: "2026-12-02 23:59:59"
   timezone: AoE
+  notification: "2027-03-18"
   place: Berlin, Germany
   date: June 22-25, 2027
   sub: [ SYS ]
+  note: Early rejects 2027-01-26.
 
 - title: Middleware (Winter cycle)
   year: 2027
@@ -138,10 +147,11 @@
   abstract_deadline: "2026-11-27 23:59:59"
   deadline: "2026-12-04 23:59:59"
   timezone: AoE
+  notification: "2027-03-29"
   place: Kyoto, Japan
   date: December 13-17, 2027
   sub: [ SYS ]
-  note: First of two cycles; firm deadline. Major-revision papers may resubmit to the Summer cycle. The 2027 CFP does not state a timezone yet - AoE is the series' convention (the 2026 site says "All times are Anywhere on Earth"), and AoE is the latest reading, so submit earlier to be safe.
+  note: First of two cycles; firm deadline. Major-revision papers may resubmit to the Summer cycle. The 2027 CFP does not state a timezone yet - AoE is the series' convention (the 2026 site says "All times are Anywhere on Earth"), and AoE is the latest reading, so submit earlier to be safe. Early rejects 2027-02-02.
 
 - title: OSDI
   year: 2027
@@ -151,6 +161,7 @@
   abstract_deadline: "2026-12-01 17:59:59"
   deadline: "2026-12-08 17:59:59"
   timezone: America/New_York
+  notification: "2027-03-16"
   place: Baltimore, MD, USA
   date: July 7-9, 2027
   sub: [ SYS ]
@@ -159,10 +170,11 @@
   year: 2027
   id: sigmetrics27winter
   full_name: ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems
-  link: https://www.sigmetrics.org/sigmetrics2027/call_for_papers.html
+  link: https://www.sigmetrics.org/sigmetrics2027/pages/cfp.html
   abstract_deadline: "2027-01-04 23:59:59"
   deadline: "2027-01-11 23:59:59"
   timezone: AoE
+  notification: "2027-03-10"
   place: Atlanta, GA, USA
   date: June 7-11, 2027
   sub: [ SYS ]
@@ -175,10 +187,11 @@
   link: https://sigops.org/s/conferences/hotos/2027/cfp.html
   deadline: "2027-02-01 23:59:59"
   timezone: AoE
+  notification: "2027-04-09"
   place: Burghausen, Germany
   date: May 24-26, 2027
   sub: [ SYS ]
-  note: Hard deadline for research and position papers (and panel proposals). The CFP gives the date, Monday 2027-02-01, but no time or timezone - end of day AoE, the latest reading, is shown here, so submit earlier to be safe. Notifications 2027-04-09.
+  note: Hard deadline for research and position papers (and panel proposals). The CFP gives the date, Monday 2027-02-01, but no time or timezone - end of day AoE, the latest reading, is shown here, so submit earlier to be safe.
 
 - title: Middleware (Summer cycle)
   year: 2027
@@ -188,10 +201,11 @@
   abstract_deadline: "2027-05-28 23:59:59"
   deadline: "2027-06-04 23:59:59"
   timezone: AoE
+  notification: "2027-09-13"
   place: Kyoto, Japan
   date: December 13-17, 2027
   sub: [ SYS ]
-  note: Second of two cycles; firm deadline. Major revisions from this cycle go to Middleware 2028. The 2027 CFP does not state a timezone yet - AoE is the series' convention (the 2026 site says "All times are Anywhere on Earth"), and AoE is the latest reading, so submit earlier to be safe.
+  note: Second of two cycles; firm deadline. Major revisions from this cycle go to Middleware 2028. The 2027 CFP does not state a timezone yet - AoE is the series' convention (the 2026 site says "All times are Anywhere on Earth"), and AoE is the latest reading, so submit earlier to be safe. Early rejects 2027-07-13.
 
 # Architecture --------------------------------------------------------------
 
@@ -203,6 +217,7 @@
   abstract_deadline: "2026-09-13 23:59:59"
   deadline: "2026-09-20 23:59:59"
   timezone: AoE
+  notification: "2026-11-23"
   place: Dresden, Germany
   date: March 22-24, 2027
   sub: [ ARCH ]
@@ -216,6 +231,7 @@
   abstract_deadline: "2026-10-01 23:59:59"
   deadline: "2026-10-08 23:59:59"
   timezone: AoE
+  notification: "2026-12-08"
   place: California, USA
   date: March 2027
   sub: [ ARCH ]
@@ -229,6 +245,7 @@
   abstract_deadline: "2026-11-09 23:59:59"
   deadline: "2026-11-16 23:59:59"
   timezone: AoE
+  notification: "2027-03-26"
   place: Atlanta, GA, USA
   date: June 5-9, 2027
   sub: [ ARCH, SYS ]
@@ -242,6 +259,7 @@
   abstract_deadline: "2026-11-11 17:00:00"
   deadline: "2026-11-18 17:00:00"
   timezone: America/Los_Angeles
+  notification: "2027-03-08"
   place: San Jose, CA, USA
   date: July 11-14, 2027
   sub: [ ARCH ]
@@ -270,6 +288,7 @@
   link: https://mlsys.org/Conferences/2027/Dates
   deadline: "2026-10-30 12:00:00"
   timezone: America/Los_Angeles
+  notification: "2027-02-28"
   place: Bellevue, WA, USA
   date: June 21-25, 2027
   sub: [ MLSYS, SYS ]
@@ -285,10 +304,11 @@
   abstract_deadline: "2026-10-01 23:59:59"
   deadline: "2026-10-08 23:59:59"
   timezone: AoE
+  notification: "2027-02-02"
   place: Seattle, WA, USA
   date: June 1-5, 2027
   sub: [ HPC ]
-  note: Sources disagree by a day (some list 10-02 / 10-09) - the earlier pair is used here. Confirm on the CFP page before you submit.
+  note: Sources disagree by a day (some list 10-02 / 10-09) - the earlier pair is used here. Confirm on the CFP page before you submit. Final decisions shown; early rejects by 2026-11-30 and first-round decisions 2026-12-18.
 
 - title: CCGrid
   year: 2027
@@ -298,6 +318,7 @@
   abstract_deadline: "2026-11-24 23:59:59"
   deadline: "2026-12-01 23:59:59"
   timezone: AoE
+  notification: "2027-02-01"
   place: Dallas-Fort Worth, TX, USA
   date: May 24-27, 2027
   sub: [ HPC ]
@@ -310,10 +331,11 @@
   abstract_deadline: "2026-12-01 23:59:59"
   deadline: "2026-12-07 23:59:59"
   timezone: AoE
+  notification: "2027-03-12"
   place: Atlanta, GA, USA
   date: June 5-11, 2027
   sub: [ HPC, ARCH ]
-  note: Single submission cycle, held as part of ACM FCRC 2027.
+  note: Single submission cycle, held as part of ACM FCRC 2027. Final decisions shown; early rejects 2027-02-11.
 
 # Database ------------------------------------------------------------------
 
@@ -325,10 +347,11 @@
   abstract_deadline: "2026-09-25 17:00:00"
   deadline: "2026-10-01 17:00:00"
   timezone: America/Los_Angeles
+  notification: "2026-11-15"
   place: Athens, Greece
   date: August 23-27, 2027
   sub: [ DB ]
-  note: PVLDB rolls monthly - paper due the 1st at 17:00 PT, mandatory abstract the 25th of the month before. Final round is 2027-03-01.
+  note: PVLDB rolls monthly - paper due the 1st at 17:00 PT, mandatory abstract the 25th of the month before. Final round is 2027-03-01. Notification follows PVLDB's rule for every round - initial reviews on the 15th of the month after submission.
 
 - title: EDBT (Cycle 3)
   year: 2027
@@ -337,10 +360,11 @@
   link: https://edbticdt2027.github.io/contents/important_dates.html
   deadline: "2026-10-07 17:00:00"
   timezone: America/Los_Angeles
+  notification: "2026-12-05"
   place: Lille, France
   date: April 6-9, 2027
   sub: [ DB ]
-  note: Last of three research-track cycles. EDBT deadlines are 5 pm Pacific, not AoE.
+  note: Last of three research-track cycles. EDBT deadlines are 5 pm Pacific, not AoE. First decision (accept/reject/revise) shown; final decision after revision 2027-01-27.
 
 - title: SIGMOD (Round 4)
   year: 2027
@@ -350,10 +374,11 @@
   abstract_deadline: "2026-10-10 23:59:59"
   deadline: "2026-10-17 23:59:59"
   timezone: AoE
+  notification: "2027-01-19"
   place: Huntington Beach, CA, USA
   date: June 13-19, 2027
   sub: [ DB ]
-  note: Last of four quarterly rounds for SIGMOD 2027.
+  note: Last of four quarterly rounds for SIGMOD 2027. First decision (accept/reject/revise) shown; revisions due 2027-02-19, final decision 2027-03-12.
 
 - title: VLDB (November round)
   year: 2027
@@ -363,10 +388,11 @@
   abstract_deadline: "2026-10-25 17:00:00"
   deadline: "2026-11-01 17:00:00"
   timezone: America/Los_Angeles
+  notification: "2026-12-15"
   place: Athens, Greece
   date: August 23-27, 2027
   sub: [ DB ]
-  note: PVLDB rolls monthly - paper due the 1st at 17:00 PT, mandatory abstract the 25th of the month before.
+  note: PVLDB rolls monthly - paper due the 1st at 17:00 PT, mandatory abstract the 25th of the month before. Notification follows PVLDB's rule for every round - initial reviews on the 15th of the month after submission.
 
 - title: ICDE (Round 2)
   year: 2027
@@ -375,6 +401,7 @@
   link: https://icde2027.github.io/important-dates.html
   deadline: "2026-11-11 17:00:00"
   timezone: America/Los_Angeles
+  notification: "2027-02-10"
   place: Copenhagen, Denmark
   date: May 17-21, 2027
   sub: [ DB ]
@@ -387,6 +414,7 @@
   link: https://dasfaa2027.github.io/CallforResearchTrack/list.htm
   deadline: "2026-11-25 23:59:59"
   timezone: AoE
+  notification: "2027-01-25"
   place: Shenyang, China
   date: May 27-30, 2027
   sub: [ DB ]
@@ -400,10 +428,11 @@
   abstract_deadline: "2026-11-25 17:00:00"
   deadline: "2026-12-01 17:00:00"
   timezone: America/Los_Angeles
+  notification: "2027-01-15"
   place: Athens, Greece
   date: August 23-27, 2027
   sub: [ DB ]
-  note: PVLDB rolls monthly - paper due the 1st at 17:00 PT, mandatory abstract the 25th of the month before.
+  note: PVLDB rolls monthly - paper due the 1st at 17:00 PT, mandatory abstract the 25th of the month before. Notification follows PVLDB's rule for every round - initial reviews on the 15th of the month after submission.
 
 - title: PODS (Cycle 2)
   year: 2027
@@ -413,9 +442,11 @@
   abstract_deadline: "2026-12-03 23:59:59"
   deadline: "2026-12-10 23:59:59"
   timezone: AoE
+  notification: "2027-02-08"
   place: Huntington Beach, CA, USA
   date: June 13-19, 2027
   sub: [ DB ]
+  note: Initial notification shown; final notification after revision 2027-03-01.
 
 - title: VLDB (January round)
   year: 2027
@@ -425,10 +456,11 @@
   abstract_deadline: "2026-12-25 17:00:00"
   deadline: "2027-01-01 17:00:00"
   timezone: America/Los_Angeles
+  notification: "2027-02-15"
   place: Athens, Greece
   date: August 23-27, 2027
   sub: [ DB ]
-  note: PVLDB rolls monthly - paper due the 1st at 17:00 PT, mandatory abstract the 25th of the month before.
+  note: PVLDB rolls monthly - paper due the 1st at 17:00 PT, mandatory abstract the 25th of the month before. Notification follows PVLDB's rule for every round - initial reviews on the 15th of the month after submission.
 
 - title: VLDB (February round)
   year: 2027
@@ -438,10 +470,11 @@
   abstract_deadline: "2027-01-25 17:00:00"
   deadline: "2027-02-01 17:00:00"
   timezone: America/Los_Angeles
+  notification: "2027-03-15"
   place: Athens, Greece
   date: August 23-27, 2027
   sub: [ DB ]
-  note: PVLDB rolls monthly - paper due the 1st at 17:00 PT, mandatory abstract the 25th of the month before.
+  note: PVLDB rolls monthly - paper due the 1st at 17:00 PT, mandatory abstract the 25th of the month before. Notification follows PVLDB's rule for every round - initial reviews on the 15th of the month after submission.
 
 - title: VLDB (March round)
   year: 2027
@@ -451,7 +484,8 @@
   abstract_deadline: "2027-02-25 17:00:00"
   deadline: "2027-03-01 17:00:00"
   timezone: America/Los_Angeles
+  notification: "2027-04-15"
   place: Athens, Greece
   date: August 23-27, 2027
   sub: [ DB ]
-  note: Final PVLDB round for VLDB 2027; later submissions roll over to VLDB 2028.
+  note: Final PVLDB round for VLDB 2027; later submissions roll over to VLDB 2028. Notification follows PVLDB's rule for every round - initial reviews on the 15th of the month after submission.
