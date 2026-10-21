@@ -57,6 +57,14 @@
                 </span>
               </div>
               <div class="meta col-12">
+                <label class="expected-toggle">
+                  <input type="checkbox" id="show-expected" checked>
+                  Show expected deadlines
+                </label>
+                <span class="expected-explain">&mdash; conferences whose CFP is not out yet, estimated from
+                  the previous year's deadline and marked <i>(Expected)</i>.</span>
+              </div>
+              <div class="meta col-12">
                 You can optionally export all deadlines to
                 <a href="https://calendar.google.com/calendar/r?cid={{ site.url }}{{ site.baseurl }}/deadlines.ics">Google Calendar</a> or
                 <a href="{{ site.baseurl }}/deadlines.ics">.ics</a>.
@@ -74,19 +82,23 @@
               {% assign all_conferences = all_conferences | push: conf %}
             {% endfor %}
           {% endfor %}
+          <!-- Estimated deadlines for conferences with no CFP yet (scripts/expected.py) -->
+          {% for conf in site.data.expected %}
+            {% assign all_conferences = all_conferences | push: conf %}
+          {% endfor %}
 
           {% for conf in all_conferences %}
 
-          <div id="{{conf.id}}" class="ConfItem {% for sub in conf.sub %} {{sub}}-conf {% endfor %}">
+          <div id="{{conf.id}}" class="ConfItem {% if conf.expected %}expected{% endif %} {% for sub in conf.sub %} {{sub}}-conf {% endfor %}">
             <div class="row">
             <div class="col-12 col-md-8">
             <div class="row conf-row">
                 <div class="col-6">
                   <span class="conf-title">
-                      <a title="{% if conf.full_name %}{{conf.full_name}}{% else %}Deadline{% endif %} Details" href="{{site.baseurl}}/conference?id={{ conf.id }}">{{conf.title}} {{conf.year}}</a>
+                      <a title="{% if conf.expected %}No CFP yet - series website{% elsif conf.full_name %}{{conf.full_name}} Details{% else %}Deadline Details{% endif %}" href="{% if conf.expected %}{{conf.link}}{% else %}{{site.baseurl}}/conference?id={{ conf.id }}{% endif %}">{{conf.title}} {{conf.year}}</a>
                   </span>
                   <span class="conf-title-small">
-                      <a title="{% if conf.full_name %}{{conf.full_name}}{% else %}Deadline{% endif %} Details" href="{{site.baseurl}}/conference?id={{ conf.id }}">{{conf.title}} '{{conf.year | slice: -2, 3}}</a>
+                      <a title="{% if conf.expected %}No CFP yet - series website{% elsif conf.full_name %}{{conf.full_name}} Details{% else %}Deadline Details{% endif %}" href="{% if conf.expected %}{{conf.link}}{% else %}{{site.baseurl}}/conference?id={{ conf.id }}{% endif %}">{{conf.title}} '{{conf.year | slice: -2, 3}}</a>
                   </span>
                   <span class="conf-title-icon">
                     <a title="Conference Website" href="{{conf.link}}" target="_blank"><img src="{{site.baseurl}}/static/img/203-earth.svg" class="badge-link" alt="Link to Conference Website" /></a>
@@ -108,6 +120,16 @@
             </div>
             <div class="row">
               <div class="col-12 col-sm-6">
+                {% if conf.expected %}
+                <div class="meta">
+                  <span class="expected-badge" title="No call for papers yet - this date is an estimate">Expected</span>
+                  No CFP yet. Dates and venue TBA.
+                </div>
+                <div class="note expected-note">
+                  Estimated from the previous edition's deadline, {{ conf.based_on }}, moved forward one year.
+                  Check the <a href="{{ conf.link }}" target="_blank">conference site</a> for the real call.
+                </div>
+                {% else %}
                 <div class="meta">
                   <span class="conf-date">{{conf.date}}.</span>
                   <span class="conf-place">
@@ -123,16 +145,17 @@
                       <b>Note: </b>{{conf.note}}
                   </div>
                 {% endif %}
+                {% endif %}
 
               </div>
               <div class="col-12 col-sm-6">
                 <div class="deadline">
-                  <div>Deadline:
+                  <div>{% if conf.expected %}Expected deadline:{% else %}Deadline:{% endif %}
                     <span class="deadline-time"></span>
                   </div>
                   {% if conf.abstract_deadline and conf.abstract_deadline != "TBA" %}
                   <div class="abstract-deadline">
-                    Abstract: {{ conf.abstract_deadline }} ({{ conf.timezone }})
+                    {% if conf.expected %}Expected abstract{% else %}Abstract{% endif %}: {{ conf.abstract_deadline }} ({{ conf.timezone }})
                   </div>
                   {% endif %}
                   {% if conf.notification %}
@@ -204,12 +227,12 @@
 
           // render countdown timer
           $('#{{conf.id}} .timer').countdown(confDate.toDate(), function (event) {
-              $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+              $(this).html(event.strftime('%D days %Hh %Mm %Ss'){% if conf.expected %} + ' <span class="exp-suffix">(Expected)</span>'{% endif %});
           });
 
           // render countdown timer small
           $('#{{conf.id}} .timer-small').countdown(confDate.toDate(), function (event) {
-              $(this).html(event.strftime('%Dd %H:%M:%S'));
+              $(this).html(event.strftime('%Dd %H:%M:%S'){% if conf.expected %} + ' <span class="exp-suffix">(Exp.)</span>'{% endif %});
           });
 
           // convert deadline to local timezone
@@ -247,6 +270,19 @@
           clearTimeout(accResize);
           accResize = setTimeout(drawAllAcceptanceCharts, 150);
         });
+
+        // Expected (estimated) deadlines can be hidden; the choice is remembered.
+        function applyExpectedToggle() {
+          var show = $('#show-expected').prop('checked');
+          $('#confs').toggleClass('hide-expected', !show);
+          try { store.set("{{site.domain}}-show-expected", show); } catch (err) {}
+        }
+        try {
+          var savedExpected = store.get("{{site.domain}}-show-expected");
+          if (savedExpected === false) { $('#show-expected').prop('checked', false); }
+        } catch (err) {}
+        $('#show-expected').on('change', applyExpectedToggle);
+        applyExpectedToggle();
 
         {% include handle_url_retrieval.js %}
 

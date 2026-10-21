@@ -8,12 +8,17 @@ Built on [ai-deadlines](https://github.com/abhshkdz/ai-deadlines) by
 [KAIST CASYS fork](https://github.com/casys-kaist/casys-kaist.github.io). The site machinery is
 the same; the conference list is the part that is specific to this repository.
 
-## Only published CFPs
+## Published CFPs, and clearly marked estimates
 
-**Every deadline here comes from a conference's own call-for-papers or important-dates page.**
-Nothing is extrapolated from a previous edition — if a conference has not released its CFP, it is
-simply absent until it does. So the list is short by design: it answers "where can I actually
-submit right now", not "what might the calendar look like next year".
+**Every deadline in [`_data/conferences/`](_data/conferences/) comes from a conference's own
+call-for-papers or important-dates page.** Nothing there is extrapolated from a previous edition.
+
+Conferences whose next CFP is not out yet appear too, but only as **estimates**: the previous
+edition's deadline moved forward one year. They live in a separate, generated file
+([`_data/expected.yml`](_data/expected.yml)) and are marked on the site — an **EXPECTED** label,
+the countdown reads `20 days 22h 57m 24s (Expected)`, and the entry says which deadline it was
+estimated from. A **Show expected deadlines** checkbox hides them. They are not in the `.ics`
+export or in the tables below. See [Expected deadlines](#expected-deadlines).
 
 Deadlines still move after a CFP is published. The `link` on every entry points at the page the
 date came from — check it before you rely on one.
@@ -155,6 +160,26 @@ python3 scripts/check_updates.py --dataset ../ccf-deadlines --format markdown
 
 > Note: USENIX ATC ended with the 2025 edition; ACM SIGOPS now runs it as **SIGOPS ATC**.
 
+## Expected deadlines
+
+`scripts/expected.py` writes [`_data/expected.yml`](_data/expected.yml). For every conference on
+the watchlist it takes the most recent edition whose deadlines have all passed, moves each round
+forward one year, and keeps the rounds that are still ahead. Past deadlines come from the
+ccf-deadlines dataset, or from a small table in the script for series the dataset does not
+track (CASES, ISLPED, GPGPU, ICPE, MASCOTS, DIMES, NVMSA). Series with nothing on record —
+EuroMLSys, PLOS, CHEOPS, and VEE, last held in 2022 — get no estimate.
+
+Treat them as "roughly when", never as a date to plan a submission around: conferences move their
+deadlines by days or weeks from year to year, and the dataset itself is sometimes a day off. Once a
+real CFP is out, its entry goes in `_data/conferences/`, the conference leaves the watchlist, and
+re-running the script drops the estimate; `scripts/validate.py` fails if an estimate and a real
+entry exist for the same conference and year.
+
+```bash
+python3 scripts/expected.py                 # clones the dataset
+python3 scripts/expected.py --dataset ../ccf-deadlines
+```
+
 ## Rankings
 
 Each conference carries up to four badges on the site, from
@@ -262,6 +287,7 @@ python3 scripts/upcoming.py --days 60 --sub SYS
 python3 scripts/upcoming.py --all           # include deadlines that have already closed
 python3 scripts/upcoming.py --markdown      # the table in "What's covered" above
 python3 scripts/check_updates.py            # what the weekly check would report
+python3 scripts/expected.py                 # regenerate the expected (estimated) deadlines
 ```
 
 ## Local development

@@ -107,6 +107,39 @@ def check_acceptance() -> list[str]:
     return errors
 
 
+def check_expected(seen_ids: dict, known_subs: set) -> list[str]:
+    """_data/expected.yml (generated): well-formed, and never shadowing a real entry."""
+    path = os.path.join(ROOT, "_data", "expected.yml")
+    if not os.path.exists(path):
+        return []
+    errors = []
+    real = set()
+    for conf_path in glob.glob(os.path.join(ROOT, "_data", "conferences", "*.yml")):
+        for entry in yaml.safe_load(open(conf_path)) or []:
+            real.add((entry["title"], entry["year"]))
+    for entry in yaml.safe_load(open(path)) or []:
+        label = f"expected.yml: {entry.get('id')}"
+        if not entry.get("expected"):
+            errors.append(f"{label}: missing 'expected: true'")
+        if entry.get("id") in seen_ids:
+            errors.append(f"{label}: id also used by a real entry")
+        if (entry.get("title"), entry.get("year")) in real:
+            errors.append(f"{label}: {entry['title']} {entry['year']} now has a real entry - "
+                          "drop it from the watchlist and re-run scripts/expected.py")
+        if resolve_tz(entry.get("timezone", "")) is None:
+            errors.append(f"{label}: unknown timezone '{entry.get('timezone')}'")
+        for sub in entry.get("sub") or []:
+            if sub not in known_subs:
+                errors.append(f"{label}: unknown category '{sub}'")
+        try:
+            datetime.strptime(str(entry.get("deadline")), FMT)
+        except ValueError:
+            errors.append(f"{label}: deadline is not '{FMT}'")
+        if not entry.get("based_on"):
+            errors.append(f"{label}: missing 'based_on'")
+    return errors
+
+
 def main() -> int:
     types = yaml.safe_load(open(os.path.join(ROOT, "_data", "types.yml")))
     known_subs = {t["sub"] for t in types}
@@ -169,6 +202,7 @@ def main() -> int:
 
     errors += check_rankings(seen)
     errors += check_acceptance()
+    errors += check_expected(seen, known_subs)
 
     for err in errors:
         print(f"ERROR {err}", file=sys.stderr)

@@ -6,7 +6,9 @@
 #
 # POLICY: only deadlines from a published call for papers go in this file.
 # Do not add a date extrapolated from a previous edition - if the CFP is not
-# out yet, leave the conference out until it is.
+# out yet, leave the conference out until it is. (Estimates for such
+# conferences are generated separately into _data/expected.yml by
+# scripts/expected.py and shown on the site marked "(Expected)".)
 #
 # Every entry below was cross-checked against the conference's own CFP or
 # important-dates page (last full re-check 2026-10-18). The `link` points at that page;
