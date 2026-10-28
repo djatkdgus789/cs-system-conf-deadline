@@ -25,7 +25,7 @@ date came from — check it before you rely on one.
 
 ## What's covered
 
-33 deadlines, all for 2027 editions (last checked 2026-10-18). A struck-through paper deadline has already closed. The site
+36 deadlines, all for 2027 editions (last checked 2026-10-28). A struck-through paper deadline has already closed. The site
 hides closed deadlines, but they stay in the data files and in this table as the record of
 the cycle.
 
@@ -89,21 +89,29 @@ Regenerate this table with `python3 scripts/upcoming.py --markdown`.
 | [VLDB (January round) 2027](https://www.vldb.org/2027/important-dates.html) | 2026-12-25 | 2027-01-01 | America/Los_Angeles | 2027-02-15 | August 23-27, 2027 | Athens, Greece | A* | ✓ | 최우수 | 4 |
 | [VLDB (February round) 2027](https://www.vldb.org/2027/important-dates.html) | 2027-01-25 | 2027-02-01 | America/Los_Angeles | 2027-03-15 | August 23-27, 2027 | Athens, Greece | A* | ✓ | 최우수 | 4 |
 | [VLDB (March round) 2027](https://www.vldb.org/2027/important-dates.html) | 2027-02-25 | 2027-03-01 | America/Los_Angeles | 2027-04-15 | August 23-27, 2027 | Athens, Greece | A* | ✓ | 최우수 | 4 |
+
+### Network (`NET`)
+
+| Conference | Abstract | Paper | Timezone | Notification | Conference dates | Venue | CORE | CSRankings | KIISE | BK21 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [IMC (Cycle 1) 2027](https://conferences.sigcomm.org/imc/2027/cfp/) | 2026-11-10 | 2026-11-17 | AoE | 2027-02-25 | October 25-29, 2027 | Atlanta, GA, USA | A | ✓ | 우수 | 2 |
+| [SIGCOMM 2027](https://conferences.sigcomm.org/sigcomm/2027/submission/) | — | 2027-02-02 | AoE | — | August 8-12, 2027 | Bangkok, Thailand | A* | ✓ | 최우수 | 4 |
+| [IMC (Cycle 2) 2027](https://conferences.sigcomm.org/imc/2027/cfp/) | 2027-03-31 | 2027-04-07 | AoE | — | October 25-29, 2027 | Atlanta, GA, USA | A | ✓ | 우수 | 2 |
 <!-- END conference-table -->
 
 ### Not yet listed
 
-48 conferences are tracked but have no open entry — either their next CFP is not out, or every
+46 conferences are tracked but have no open entry — either their next CFP is not out, or every
 round of their 2027 edition has closed and the next edition has not opened. They live in
 [`_data/watchlist.yml`](_data/watchlist.yml) with the page to confirm against and what is known so
 far. Several have announced a venue and dates while withholding deadlines:
 
-| Conference | Known as of 2026-10-18 |
+| Conference | Known as of 2026-10-28 |
 | --- | --- |
 | ICPE 2027 | Gothenburg, May 24-28, 2027. Site is up and mentions an upcoming deadline; trackers say abstract 11-09 / paper 11-16, but the official important-dates page could not be read from here. **Likely open — confirm on [icpe2027.spec.org](https://icpe2027.spec.org/).** |
 | HPDC 2027 | ACM FCRC, Atlanta, June 5-11, 2027. |
 | SOSP 2027 | Vancouver, Canada, November 30 - December 3, 2027. |
-| SIGCOMM 2027 | Bangkok, August 8-12, 2027. Site up, no deadlines. |
+| Euro-Par 2027 | Groningen, the Netherlands, August 23-27, 2027. Site up, no call yet. |
 | CoNEXT 2027 | Rio de Janeiro, December 6-9, 2027 (to be confirmed). Trackers give a December cycle (paper 12-04) and a June cycle, but the official CFP could not be read from here. |
 | ICDCS 2027 | Melbourne, July 5-8, 2027. Site up, important dates TBD. |
 | ICPP 2027 | Sapporo, Japan, September 13-17, 2027. "Call for Papers coming soon." |
@@ -116,10 +124,10 @@ The rest have nothing announced for their next edition:
   RTSS, HotStorage, DIMES, PLOS, CHEOPS, and the next EuroSys
 - **Architecture**: MICRO, ASPLOS, HPCA, PACT, IISWC, ICCAD, ISLPED, CASES, CODES+ISSS, CF,
   NVMSA, GPGPU, and the next DATE and FPGA
-- **HPC**: SC, PPoPP, CLUSTER, Euro-Par, and the next IPDPS
+- **HPC**: SC, PPoPP, CLUSTER, and the next IPDPS
 - **ML System**: EuroMLSys
 - **Database**: BigData, CIDR (2028), and the next EDBT
-- **Network**: HotNets, IMC
+- **Network**: HotNets
 
 EMSOFT, CASES and CODES+ISSS share one set of deadlines through Embedded Systems Week, so they
 will open together. DIMES and PLOS are SOSP workshops, CHEOPS is a EuroSys workshop, and GPGPU

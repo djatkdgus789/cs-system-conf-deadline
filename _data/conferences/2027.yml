@@ -491,3 +491,44 @@
   date: August 23-27, 2027
   sub: [ DB ]
   note: Final PVLDB round for VLDB 2027; later submissions roll over to VLDB 2028. Notification follows PVLDB's rule for every round - initial reviews on the 15th of the month after submission.
+
+# Network -------------------------------------------------------------------
+
+- title: IMC (Cycle 1)
+  year: 2027
+  id: imc27c1
+  full_name: ACM Internet Measurement Conference
+  link: https://conferences.sigcomm.org/imc/2027/cfp/
+  abstract_deadline: "2026-11-10 23:59:59"
+  deadline: "2026-11-17 23:59:59"
+  timezone: AoE
+  notification: "2027-02-25"
+  place: Atlanta, GA, USA
+  date: October 25-29, 2027
+  sub: [ NET ]
+  note: First of two cycles; registration with abstract is required. Early rejects 2027-01-05, rebuttal Jan 26 - Feb 2. One-shot revisions from IMC 2026 are due 2026-12-02. The 2027 CFP gives dates but no time or timezone; IMC 2023-2026 used 11:59 PM AoE, so end of day AoE is shown - check the CFP before relying on the hour.
+
+- title: SIGCOMM
+  year: 2027
+  id: sigcomm27
+  full_name: ACM SIGCOMM Conference
+  link: https://conferences.sigcomm.org/sigcomm/2027/submission/
+  deadline: "2027-02-02 23:59:59"
+  timezone: AoE
+  place: Bangkok, Thailand
+  date: August 8-12, 2027
+  sub: [ NET ]
+  note: Hard deadline, no extensions. Abstract registration comes earlier but its date is still TBA on the site. The 2027 pages give no time or timezone - end of day AoE, the latest reading, is shown; SIGCOMM 2025 used 23:59 UTC, which would be 12 hours earlier, so submit well before.
+
+- title: IMC (Cycle 2)
+  year: 2027
+  id: imc27c2
+  full_name: ACM Internet Measurement Conference
+  link: https://conferences.sigcomm.org/imc/2027/cfp/
+  abstract_deadline: "2027-03-31 23:59:59"
+  deadline: "2027-04-07 23:59:59"
+  timezone: AoE
+  place: Atlanta, GA, USA
+  date: October 25-29, 2027
+  sub: [ NET ]
+  note: Second of two cycles; registration with abstract is required. Cycle 1 one-shot revisions are due 2027-04-28. The 2027 CFP gives dates but no time or timezone; IMC 2023-2026 used 11:59 PM AoE, so end of day AoE is shown - check the CFP before relying on the hour.

@@ -19,69 +19,63 @@
   cfp: https://sigops.org/s/conferences/sosp/
   sub: [ SYS ]
   status: >
-    As of 2026-10-18: SOSP 2027 is Nov 30-Dec 3, 2027 in Vancouver (sosp.org). No CFP or
-    deadlines published.
+    As of 2026-10-28: Unchanged: no CFP.
 
 - name: SIGOPS ATC
   ccfddl: atc
   cfp: https://sigops.org/s/conferences/atc/
   sub: [ SYS ]
   status: >
-    As of 2026-10-18: No ATC 2027 CFP yet; an atc27.hotcrp.com placeholder exists
-    (closed). ATC 2026 deadline was 2026-06-10.
+    As of 2026-10-28: Unchanged: no CFP; site also served at atc.sigops.org.
 
 - name: FAST
   ccfddl: fast
   cfp: https://www.usenix.org/conferences/calls-for-papers
   sub: [ SYS ]
   status: >
-    As of 2026-10-18: FAST '28 is Feb 28-Mar 1, 2028 at the Grand Hyatt Seattle. No CFP
-    or deadlines yet.
+    As of 2026-10-28: Unchanged: no CFP.
 
 - name: SoCC
   ccfddl: socc
   cfp: https://acmsocc.org/
   sub: [ SYS ]
   status: >
-    As of 2026-10-18: No SoCC 2027 site yet (site source still links 2026). SoCC'26
-    first round was Feb 2026.
+    As of 2026-10-28: Unchanged: no 2027 CFP.
 
 - name: APSys
   ccfddl: apsys
   cfp: https://sigops.org/s/conferences/apsys/
   sub: [ SYS ]
   status: >
-    As of 2026-10-18: No APSys 2027 site yet.
+    As of 2026-10-28: Unchanged: no 2027 CFP.
 
 - name: ICDCS
   ccfddl: icdcs
   cfp: https://icdcs.org/
   sub: [ SYS ]
   status: >
-    As of 2026-10-18: ICDCS 2027 site is up (Melbourne, July 5-8, 2027); important dates
-    still TBD.
+    As of 2026-10-28: Unchanged: dates TBD (table will be AoE).
 
 - name: CLOUD
   ccfddl: cloud
   cfp: https://services.conferences.computer.org/
   sub: [ SYS ]
   status: >
-    As of 2026-10-18: No CLOUD 2027 CFP yet.
+    As of 2026-10-28: Unchanged: no 2027 CFP.
 
 - name: MASCOTS
   ccfddl: null
   cfp: https://mascots.org/
   sub: [ SYS ]
   status: >
-    As of 2026-10-18: No MASCOTS 2027 CFP yet. Editions are hosted at mascotsNN.iitis.pl
-    (watch mascots27.iitis.pl).
+    As of 2026-10-28: Unchanged: no 2027 CFP.
 
 - name: SYSTOR
   ccfddl: systor
   cfp: https://www.systor.org/
   sub: [ SYS ]
   status: >
-    As of 2026-10-18: No SYSTOR 2027 site yet.
+    As of 2026-10-28: Unchanged: no 2027 CFP.
 
 - name: VEE
   ccfddl: vee
@@ -96,53 +90,51 @@
   sub: [ ARCH, SYS ]
   status: >
     MICRO 2026 (59th) is Athens, Oct 31-Nov 4, 2026. No MICRO 2027 (60th) venue, site or
-    CFP found as of 2026-10-18.
+    CFP found as of 2026-10-28.
 
 - name: ASPLOS
   ccfddl: asplos
   cfp: https://www.asplos-conference.org/
   sub: [ ARCH, SYS ]
   status: >
-    As of 2026-10-18: Both ASPLOS 2027 cycles closed. No ASPLOS 2028 CFP yet.
+    Both ASPLOS 2027 cycles closed. No ASPLOS 2028 CFP as of 2026-10-28.
 
 - name: HPCA
   ccfddl: hpca
   cfp: https://hpca-conf.org/
   sub: [ ARCH ]
   status: >
-    As of 2026-10-18: HPCA 2027 closed 2026-07-31. No HPCA 2028 CFP or venue yet (only a
-    showsbee TBD placeholder).
+    HPCA 2027 closed 2026-07-31 (notification 2026-11-06). No HPCA 2028 CFP or venue as
+    of 2026-10-28.
 
 - name: PACT
   ccfddl: pact
   cfp: https://pactconf.org/
   sub: [ ARCH ]
   status: >
-    As of 2026-10-18: PACT 2026 runs Oct 19-22, 2026 in Chicago. No PACT 2027 site or
-    CFP yet.
+    PACT 2026 (Chicago, Oct 19-22) done. No PACT 2027 site or CFP as of 2026-10-28.
 
 - name: IISWC
   ccfddl: iiswc
   cfp: https://iiswc.org/
   sub: [ ARCH ]
   status: >
-    As of 2026-10-18: IISWC 2026 (Boulder, Sep 27-29) done. No IISWC 2027 site or CFP
-    yet.
+    IISWC 2026 (Boulder, Sep 27-29) done. No IISWC 2027 site or CFP as of 2026-10-28.
 
 - name: SC
   ccfddl: sc
   cfp: https://supercomputing.org/
   sub: [ HPC ]
   status: >
-    SC27 is Denver, Nov 14-19, 2027 (trade-show listing only). No SC27 technical-papers
-    CFP found as of 2026-10-18.
+    SC27 is Denver, Nov 14-19, 2027 (trade-show listings only). No SC27 technical-papers
+    CFP found as of 2026-10-28.
 
 - name: PPoPP
   ccfddl: ppopp
   cfp: https://ppopp-conference.org/
   sub: [ HPC, ARCH ]
   status: >
-    As of 2026-10-18: PPoPP 2027 closed 2026-08-03. No PPoPP 2028 CFP yet
+    PPoPP 2027 closed 2026-08-03. No PPoPP 2028 CFP as of 2026-10-28
     (ppopp28.sigplan.org not indexed).
 
 - name: HPDC
@@ -150,18 +142,17 @@
   cfp: https://www.hpdc.org/
   sub: [ HPC ]
   status: >
-    HPDC 2027 is at ACM FCRC 2027 in Atlanta, June 5-11. As of 2026-10-18 no HPDC 2027
-    CFP with dates found (search, hpc-announce); ACM upcoming-deadlines calendar shows
-    an unlabelled 'HPDC '27' item in January 2027 - not a CFP. hpdc.sci.utah.edu
-    unreachable from here.
+    HPDC 2027 is at ACM FCRC 2027 in Atlanta (June 5-11, 2027). As of 2026-10-28 no HPDC
+    2027 CFP with dates found (search, hpc-announce, sigarch); trackers' Jan 2027
+    deadline is an extrapolation. hpdc.sci.utah.edu unreachable from here.
 
 - name: ICPP
   ccfddl: icpp
   cfp: https://www.icpp-conf.org/
   sub: [ HPC ]
   status: >
-    As of 2026-10-18: ICPP 2027 (56th) is Sapporo, Japan, Sep 13-17, 2027 per site
-    source icpp2027/icpp2027.github.io (last commit 2026-09-23), which says 'More
+    ICPP 2027 (56th) is Sapporo, Japan, Sep 13-17, 2027 per site source
+    icpp2027/icpp2027.github.io (unchanged since 2026-09-23 as of 2026-10-28): 'More
     details, including Call for Papers, coming soon!'. No deadlines.
 
 - name: CLUSTER
@@ -169,75 +160,55 @@
   cfp: https://clustercomp.org/
   sub: [ HPC ]
   status: >
-    As of 2026-10-18: CLUSTER 2026 (Alexandria, VA) done. No CLUSTER 2027 site, venue or
-    CFP yet.
+    CLUSTER 2026 (Alexandria, VA) done. No CLUSTER 2027 site, venue or CFP as of
+    2026-10-28.
 
 - name: Euro-Par
   ccfddl: europar
   cfp: https://www.euro-par.org/
   sub: [ HPC ]
   status: >
-    Euro-Par 2027 host is the University of Groningen, The Netherlands (Euro-Par history
-    page). No 2027 site or CFP found as of 2026-10-18; Euro-Par 2026 closed 2026-03-13.
+    Euro-Par 2027 site is up (2027.euro-par.org): 33rd edition, Groningen, The
+    Netherlands, Aug 23-27, 2027. No call for papers or deadlines found as of
+    2026-10-28; Euro-Par 2026 closed 2026-03-13.
 
 - name: EuroMLSys
   ccfddl: null
   cfp: https://euromlsys.eu/
   sub: [ MLSYS, SYS ]
   status: >
-    As of 2026-10-18: Site still on 2026. EuroSys 2027 (Rabat, Apr 19-23; workshops Apr
-    19) notifies workshop proposals on 2026-10-30.
-
-- name: SIGCOMM
-  ccfddl: sigcomm
-  cfp: https://conferences.sigcomm.org/sigcomm/2027/
-  sub: [ NET ]
-  status: >
-    SIGCOMM 2027 is 2027-08-08 to 12 at the Queen Sirikit National Convention Center,
-    Bangkok. As of 2026-10-18 the home page has an 'Upcoming Deadlines' block for the
-    main track, but its dates could not be read from here.
+    As of 2026-10-28: Unchanged: wait for EuroSys 2027 workshop decisions (2026-10-30).
 
 - name: CoNEXT
   ccfddl: conext
   cfp: https://conferences.sigcomm.org/co-next/
   sub: [ NET ]
   status: >
-    CoNEXT 2027 is Rio de Janeiro, 2027-12-06 to 09 (to be confirmed); papers go to
-    PACMNET. As of 2026-10-18 trackers give a December cycle (abstract 2026-11-27, paper
-    2026-12-04 AoE) and a June cycle (2027-05-28 / 2027-06-04), said to come from
-    conferences.sigcomm.org/co-next/2027/partials/cfp.html, but the official page could
-    not be read from here - confirm there before adding.
+    As of 2026-10-28: Unchanged: trackers give Dec cycle abstract 2026-11-27 / paper
+    2026-12-04 AoE; official CFP still unreadable from here and not indexed - must be
+    opened directly (deadline in ~5 weeks).
 
 - name: HotNets
   ccfddl: hotnets
   cfp: https://conferences.sigcomm.org/hotnets/
   sub: [ NET ]
   status: >
-    As of 2026-10-18: No HotNets 2027 site yet.
-
-- name: IMC
-  ccfddl: imc
-  cfp: https://conferences.sigcomm.org/imc/
-  sub: [ NET ]
-  status: >
-    As of 2026-10-18: No IMC 2027 CFP yet (Atlanta per SIGCOMM). IMC 2026 Cycle 1 closed
-    2025-11-20, so the 2027 Cycle 1 call may appear any day.
+    As of 2026-10-28: Unchanged: no 2027 CFP.
 
 - name: BigData
   ccfddl: bigdata
   cfp: https://bigdataieee.org/
   sub: [ DB ]
   status: >
-    As of 2026-10-18: BigData 2026 (Phoenix, Dec) closed 2026-08-21. No BigData 2027 CFP
-    yet.
+    BigData 2026 (Phoenix, Dec 14-17) closed 2026-08-21. No BigData 2027 CFP or venue as
+    of 2026-10-28.
 
 - name: NSDI
   ccfddl: nsdi
   cfp: https://www.usenix.org/conference/nsdi28
   sub: [ SYS, NET ]
   status: >
-    As of 2026-10-18: NSDI '28 is May 9-11, 2028 in Santa Clara. No CFP or deadlines yet
-    (NSDI '27 spring round was April 2026, so expect the CFP early 2027).
+    As of 2026-10-28: Unchanged: no CFP.
 
 - name: EuroSys
   ccfddl: eurosys
@@ -249,72 +220,75 @@
   ccfddl: date
   cfp: https://www.date-conference.com/
   sub: [ ARCH ]
-  status: DATE 2027 closed 2026-09-20. No DATE 2028 CFP.
+  status: >
+    DATE 2027 closed 2026-09. No DATE 2028 CFP as of 2026-10-28.
 
 - name: FPGA
   ccfddl: fpga
   cfp: https://www.isfpga.org/
   sub: [ ARCH ]
-  status: FPGA 2027 closed 2026-10-08. No FPGA 2028 CFP.
+  status: >
+    FPGA 2027 closed 2026-10-08. No FPGA 2028 CFP as of 2026-10-28.
 
 - name: IPDPS
   ccfddl: ipdps
   cfp: https://www.ipdps.org/
   sub: [ HPC ]
-  status: IPDPS 2027 closed 2026-10-08. No IPDPS 2028 CFP.
+  status: >
+    IPDPS 2027 closed 2026-10-08. IPDPS 2028 host not yet announced (planned outside the
+    US per Feb 2026 host EOI call); no CFP as of 2026-10-28.
 
 - name: EDBT
   ccfddl: edbt
   cfp: https://edbticdt2027.github.io/
   sub: [ DB ]
   status: >
-    All three EDBT 2027 cycles closed. No EDBT/ICDT 2028 CFP or site found as of
-    2026-10-18 (2027's cycle 1 was 2026-02-04, so 2028's call may appear soon).
+    All three EDBT 2027 cycles closed. No EDBT/ICDT 2028 CFP, host or site found as of
+    2026-10-28 (2027's cycle 1 was 2026-02-04, so the 2028 call may appear soon).
 
 - name: ICPE
   ccfddl: null
   cfp: https://icpe2027.spec.org/
   sub: [ SYS ]
   status: >
-    ICPE 2027 is May 24-28, 2027 in Gothenburg; its site is up and the research track
-    page points to an Important Dates page that could not be read from here. As of
-    2026-10-18 WikiCFP gives research abstract 2026-11-09 / paper 2026-11-16 AoE and
-    other trackers 11-01 - confirm on icpe2027.spec.org before adding.
+    As of 2026-10-28: Leads now consistent (Ada-Belgium copy of the call + WikiCFP):
+    research abstract 2026-11-09 / paper 2026-11-16 AoE; still need the official
+    icpe2027.spec.org/important-dates/ page (deadline in ~2.5 weeks).
 
 - name: EMSOFT
   ccfddl: emsoft
   cfp: https://esweek.org/
   sub: [ SYS ]
   status: >
-    ESWEEK 2027 CFP not out as of 2026-10-18 (venue/dates TBD; only a showsbee
-    placeholder). EMSOFT shares one set of deadlines with the other ESWEEK conferences;
-    ESWEEK 2026 journal track closed 2026-03-30.
+    ESWEEK 2027 CFP not out as of 2026-10-28 (venue/dates TBD). EMSOFT shares one set of
+    deadlines with the other ESWEEK conferences; ESWEEK 2026 journal track closed
+    2026-03-30.
 
 - name: CASES
   ccfddl: null
   cfp: https://esweek.org/
   sub: [ ARCH ]
   status: >
-    ESWEEK 2027 CFP not out as of 2026-10-18 (venue/dates TBD; only a showsbee
-    placeholder). CASES shares one set of deadlines with the other ESWEEK conferences;
-    ESWEEK 2026 journal track closed 2026-03-30.
+    ESWEEK 2027 CFP not out as of 2026-10-28 (venue/dates TBD). CASES shares one set of
+    deadlines with the other ESWEEK conferences; ESWEEK 2026 journal track closed
+    2026-03-30.
 
 - name: CODES+ISSS
   ccfddl: codesisss
   cfp: https://esweek.org/
   sub: [ ARCH ]
   status: >
-    ESWEEK 2027 CFP not out as of 2026-10-18 (venue/dates TBD; only a showsbee
-    placeholder). CODES+ISSS shares one set of deadlines with the other ESWEEK
-    conferences; ESWEEK 2026 journal track closed 2026-03-30.
+    ESWEEK 2027 CFP not out as of 2026-10-28 (venue/dates TBD). CODES+ISSS shares one
+    set of deadlines with the other ESWEEK conferences; ESWEEK 2026 journal track closed
+    2026-03-30.
 
 - name: RTSS
   ccfddl: rtss
   cfp: https://rtss.org/
   sub: [ SYS ]
   status: >
-    As of 2026-10-18: RTSS 2026 (Yokohama, Dec) closed 2026-05-21/26. RTSS 2027
-    deadline/location still TBD (trackers only); no official CFP.
+    RTSS 2026 (Yokohama, Dec 9-11) closed 2026-05-21/26. RTSS 2027 (48th, Dec 2027)
+    venue and deadline still TBD as of 2026-10-28; no official CFP.
 
 - name: ICCAD
   ccfddl: iccad
@@ -322,46 +296,45 @@
   sub: [ ARCH ]
   status: >
     ICCAD 2026 (San Jose, Nov 8-12) closed 2026-04-14. No ICCAD 2027 call as of
-    2026-10-18 (ignore iccad-conf.com, a different conference).
+    2026-10-28 (ignore easychair ICCAD'27 / iccad-conf.com, different conferences).
 
 - name: ISLPED
   ccfddl: null
   cfp: https://www.islped.org/
   sub: [ ARCH ]
   status: >
-    ISLPED 2026 (Chicago, Aug 5-7) closed 2026-03-09. No ISLPED 2027 call or site found
-    as of 2026-10-18.
+    ISLPED 2026 (Evanston/Chicago, Aug 5-7) closed 2026-03-09. No ISLPED 2027 call or
+    site found as of 2026-10-28.
 
 - name: CF
   ccfddl: cf
   cfp: https://www.computingfrontiers.org/
   sub: [ ARCH ]
   status: >
-    No CF 2027 site or call found as of 2026-10-18. The CF'26 call was announced Nov
-    2025 (TCCA post 2025-11-21), so CF'27's may appear any time.
+    No CF 2027 site or call found as of 2026-10-28. CF'26's call came out in Nov 2025,
+    so CF'27's may appear any time.
 
 - name: CIDR
   ccfddl: cidr
   cfp: https://www.cidrdb.org/
   sub: [ DB ]
   status: >
-    As of 2026-10-18: CIDR 2027 (Amsterdam, Jan 24-27, 2027) closed 2026-08-04. No CIDR
-    2028 site or CFP yet.
+    CIDR 2027 (Amsterdam, Jan 24-27, 2027) closed 2026-08-04. No CIDR 2028 site or CFP
+    as of 2026-10-28.
 
 - name: NVMSA
   ccfddl: null
   cfp: https://www.nvmsa.org/
   sub: [ ARCH ]
   status: >
-    As of 2026-10-18: NVMSA 2026 (Qingdao, Aug) has closed. No NVMSA 2027 site or CFP
-    yet.
+    NVMSA 2026 (Qingdao, Aug) has closed. No NVMSA 2027 site or CFP as of 2026-10-28.
 
 - name: HotStorage
   ccfddl: hotstorage
   cfp: https://www.hotstorage.org/
   sub: [ SYS ]
   status: >
-    As of 2026-10-18: No HotStorage 2027 CFP yet.
+    As of 2026-10-28: Unchanged: no 2027 CFP.
 
 - name: DIMES
   ccfddl: null
@@ -382,13 +355,11 @@
   cfp: https://www.sigarch.org/call-contributions/
   sub: [ ARCH, HPC ]
   status: >
-    As of 2026-10-18: No GPGPU 2027 call. ASPLOS 2027 (Heraklion, Apr 11-15) workshop
-    proposals due 2026-11-04, decisions 2026-11-20.
+    As of 2026-10-28: Unchanged.
 
 - name: CHEOPS
   ccfddl: null
   cfp: https://cheops-workshop.github.io/
   sub: [ SYS ]
   status: >
-    As of 2026-10-18: No 2027 page in the site source. EuroSys 2027 workshop decisions
-    due 2026-10-30.
+    As of 2026-10-28: Unchanged: wait for EuroSys 2027 workshop decisions (2026-10-30).
