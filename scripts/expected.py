@@ -36,30 +36,68 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FMT = "%Y-%m-%d %H:%M:%S"
 DATASET_URL = "https://github.com/ccfddl/ccf-deadlines"
 
-# Previous editions of series ccfddl does not track. Each is the last edition's
-# deadline as published, with where it was read.
+# Previous editions' ORIGINAL deadlines, checked against the official call
+# (2026-10-28). These win over the dataset, which often records an extended
+# deadline instead of the original - an estimate built on an extension runs
+# late. Also covers series the dataset does not track. "source" says where the
+# date was read; AoE is assumed where the call gave no timezone (noted).
 MANUAL = {
+    # Not in the dataset.
     "CASES": {"year": 2026, "timezone": "AoE",
               "rounds": [{"deadline": "2026-03-30 23:59:59"}],
               "source": "ESWEEK 2026 journal-track deadline (shared by EMSOFT, CASES and CODES+ISSS)"},
-    "ISLPED": {"year": 2026, "timezone": "AoE",
-               "rounds": [{"deadline": "2026-03-09 23:59:59"}],
-               "source": "ISLPED 2026 call for papers"},
-    "GPGPU": {"year": 2026, "timezone": "AoE",
-              "rounds": [{"deadline": "2026-01-21 23:59:59"}],
-              "source": "GPGPU 2026 call (with ASPLOS '26)"},
     "ICPE": {"year": 2026, "timezone": "AoE",
              "rounds": [{"abstract_deadline": "2025-11-03 23:59:59", "deadline": "2025-11-10 23:59:59"}],
              "source": "ICPE 2026 research-track important dates (before its extension)"},
-    "MASCOTS": {"year": 2026, "timezone": "AoE",
-                "rounds": [{"deadline": "2026-05-17 23:59:59"}],
-                "source": "MASCOTS 2026 call for papers"},
     "DIMES": {"year": 2026, "timezone": "AoE",
               "rounds": [{"deadline": "2026-05-29 23:59:59"}],
               "source": "DIMES'26 call for papers on hpc-announce (before its extension)"},
+    "EuroMLSys": {"year": 2026, "timezone": "AoE",
+                  "rounds": [{"deadline": "2026-02-15 23:59:59"}],
+                  "source": "EuroMLSys 2026 call, site source euromlsys/euromlsys.github.io (before its extension to 02-24)"},
+    "CHEOPS": {"year": 2026, "timezone": "AoE",
+               "rounds": [{"abstract_deadline": "2026-01-26 23:59:59", "deadline": "2026-02-02 23:59:59"}],
+               "source": "CHEOPS 2026 call, site source cheops-workshop/cheops-workshop.github.io (before its extension; no timezone given, AoE assumed)"},
+    "MASCOTS": {"year": 2026, "timezone": "AoE",
+                "rounds": [{"deadline": "2026-05-17 23:59:59"}],
+                "source": "MASCOTS 2026 deadline as listed by an aggregator (official page not reachable)"},
     "NVMSA": {"year": 2026, "timezone": "AoE",
               "rounds": [{"deadline": "2026-04-20 23:59:59"}],
-              "source": "NVMSA 2026 listing"},
+              "source": "NVMSA 2026 deadline as listed by an aggregator (official page not reachable; no timezone)"},
+    # In the dataset, but recorded there as an extended deadline (or wrong zone).
+    "ICDCS": {"year": 2026, "timezone": "AoE",
+              "rounds": [{"abstract_deadline": "2025-12-05 23:59:59", "deadline": "2025-12-12 23:59:59"}],
+              "source": "ICDCS 2026 call as originally posted (extended on 2025-11-23 to 01-21; no timezone seen, AoE assumed)"},
+    "GPGPU": {"year": 2026, "timezone": "AoE",
+              "rounds": [{"deadline": "2026-01-14 23:59:59"}],
+              "source": "GPGPU 2026 call (with ASPLOS '26), before its extension"},
+    "CF": {"year": 2026, "timezone": "AoE",
+           "rounds": [{"abstract_deadline": "2026-01-12 23:59:59", "deadline": "2026-01-19 23:59:59"}],
+           "source": "Computing Frontiers 2026 call on hpc-announce, before two extensions"},
+    "ISLPED": {"year": 2026, "timezone": "America/Los_Angeles",
+               "rounds": [{"abstract_deadline": "2026-03-02 23:59:00", "deadline": "2026-03-09 23:59:00"}],
+               "source": "ISLPED 2026 call for papers (11:59 pm Pacific)"},
+    "Euro-Par": {"year": 2026, "timezone": "AoE",
+                 "rounds": [{"abstract_deadline": "2026-02-27 23:59:59", "deadline": "2026-03-06 23:59:59"}],
+                 "source": "Euro-Par 2026 call for papers, before its extension"},
+    "CLOUD": {"year": 2026, "timezone": "AoE",
+              "rounds": [{"deadline": "2026-03-08 23:59:59"}],
+              "source": "IEEE CLOUD 2026 call, before its extension (no timezone given, AoE assumed)"},
+    "PACT": {"year": 2026, "timezone": "AoE",
+             "rounds": [{"abstract_deadline": "2026-04-17 23:59:59", "deadline": "2026-04-24 23:59:59"}],
+             "source": "PACT 2026 call for papers, before its extension"},
+    "CLUSTER": {"year": 2026, "timezone": "AoE",
+                "rounds": [{"abstract_deadline": "2026-04-23 23:59:59", "deadline": "2026-04-30 23:59:59"}],
+                "source": "IEEE CLUSTER 2026 site source, original (struck-through) dates"},
+    "SYSTOR": {"year": 2026, "timezone": "AoE",
+               "rounds": [{"deadline": "2026-05-21 23:59:59"}],
+               "source": "SYSTOR 2026 call on hpc-announce, before its extension"},
+    "RTSS": {"year": 2026, "timezone": "AoE",
+             "rounds": [{"abstract_deadline": "2026-05-21 23:59:59", "deadline": "2026-05-26 23:59:59"}],
+             "source": "RTSS 2026 call for papers (abstract and paper split on 2026-04-10)"},
+    "HotStorage": {"year": 2026, "timezone": "AoE",
+                   "rounds": [{"deadline": "2026-06-05 23:59:59"}],
+                   "source": "HotStorage 2026 call for papers, before its extension"},
 }
 
 HEADER = """---

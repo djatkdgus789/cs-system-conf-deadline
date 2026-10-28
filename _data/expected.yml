@@ -22,6 +22,19 @@
   - SYS
   based_on: 'ICPE 2026: 2025-11-10 23:59:59 (AoE)'
   based_on_source: ICPE 2026 research-track important dates (before its extension)
+- title: ICDCS
+  year: 2027
+  id: icdcs27x
+  expected: true
+  link: https://icdcs.org/
+  abstract_deadline: '2026-12-05 23:59:59'
+  deadline: '2026-12-12 23:59:59'
+  timezone: AoE
+  sub:
+  - SYS
+  based_on: 'ICDCS 2026: 2025-12-12 23:59:59 (AoE)'
+  based_on_source: ICDCS 2026 call as originally posted (extended on 2025-11-23 to 01-21; no timezone
+    seen, AoE assumed)
 - title: CoNEXT (December cycle)
   year: 2027
   id: conext27r1x
@@ -34,42 +47,43 @@
   - NET
   based_on: 'CoNEXT 2026: 2025-12-12 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://conferences.sigcomm.org/co-next/2026/#!/home)
-- title: ICDCS
-  year: 2027
-  id: icdcs27x
-  expected: true
-  link: https://icdcs.org/
-  abstract_deadline: '2027-01-21 23:59:59'
-  deadline: '2027-01-21 23:59:59'
-  timezone: AoE
-  sub:
-  - SYS
-  based_on: 'ICDCS 2026: 2026-01-21 23:59:59 (AoE)'
-  based_on_source: ccf-deadlines (http://icdcs2026.icdcs.org/)
 - title: GPGPU
   year: 2027
   id: gpgpu27x
   expected: true
   link: https://www.sigarch.org/call-contributions/
-  deadline: '2027-01-21 23:59:59'
+  deadline: '2027-01-14 23:59:59'
   timezone: AoE
   sub:
   - ARCH
   - HPC
-  based_on: 'GPGPU 2026: 2026-01-21 23:59:59 (AoE)'
-  based_on_source: GPGPU 2026 call (with ASPLOS '26)
+  based_on: 'GPGPU 2026: 2026-01-14 23:59:59 (AoE)'
+  based_on_source: GPGPU 2026 call (with ASPLOS '26), before its extension
 - title: CF
   year: 2027
   id: cf27x
   expected: true
   link: https://www.computingfrontiers.org/
-  abstract_deadline: '2027-02-01 23:59:59'
-  deadline: '2027-02-01 23:59:59'
+  abstract_deadline: '2027-01-12 23:59:59'
+  deadline: '2027-01-19 23:59:59'
   timezone: AoE
   sub:
   - ARCH
-  based_on: 'CF 2026: 2026-02-01 23:59:59 (AoE)'
-  based_on_source: ccf-deadlines (https://www.computingfrontiers.org/2026/)
+  based_on: 'CF 2026: 2026-01-19 23:59:59 (AoE)'
+  based_on_source: Computing Frontiers 2026 call on hpc-announce, before two extensions
+- title: CHEOPS
+  year: 2027
+  id: cheops27x
+  expected: true
+  link: https://cheops-workshop.github.io/
+  abstract_deadline: '2027-01-26 23:59:59'
+  deadline: '2027-02-02 23:59:59'
+  timezone: AoE
+  sub:
+  - SYS
+  based_on: 'CHEOPS 2026: 2026-02-02 23:59:59 (AoE)'
+  based_on_source: CHEOPS 2026 call, site source cheops-workshop/cheops-workshop.github.io (before its
+    extension; no timezone given, AoE assumed)
 - title: EDBT (Cycle 1)
   year: 2028
   id: edbt28r1x
@@ -105,29 +119,54 @@
   - SYS
   based_on: 'SoCC 2026: 2026-02-13 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://acmsocc.org/2026/)
-- title: ISLPED
+- title: EuroMLSys
   year: 2027
-  id: islped27x
+  id: euromlsys27x
   expected: true
-  link: https://www.islped.org/
-  deadline: '2027-03-09 23:59:59'
+  link: https://euromlsys.eu/
+  deadline: '2027-02-15 23:59:59'
   timezone: AoE
   sub:
-  - ARCH
-  based_on: 'ISLPED 2026: 2026-03-09 23:59:59 (AoE)'
-  based_on_source: ISLPED 2026 call for papers
+  - MLSYS
+  - SYS
+  based_on: 'EuroMLSys 2026: 2026-02-15 23:59:59 (AoE)'
+  based_on_source: EuroMLSys 2026 call, site source euromlsys/euromlsys.github.io (before its extension
+    to 02-24)
 - title: Euro-Par
   year: 2027
   id: europar27x
   expected: true
   link: https://www.euro-par.org/
-  abstract_deadline: '2027-03-06 23:59:59'
-  deadline: '2027-03-13 23:59:59'
+  abstract_deadline: '2027-02-27 23:59:59'
+  deadline: '2027-03-06 23:59:59'
   timezone: AoE
   sub:
   - HPC
-  based_on: 'Euro-Par 2026: 2026-03-13 23:59:59 (AoE)'
-  based_on_source: ccf-deadlines (https://2026.euro-par.org/)
+  based_on: 'Euro-Par 2026: 2026-03-06 23:59:59 (AoE)'
+  based_on_source: Euro-Par 2026 call for papers, before its extension
+- title: CLOUD
+  year: 2027
+  id: cloud27x
+  expected: true
+  link: https://services.conferences.computer.org/
+  deadline: '2027-03-08 23:59:59'
+  timezone: AoE
+  sub:
+  - SYS
+  based_on: 'CLOUD 2026: 2026-03-08 23:59:59 (AoE)'
+  based_on_source: IEEE CLOUD 2026 call, before its extension (no timezone given, AoE assumed)
+- title: ISLPED
+  year: 2027
+  id: islped27x
+  expected: true
+  link: https://www.islped.org/
+  abstract_deadline: '2027-03-02 23:59:00'
+  deadline: '2027-03-09 23:59:00'
+  timezone: America/Los_Angeles
+  sub:
+  - ARCH
+  based_on: 'ISLPED 2026: 2026-03-09 23:59:00 (America/Los_Angeles)'
+  based_on_source: ISLPED 2026 call for papers (11:59 pm Pacific)
 - title: FAST (Spring)
   year: 2028
   id: fast28r1x
@@ -139,17 +178,6 @@
   - SYS
   based_on: 'FAST 2027: 2026-03-17 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://www.usenix.org/conference/fast27)
-- title: CLOUD
-  year: 2027
-  id: cloud27x
-  expected: true
-  link: https://services.conferences.computer.org/
-  deadline: '2027-03-22 23:00:00'
-  timezone: AoE
-  sub:
-  - SYS
-  based_on: 'CLOUD 2026: 2026-03-22 23:00:00 (AoE)'
-  based_on_source: ccf-deadlines (https://services.conferences.computer.org/2026/cloud/)
 - title: EMSOFT
   year: 2027
   id: emsoft27x
@@ -256,7 +284,7 @@
   sub:
   - ARCH
   based_on: 'NVMSA 2026: 2026-04-20 23:59:59 (AoE)'
-  based_on_source: NVMSA 2026 listing
+  based_on_source: NVMSA 2026 deadline as listed by an aggregator (official page not reachable; no timezone)
 - title: NSDI (Spring)
   year: 2028
   id: nsdi28r1x
@@ -275,13 +303,25 @@
   id: pact27x
   expected: true
   link: https://pactconf.org/
+  abstract_deadline: '2027-04-17 23:59:59'
+  deadline: '2027-04-24 23:59:59'
+  timezone: AoE
+  sub:
+  - ARCH
+  based_on: 'PACT 2026: 2026-04-24 23:59:59 (AoE)'
+  based_on_source: PACT 2026 call for papers, before its extension
+- title: CLUSTER
+  year: 2027
+  id: cluster27x
+  expected: true
+  link: https://clustercomp.org/
   abstract_deadline: '2027-04-23 23:59:59'
   deadline: '2027-04-30 23:59:59'
   timezone: AoE
   sub:
-  - ARCH
-  based_on: 'PACT 2026: 2026-04-30 23:59:59 (AoE)'
-  based_on_source: ccf-deadlines (https://pact2026.github.io/)
+  - HPC
+  based_on: 'CLUSTER 2026: 2026-04-30 23:59:59 (AoE)'
+  based_on_source: IEEE CLUSTER 2026 site source, original (struck-through) dates
 - title: ICPP
   year: 2027
   id: icpp27x
@@ -294,18 +334,6 @@
   - HPC
   based_on: 'ICPP 2026: 2026-05-01 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://icpp2026.github.io/)
-- title: CLUSTER
-  year: 2027
-  id: cluster27x
-  expected: true
-  link: https://clustercomp.org/
-  abstract_deadline: '2027-05-07 23:59:59'
-  deadline: '2027-05-07 23:59:59'
-  timezone: AoE
-  sub:
-  - HPC
-  based_on: 'CLUSTER 2026: 2026-05-07 23:59:59 (AoE)'
-  based_on_source: ccf-deadlines (https://clustercomp.org/2026)
 - title: EuroSys (Spring)
   year: 2028
   id: eurosys28r1x
@@ -328,7 +356,7 @@
   sub:
   - SYS
   based_on: 'MASCOTS 2026: 2026-05-17 23:59:59 (AoE)'
-  based_on_source: MASCOTS 2026 call for papers
+  based_on_source: MASCOTS 2026 deadline as listed by an aggregator (official page not reachable)
 - title: APSys
   year: 2027
   id: apsys27x
@@ -341,6 +369,17 @@
   - SYS
   based_on: 'APSys 2026: 2026-05-20 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://apsys26.github.io/)
+- title: SYSTOR
+  year: 2027
+  id: systor27x
+  expected: true
+  link: https://www.systor.org/
+  deadline: '2027-05-21 23:59:59'
+  timezone: AoE
+  sub:
+  - SYS
+  based_on: 'SYSTOR 2026: 2026-05-21 23:59:59 (AoE)'
+  based_on_source: SYSTOR 2026 call on hpc-announce, before its extension
 - title: IISWC
   year: 2027
   id: iiswc27x
@@ -353,17 +392,6 @@
   - ARCH
   based_on: 'IISWC 2026: 2026-05-21 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://iiswc.org/iiswc2026/)
-- title: SYSTOR
-  year: 2027
-  id: systor27x
-  expected: true
-  link: https://www.systor.org/
-  deadline: '2027-05-25 23:59:59'
-  timezone: AoE
-  sub:
-  - SYS
-  based_on: 'SYSTOR 2026: 2026-05-25 23:59:59 (AoE)'
-  based_on_source: ccf-deadlines (https://www.systor.org/2026/)
 - title: RTSS
   year: 2027
   id: rtss27x
@@ -375,7 +403,7 @@
   sub:
   - SYS
   based_on: 'RTSS 2026: 2026-05-26 23:59:59 (AoE)'
-  based_on_source: ccf-deadlines (http://2026.rtss.org/)
+  based_on_source: RTSS 2026 call for papers (abstract and paper split on 2026-04-10)
 - title: DIMES
   year: 2027
   id: dimes27x
@@ -398,6 +426,17 @@
   sub: *id001
   based_on: 'CoNEXT 2026: 2026-06-05 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://conferences.sigcomm.org/co-next/2026/#!/home)
+- title: HotStorage
+  year: 2027
+  id: hotstorage27x
+  expected: true
+  link: https://www.hotstorage.org/
+  deadline: '2027-06-05 23:59:59'
+  timezone: AoE
+  sub:
+  - SYS
+  based_on: 'HotStorage 2026: 2026-06-05 23:59:59 (AoE)'
+  based_on_source: HotStorage 2026 call for papers, before its extension
 - title: EDBT (Cycle 2)
   year: 2028
   id: edbt28r2x
@@ -419,17 +458,6 @@
   - SYS
   based_on: 'SIGOPS ATC 2026: 2026-06-11 11:59:59 (UTC+0)'
   based_on_source: ccf-deadlines (https://sigops.org/s/conferences/atc/2026/index.html)
-- title: HotStorage
-  year: 2027
-  id: hotstorage27x
-  expected: true
-  link: https://www.hotstorage.org/
-  deadline: '2027-06-12 23:59:59'
-  timezone: AoE
-  sub:
-  - SYS
-  based_on: 'HotStorage 2026: 2026-06-12 23:59:59 (AoE)'
-  based_on_source: ccf-deadlines (https://www.hotstorage.org/2026/)
 - title: SoCC (second round)
   year: 2027
   id: socc27r2x

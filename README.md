@@ -172,10 +172,15 @@ python3 scripts/check_updates.py --dataset ../ccf-deadlines --format markdown
 
 `scripts/expected.py` writes [`_data/expected.yml`](_data/expected.yml). For every conference on
 the watchlist it takes the most recent edition whose deadlines have all passed, moves each round
-forward one year, and keeps the rounds that are still ahead. Past deadlines come from the
-ccf-deadlines dataset, or from a small table in the script for series the dataset does not
-track (CASES, ISLPED, GPGPU, ICPE, MASCOTS, DIMES, NVMSA). Series with nothing on record —
-EuroMLSys, PLOS, CHEOPS, and VEE, last held in 2022 — get no estimate.
+forward one year, and keeps the rounds that are still ahead. The base is always the previous
+edition's **original** deadline, never an extension: the ccf-deadlines dataset often records the
+extended date, which would make an estimate run late, so a table in the script overrides it with
+the original from the official call. On 2026-10-28 every base was checked against the previous
+edition's call; eleven dataset dates turned out to be extensions or the wrong timezone (ICDCS,
+GPGPU, CF, ISLPED, Euro-Par, CLOUD, PACT, CLUSTER, SYSTOR, RTSS, HotStorage) and were replaced.
+The same table covers series the dataset does not track. MASCOTS and NVMSA rest on an
+aggregator's listing because their official pages could not be read; PLOS (no deadline found)
+and VEE (last held in 2022) get no estimate.
 
 Treat them as "roughly when", never as a date to plan a submission around: conferences move their
 deadlines by days or weeks from year to year, and the dataset itself is sometimes a day off. Once a
