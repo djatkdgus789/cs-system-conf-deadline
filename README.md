@@ -25,7 +25,7 @@ date came from — check it before you rely on one.
 
 ## What's covered
 
-36 deadlines, all for 2027 editions (last checked 2026-10-28). A struck-through paper deadline has already closed. The site
+36 deadlines, all for 2027 editions (last checked 2026-10-29). A struck-through paper deadline has already closed. The site
 hides closed deadlines, but they stay in the data files and in this table as the record of
 the cycle.
 
@@ -106,7 +106,7 @@ round of their 2027 edition has closed and the next edition has not opened. They
 [`_data/watchlist.yml`](_data/watchlist.yml) with the page to confirm against and what is known so
 far. Several have announced a venue and dates while withholding deadlines:
 
-| Conference | Known as of 2026-10-28 |
+| Conference | Known as of 2026-10-29 |
 | --- | --- |
 | ICPE 2027 | Gothenburg, May 24-28, 2027. Site is up and mentions an upcoming deadline; trackers say abstract 11-09 / paper 11-16, but the official important-dates page could not be read from here. **Likely open — confirm on [icpe2027.spec.org](https://icpe2027.spec.org/).** |
 | HPDC 2027 | ACM FCRC, Atlanta, June 5-11, 2027. |
