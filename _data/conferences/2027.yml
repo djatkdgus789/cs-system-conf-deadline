@@ -195,6 +195,20 @@
   sub: [ SYS ]
   note: Hard deadline for research and position papers (and panel proposals). The CFP gives the date, Monday 2027-02-01, but no time or timezone - end of day AoE, the latest reading, is shown here, so submit earlier to be safe.
 
+- title: CHEOPS
+  year: 2027
+  id: cheops27
+  full_name: Workshop on Challenges and Opportunities of Efficient and Performant Storage Systems (with EuroSys 2027)
+  link: https://cheops-workshop.github.io/
+  abstract_deadline: "2027-01-29 23:59:59"
+  deadline: "2027-02-05 23:59:59"
+  timezone: AoE
+  notification: "2027-03-05"
+  place: Rabat, Morocco
+  date: April 19, 2027
+  sub: [ SYS ]
+  note: EuroSys 2027 workshop; full papers 6 pages, short papers 4. The call gives dates but no time or timezone - end of day AoE, the latest reading, is shown, so submit earlier to be safe.
+
 - title: Middleware (Summer cycle)
   year: 2027
   id: middleware27s
@@ -280,6 +294,20 @@
   date: May 9-11, 2027
   sub: [ ARCH ]
   note: An abstract is required before a full paper can be submitted. Hosted by NYU; accepted papers must be presented in person.
+
+- title: CF
+  year: 2027
+  id: cf27
+  full_name: ACM International Conference on Computing Frontiers
+  link: https://www.computingfrontiers.org/2027/
+  abstract_deadline: "2027-01-18 23:59:59"
+  deadline: "2027-01-25 23:59:59"
+  timezone: AoE
+  notification: "2027-03-15"
+  place: Trento, Italy
+  date: May 25-27, 2027
+  sub: [ ARCH ]
+  note: In person only. Poster, artifact and workshop deadlines still to be announced.
 
 # ML System -----------------------------------------------------------------
 

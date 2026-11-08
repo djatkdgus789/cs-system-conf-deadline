@@ -59,31 +59,6 @@
   - HPC
   based_on: 'GPGPU 2026: 2026-01-14 23:59:59 (AoE)'
   based_on_source: GPGPU 2026 call (with ASPLOS '26), before its extension
-- title: CF
-  year: 2027
-  id: cf27x
-  expected: true
-  link: https://www.computingfrontiers.org/
-  abstract_deadline: '2027-01-12 23:59:59'
-  deadline: '2027-01-19 23:59:59'
-  timezone: AoE
-  sub:
-  - ARCH
-  based_on: 'CF 2026: 2026-01-19 23:59:59 (AoE)'
-  based_on_source: Computing Frontiers 2026 call on hpc-announce, before two extensions
-- title: CHEOPS
-  year: 2027
-  id: cheops27x
-  expected: true
-  link: https://cheops-workshop.github.io/
-  abstract_deadline: '2027-01-26 23:59:59'
-  deadline: '2027-02-02 23:59:59'
-  timezone: AoE
-  sub:
-  - SYS
-  based_on: 'CHEOPS 2026: 2026-02-02 23:59:59 (AoE)'
-  based_on_source: CHEOPS 2026 call, site source cheops-workshop/cheops-workshop.github.io (before its
-    extension; no timezone given, AoE assumed)
 - title: EDBT (Cycle 1)
   year: 2028
   id: edbt28r1x
