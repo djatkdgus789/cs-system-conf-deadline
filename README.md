@@ -98,7 +98,7 @@ Regenerate this table with `python3 scripts/upcoming.py --markdown`.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [IMC (Cycle 1) 2027](https://conferences.sigcomm.org/imc/2027/cfp/) | 2026-11-10 | 2026-11-17 | AoE | 2027-02-25 | October 25-29, 2027 | Atlanta, GA, USA | A | ✓ | 우수 | 2 |
 | [SIGCOMM 2027](https://conferences.sigcomm.org/sigcomm/2027/submission/) | — | 2027-02-02 | AoE | — | August 8-12, 2027 | Bangkok, Thailand | A* | ✓ | 최우수 | 4 |
-| [IMC (Cycle 2) 2027](https://conferences.sigcomm.org/imc/2027/cfp/) | 2027-03-31 | 2027-04-07 | AoE | — | October 25-29, 2027 | Atlanta, GA, USA | A | ✓ | 우수 | 2 |
+| [IMC (Cycle 2) 2027](https://conferences.sigcomm.org/imc/2027/cfp/) | 2027-03-31 | 2027-04-07 | AoE | 2027-07-22 | October 25-29, 2027 | Atlanta, GA, USA | A | ✓ | 우수 | 2 |
 <!-- END conference-table -->
 
 ### Not yet listed

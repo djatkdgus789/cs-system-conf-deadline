@@ -43,7 +43,7 @@
   place: Ghent, Belgium
   date: March 30 - April 2, 2027
   sub: [ SYS, NET ]
-  note: First of two rounds. Per-track deadlines differ - check the deadlines page.
+  note: First of two rounds. Per-track deadlines differ - check the deadlines page. The deadlines page gives dates but no time or timezone - end of day AoE, the latest reading, is shown, so submit earlier to be safe.
 
 - title: NSDI (Fall)
   year: 2027
@@ -125,7 +125,7 @@
   place: Ghent, Belgium
   date: March 30 - April 2, 2027
   sub: [ SYS, NET ]
-  note: Second of two rounds. Per-track deadlines differ - check the deadlines page.
+  note: Second of two rounds. Per-track deadlines differ - check the deadlines page. The deadlines page gives dates but no time or timezone - end of day AoE, the latest reading, is shown, so submit earlier to be safe.
 
 - title: DSN
   year: 2027
@@ -265,7 +265,7 @@
   place: Atlanta, GA, USA
   date: June 5-9, 2027
   sub: [ ARCH, SYS ]
-  note: Main track, at ACM FCRC 2027. Titles, abstracts and author lists are final at abstract registration; at most 8 submissions per author. Industry track dates still TBA.
+  note: Main track, at ACM FCRC 2027. Titles, abstracts and author lists are final at abstract registration; at most 8 submissions per author. The industry track is separate - abstract 2026-12-06, paper 2026-12-13 (11:59 PM AoE).
 
 - title: DAC
   year: 2027
@@ -556,7 +556,8 @@
   abstract_deadline: "2027-03-31 23:59:59"
   deadline: "2027-04-07 23:59:59"
   timezone: AoE
+  notification: "2027-07-22"
   place: Atlanta, GA, USA
   date: October 25-29, 2027
   sub: [ NET ]
-  note: Second of two cycles; registration with abstract is required. Cycle 1 one-shot revisions are due 2027-04-28. The 2027 CFP gives dates but no time or timezone; IMC 2023-2026 used 11:59 PM AoE, so end of day AoE is shown - check the CFP before relying on the hour.
+  note: Second of two cycles; registration with abstract is required. Early rejects 2027-05-19. Cycle 1 one-shot revisions are due 2027-04-28. The 2027 CFP gives dates but no time or timezone; IMC 2023-2026 used 11:59 PM AoE, so end of day AoE is shown - check the CFP before relying on the hour.
