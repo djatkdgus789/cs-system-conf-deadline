@@ -107,11 +107,15 @@ def main() -> int:
     findings: list[tuple[str, str, str]] = []
 
     def series_of(entry: dict) -> str | None:
-        """The dataset file basename covering this entry, if any."""
-        for key in upstream:
-            if entry["id"].startswith(key):
-                return key
-        return None
+        """The dataset file basename covering this entry, if any.
+
+        An id is the series key followed directly by the two-digit year
+        ("sigcomm27", "imc27c1"), so the key must be followed by a digit:
+        a bare prefix match would read SIGGRAPH's "sig" file as SIGCOMM's.
+        """
+        matches = [key for key in upstream
+                   if entry["id"].startswith(key) and entry["id"][len(key):len(key) + 1].isdigit()]
+        return max(matches, key=len) if matches else None
 
     # NEW: a watched conference now has an upcoming deadline upstream.
     for watched in watchlist:
