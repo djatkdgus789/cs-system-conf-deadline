@@ -160,14 +160,14 @@
   id: middleware27w
   full_name: ACM/IFIP International Middleware Conference
   link: https://middleware-conf.github.io/2027/call-for-papers/
-  abstract_deadline: "2026-11-27 23:59:59"
+  abstract_deadline: "2026-11-27 00:00:00"
   deadline: "2026-12-04 23:59:59"
   timezone: AoE
   notification: "2027-03-29"
   place: Kyoto, Japan
   date: December 13-17, 2027
   sub: [ SYS ]
-  note: First of two cycles; firm deadline. Major-revision papers may resubmit to the Summer cycle. The 2027 CFP does not state a timezone yet - AoE is the series' convention (the 2026 site says "All times are Anywhere on Earth"), and AoE is the latest reading, so submit earlier to be safe. Early rejects 2027-02-02.
+  note: First of two cycles; firm deadline. Major-revision papers may resubmit to the Summer cycle. The submission site (middleware2027r1.hotcrp.com) closes registration at "Friday Nov 27, 2026, 12 AM AoE" - the start of Nov 27, not its end. It does not show the paper deadline's time yet; end of day AoE is shown, but it may also be 12 AM, so submit by Dec 3 to be safe. Early rejects 2027-02-02.
 
 - title: OSDI
   year: 2027
