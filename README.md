@@ -25,7 +25,7 @@ date came from — check it before you rely on one.
 
 ## What's covered
 
-41 deadlines, all for 2027 editions (last checked 2026-11-20). A struck-through paper deadline has already closed. The site
+43 deadlines, all for 2027 editions (last checked 2026-11-20). A struck-through paper deadline has already closed. The site
 hides closed deadlines, but they stay in the data files and in this table as the record of
 the cycle.
 
@@ -99,14 +99,16 @@ Regenerate this table with `python3 scripts/upcoming.py --markdown`.
 
 | Conference | Abstract | Paper | Timezone | Notification | Conference dates | Venue | CORE | CSRankings | KIISE | BK21 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [IMC (Cycle 1) 2027](https://conferences.sigcomm.org/imc/2027/cfp/) | 2026-11-10 | ~~2026-11-17~~ | AoE | 2027-02-25 | October 25-29, 2027 | Atlanta, GA, USA | A | ✓ | 우수 | 2 |
+| [IMC (Cycle 1) 2027](https://conferences.sigcomm.org/imc/2027/submission-instructions/) | 2026-11-10 | ~~2026-11-17~~ | AoE | 2027-02-25 | October 25-29, 2027 | Atlanta, GA, USA | A | ✓ | 우수 | 2 |
+| [CoNEXT (December cycle) 2027](https://conferences.sigcomm.org/co-next/2027/) | 2026-11-27 | 2026-12-04 | AoE | 2027-03-31 | December 6-9, 2027 | Rio de Janeiro, Brazil | A | — | 최우수 | 3 |
 | [SIGCOMM 2027](https://conferences.sigcomm.org/sigcomm/2027/submission/) | — | 2027-02-02 | AoE | — | August 8-12, 2027 | Bangkok, Thailand | A* | ✓ | 최우수 | 4 |
-| [IMC (Cycle 2) 2027](https://conferences.sigcomm.org/imc/2027/cfp/) | 2027-03-31 | 2027-04-07 | AoE | 2027-07-22 | October 25-29, 2027 | Atlanta, GA, USA | A | ✓ | 우수 | 2 |
+| [IMC (Cycle 2) 2027](https://conferences.sigcomm.org/imc/2027/submission-instructions/) | 2027-03-31 | 2027-04-07 | AoE | 2027-07-22 | October 25-29, 2027 | Atlanta, GA, USA | A | ✓ | 우수 | 2 |
+| [CoNEXT (June cycle) 2027](https://conferences.sigcomm.org/co-next/2027/) | 2027-05-28 | 2027-06-04 | AoE | 2027-09-10 | December 6-9, 2027 | Rio de Janeiro, Brazil | A | — | 최우수 | 3 |
 <!-- END conference-table -->
 
 ### Not yet listed
 
-49 conferences are tracked but have no open entry — either their next CFP is not out, or every
+48 conferences are tracked but have no open entry — either their next CFP is not out, or every
 round of their 2027 edition has closed and the next edition has not opened. They live in
 [`_data/watchlist.yml`](_data/watchlist.yml) with the page to confirm against and what is known so
 far. Several have announced a venue and dates while withholding deadlines:
@@ -115,7 +117,6 @@ far. Several have announced a venue and dates while withholding deadlines:
 | --- | --- |
 | SOSP 2027 | Vancouver, Canada, November 30 - December 3, 2027. |
 | Euro-Par 2027 | Groningen, the Netherlands, August 23-27, 2027. Site up, no call yet. |
-| CoNEXT 2027 | Rio de Janeiro, December 6-9, 2027 (to be confirmed). Trackers give a December cycle (paper 12-04) and a June cycle, but the official CFP could not be read from here. |
 | ICDCS 2027 | Melbourne, July 5-8, 2027. Site up, important dates TBD. |
 | ICPP 2027 | Sapporo, Japan, September 13-17, 2027. "Call for Papers coming soon." |
 | NSDI '28 | Hyatt Regency Santa Clara, May 9-11, 2028. |

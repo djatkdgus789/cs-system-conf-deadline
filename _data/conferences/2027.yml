@@ -567,7 +567,7 @@
   year: 2027
   id: imc27c1
   full_name: ACM Internet Measurement Conference
-  link: https://conferences.sigcomm.org/imc/2027/cfp/
+  link: https://conferences.sigcomm.org/imc/2027/submission-instructions/
   abstract_deadline: "2026-11-10 23:59:59"
   deadline: "2026-11-17 23:59:59"
   timezone: AoE
@@ -575,7 +575,21 @@
   place: Atlanta, GA, USA
   date: October 25-29, 2027
   sub: [ NET ]
-  note: First of two cycles; registration with abstract is required. Early rejects 2027-01-05, rebuttal Jan 26 - Feb 2. One-shot revisions from IMC 2026 are due 2026-12-02. The 2027 CFP gives dates but no time or timezone; IMC 2023-2026 used 11:59 PM AoE, so end of day AoE is shown - check the CFP before relying on the hour.
+  note: First of two cycles; registration with abstract is required. Early rejects 2027-01-05, rebuttal Jan 26 - Feb 2. One-shot revisions from IMC 2026 are due 2026-12-02. Hard deadlines, 11:59 PM AoE (UTC-12), per the 2027 submission instructions.
+
+- title: CoNEXT (December cycle)
+  year: 2027
+  id: conext27dec
+  full_name: ACM International Conference on emerging Networking EXperiments and Technologies
+  link: https://conferences.sigcomm.org/co-next/2027/
+  abstract_deadline: "2026-11-27 23:59:59"
+  deadline: "2026-12-04 23:59:59"
+  timezone: AoE
+  notification: "2027-03-31"
+  place: Rio de Janeiro, Brazil
+  date: December 6-9, 2027
+  sub: [ NET ]
+  note: First of two cycles; paper registration by the abstract deadline. Early rejects in February 2027. Accepted papers appear in PACMNET. Conference dates still marked "to be confirmed".
 
 - title: SIGCOMM
   year: 2027
@@ -593,7 +607,7 @@
   year: 2027
   id: imc27c2
   full_name: ACM Internet Measurement Conference
-  link: https://conferences.sigcomm.org/imc/2027/cfp/
+  link: https://conferences.sigcomm.org/imc/2027/submission-instructions/
   abstract_deadline: "2027-03-31 23:59:59"
   deadline: "2027-04-07 23:59:59"
   timezone: AoE
@@ -601,4 +615,18 @@
   place: Atlanta, GA, USA
   date: October 25-29, 2027
   sub: [ NET ]
-  note: Second of two cycles; registration with abstract is required. Early rejects 2027-05-19. Cycle 1 one-shot revisions are due 2027-04-28. The 2027 CFP gives dates but no time or timezone; IMC 2023-2026 used 11:59 PM AoE, so end of day AoE is shown - check the CFP before relying on the hour.
+  note: Second of two cycles; registration with abstract is required. Early rejects 2027-05-19. Cycle 1 one-shot revisions are due 2027-04-28. Hard deadlines, 11:59 PM AoE (UTC-12), per the 2027 submission instructions.
+
+- title: CoNEXT (June cycle)
+  year: 2027
+  id: conext27jun
+  full_name: ACM International Conference on emerging Networking EXperiments and Technologies
+  link: https://conferences.sigcomm.org/co-next/2027/
+  abstract_deadline: "2027-05-28 23:59:59"
+  deadline: "2027-06-04 23:59:59"
+  timezone: AoE
+  notification: "2027-09-10"
+  place: Rio de Janeiro, Brazil
+  date: December 6-9, 2027
+  sub: [ NET ]
+  note: Second of two cycles; paper registration by the abstract deadline. Accepted papers appear in PACMNET. Conference dates still marked "to be confirmed".

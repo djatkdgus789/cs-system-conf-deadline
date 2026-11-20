@@ -23,18 +23,6 @@
   based_on: 'ICDCS 2026: 2025-12-12 23:59:59 (AoE)'
   based_on_source: ICDCS 2026 call as originally posted (extended on 2025-11-23 to 01-21; no timezone
     seen, AoE assumed)
-- title: CoNEXT (December cycle)
-  year: 2027
-  id: conext27r1x
-  expected: true
-  link: https://conferences.sigcomm.org/co-next/
-  abstract_deadline: '2026-12-05 23:59:59'
-  deadline: '2026-12-12 23:59:59'
-  timezone: AoE
-  sub: &id002
-  - NET
-  based_on: 'CoNEXT 2026: 2025-12-12 23:59:59 (AoE)'
-  based_on_source: ccf-deadlines (https://conferences.sigcomm.org/co-next/2026/#!/home)
 - title: GPGPU
   year: 2027
   id: gpgpu27x
@@ -66,7 +54,7 @@
   link: https://edbticdt2027.github.io/
   deadline: '2027-02-04 13:00:00'
   timezone: AoE
-  sub: &id003
+  sub: &id002
   - DB
   based_on: 'EDBT 2027: 2026-02-04 13:00:00 (AoE)'
   based_on_source: ccf-deadlines (https://edbticdt2027.github.io/)
@@ -78,7 +66,7 @@
   abstract_deadline: '2027-02-06 23:59:59'
   deadline: '2027-02-13 23:59:59'
   timezone: AoE
-  sub: &id004
+  sub: &id003
   - SYS
   based_on: 'SoCC 2026: 2026-02-13 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://acmsocc.org/2026/)
@@ -137,7 +125,7 @@
   link: https://www.usenix.org/conferences/calls-for-papers
   deadline: '2027-03-17 23:59:59'
   timezone: AoE
-  sub: &id006
+  sub: &id005
   - SYS
   based_on: 'FAST 2027: 2026-03-17 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://www.usenix.org/conference/fast27)
@@ -232,7 +220,7 @@
   link: https://www.asplos-conference.org/
   deadline: '2027-04-15 23:59:59'
   timezone: AoE
-  sub: &id005
+  sub: &id004
   - ARCH
   - SYS
   based_on: 'ASPLOS 2027: 2026-04-15 23:59:59 (AoE)'
@@ -267,7 +255,7 @@
   abstract_deadline: '2027-04-16 23:59:59'
   deadline: '2027-04-23 23:59:59'
   timezone: UTC-4
-  sub: &id007
+  sub: &id006
   - SYS
   - NET
   based_on: 'NSDI 2027: 2026-04-23 23:59:59 (UTC-4)'
@@ -316,7 +304,7 @@
   abstract_deadline: '2027-05-07 23:59:59'
   deadline: '2027-05-14 23:59:59'
   timezone: AoE
-  sub: &id008
+  sub: &id007
   - SYS
   based_on: 'EuroSys 2027: 2026-05-14 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://2027.eurosys.org/)
@@ -389,17 +377,6 @@
   - SYS
   based_on: 'DIMES 2026: 2026-05-29 23:59:59 (AoE)'
   based_on_source: DIMES'26 call for papers on hpc-announce (before its extension)
-- title: CoNEXT (June cycle)
-  year: 2027
-  id: conext27r2x
-  expected: true
-  link: https://conferences.sigcomm.org/co-next/
-  abstract_deadline: '2027-05-29 23:59:59'
-  deadline: '2027-06-05 23:59:59'
-  timezone: AoE
-  sub: *id002
-  based_on: 'CoNEXT 2026: 2026-06-05 23:59:59 (AoE)'
-  based_on_source: ccf-deadlines (https://conferences.sigcomm.org/co-next/2026/#!/home)
 - title: HotStorage
   year: 2027
   id: hotstorage27x
@@ -419,7 +396,7 @@
   abstract_deadline: '2027-05-29 23:59:59'
   deadline: '2027-06-05 23:59:59'
   timezone: AoE
-  sub: &id009
+  sub: &id008
   - SYS
   - NET
   based_on: 'SenSys 2027: 2026-06-05 23:59:59 (AoE)'
@@ -431,7 +408,7 @@
   link: https://edbticdt2027.github.io/
   deadline: '2027-06-10 12:00:00'
   timezone: AoE
-  sub: *id003
+  sub: *id002
   based_on: 'EDBT 2027: 2026-06-10 12:00:00 (AoE)'
   based_on_source: ccf-deadlines (https://edbticdt2027.github.io/)
 - title: ICDE (Round 1)
@@ -441,7 +418,7 @@
   link: https://icde2027.github.io/
   deadline: '2027-06-11 17:00:00'
   timezone: America/Los_Angeles
-  sub: &id010
+  sub: &id009
   - DB
   based_on: 'ICDE 2027: 2026-06-11 17:00:00 (America/Los_Angeles)'
   based_on_source: ccf-deadlines (https://icde2027.github.io/)
@@ -453,7 +430,7 @@
   abstract_deadline: '2027-07-07 23:59:59'
   deadline: '2027-07-14 23:59:59'
   timezone: AoE
-  sub: *id004
+  sub: *id003
   based_on: 'SoCC 2026: 2026-07-14 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://acmsocc.org/2026/)
 - title: HotNets
@@ -532,7 +509,7 @@
   link: https://www.asplos-conference.org/
   deadline: '2027-09-09 23:59:59'
   timezone: AoE
-  sub: *id005
+  sub: *id004
   based_on: 'ASPLOS 2027: 2026-09-09 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://www.asplos-conference.org/asplos2027/cfp/)
 - title: FAST (Fall)
@@ -542,7 +519,7 @@
   link: https://www.usenix.org/conferences/calls-for-papers
   deadline: '2027-09-15 23:59:59'
   timezone: AoE
-  sub: *id006
+  sub: *id005
   based_on: 'FAST 2027: 2026-09-15 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://www.usenix.org/conference/fast27)
 - title: NSDI (Fall)
@@ -553,7 +530,7 @@
   abstract_deadline: '2027-09-10 23:59:59'
   deadline: '2027-09-17 23:59:59'
   timezone: UTC-4
-  sub: *id007
+  sub: *id006
   based_on: 'NSDI 2027: 2026-09-17 23:59:59 (UTC-4)'
   based_on_source: ccf-deadlines (https://www.usenix.org/conference/nsdi27)
 - title: MMSys (Round 1)
@@ -564,7 +541,7 @@
   abstract_deadline: '2027-09-17 23:59:59'
   deadline: '2027-09-17 23:59:59'
   timezone: AoE
-  sub: &id011
+  sub: &id010
   - SYS
   - NET
   based_on: 'MMSys 2027: 2026-09-17 23:59:59 (AoE)'
@@ -589,7 +566,7 @@
   abstract_deadline: '2027-09-17 23:59:59'
   deadline: '2027-09-24 23:59:59'
   timezone: AoE
-  sub: *id008
+  sub: *id007
   based_on: 'EuroSys 2027: 2026-09-24 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://2027.eurosys.org/)
 - title: EDBT (Cycle 3)
@@ -599,7 +576,7 @@
   link: https://edbticdt2027.github.io/
   deadline: '2027-10-07 12:00:00'
   timezone: AoE
-  sub: *id003
+  sub: *id002
   based_on: 'EDBT 2027: 2026-10-07 12:00:00 (AoE)'
   based_on_source: ccf-deadlines (https://edbticdt2027.github.io/)
 - title: FPGA
@@ -668,7 +645,7 @@
   abstract_deadline: '2027-10-29 23:59:59'
   deadline: '2027-11-05 23:59:59'
   timezone: AoE
-  sub: *id009
+  sub: *id008
   based_on: 'SenSys 2027: 2026-11-05 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://sensys.acm.org/2027/)
 - title: ICDE (Round 2)
@@ -678,7 +655,7 @@
   link: https://icde2027.github.io/
   deadline: '2027-11-11 17:00:00'
   timezone: America/Los_Angeles
-  sub: *id010
+  sub: *id009
   based_on: 'ICDE 2027: 2026-11-11 17:00:00 (America/Los_Angeles)'
   based_on_source: ccf-deadlines (https://icde2027.github.io/)
 - title: ISCA
@@ -714,6 +691,6 @@
   abstract_deadline: '2027-11-19 23:59:59'
   deadline: '2027-11-19 23:59:59'
   timezone: AoE
-  sub: *id011
+  sub: *id010
   based_on: 'MMSys 2027: 2026-11-19 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://2027.acmmmsys.org)
