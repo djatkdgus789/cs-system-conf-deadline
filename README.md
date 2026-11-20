@@ -25,7 +25,7 @@ date came from — check it before you rely on one.
 
 ## What's covered
 
-43 deadlines, all for 2027 editions (last checked 2026-11-20). A struck-through paper deadline has already closed. The site
+44 deadlines, all for 2027 editions (last checked 2026-11-20). A struck-through paper deadline has already closed. The site
 hides closed deadlines, but they stay in the data files and in this table as the record of
 the cycle.
 
@@ -48,6 +48,7 @@ Regenerate this table with `python3 scripts/upcoming.py --markdown`.
 | [Middleware (Winter cycle) 2027](https://middleware-conf.github.io/2027/call-for-papers/) | 2026-11-27 | 2026-12-04 | AoE | 2027-03-29 | December 13-17, 2027 | Kyoto, Japan | A | — | 우수 | 2 |
 | [OSDI 2027](https://www.usenix.org/conference/osdi27/call-for-papers) | 2026-12-01 | 2026-12-08 | America/New_York | 2027-03-16 | July 7-9, 2027 | Baltimore, MD, USA | A* | ✓ | 최우수 | 4 |
 | [SIGMETRICS (Winter round) 2027](https://www.sigmetrics.org/sigmetrics2027/pages/cfp.html) | 2027-01-04 | 2027-01-11 | AoE | 2027-03-10 | June 7-11, 2027 | Atlanta, GA, USA | A* | ✓ | 최우수 | 3 |
+| [ICDCS 2027](https://icdcs2027.icdcs.org/calls/call-for-research-papers/) | 2027-01-06 | 2027-01-13 | AoE | 2027-04-18 | July 5-8, 2027 | Melbourne, Australia | A | — | 우수 | 3 |
 | [SIGOPS ATC 2027](https://atc.sigops.org/2027/) | — | 2027-01-19 | AoE | 2027-04-27 | June 28 - July 1, 2027 | Rennes, France | A | next tier | 최우수 | 3 |
 | [HotOS 2027](https://sigops.org/s/conferences/hotos/2027/cfp.html) | — | 2027-02-01 | AoE | 2027-04-09 | May 24-26, 2027 | Burghausen, Germany | A | — | — | — |
 | [CHEOPS 2027](https://cheops-workshop.github.io/) | 2027-01-29 | 2027-02-05 | AoE | 2027-03-05 | April 19, 2027 | Rabat, Morocco | — | — | — | — |
@@ -108,7 +109,7 @@ Regenerate this table with `python3 scripts/upcoming.py --markdown`.
 
 ### Not yet listed
 
-48 conferences are tracked but have no open entry — either their next CFP is not out, or every
+47 conferences are tracked but have no open entry — either their next CFP is not out, or every
 round of their 2027 edition has closed and the next edition has not opened. They live in
 [`_data/watchlist.yml`](_data/watchlist.yml) with the page to confirm against and what is known so
 far. Several have announced a venue and dates while withholding deadlines:
@@ -117,7 +118,6 @@ far. Several have announced a venue and dates while withholding deadlines:
 | --- | --- |
 | SOSP 2027 | Vancouver, Canada, November 30 - December 3, 2027. |
 | Euro-Par 2027 | Groningen, the Netherlands, August 23-27, 2027. Site up, no call yet. |
-| ICDCS 2027 | Melbourne, July 5-8, 2027. Site up, important dates TBD. |
 | ICPP 2027 | Sapporo, Japan, September 13-17, 2027. "Call for Papers coming soon." |
 | NSDI '28 | Hyatt Regency Santa Clara, May 9-11, 2028. |
 | FAST '28 | Seattle, February 28 - March 1, 2028. |

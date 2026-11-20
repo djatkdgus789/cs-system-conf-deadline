@@ -196,6 +196,20 @@
   sub: [ SYS ]
   note: Last of three rounds; held as part of ACM FCRC 2027.
 
+- title: ICDCS
+  year: 2027
+  id: icdcs27
+  full_name: IEEE International Conference on Distributed Computing Systems
+  link: https://icdcs2027.icdcs.org/calls/call-for-research-papers/
+  abstract_deadline: "2027-01-06 23:59:59"
+  deadline: "2027-01-13 23:59:59"
+  timezone: AoE
+  notification: "2027-04-18"
+  place: Melbourne, Australia
+  date: July 5-8, 2027
+  sub: [ SYS ]
+  note: Research papers. Early rejects 2027-03-11. Call posted 2026-11-18.
+
 - title: SIGOPS ATC
   year: 2027
   id: atc27

@@ -50,19 +50,6 @@
     As of 2026-11-20: No APSys 2027 CFP; no apsys27/apsys2027 github.io repo (2026's
     apsys26.github.io, Bangkok Sep 17-18, 2026, has no 2027 mention).
 
-- name: ICDCS
-  ccfddl: icdcs
-  cfp: https://icdcs.org/
-  sub: [ SYS ]
-  status: >
-    As of 2026-11-20: CALL IS OUT but dates unverified: icdcs2027.icdcs.org news says
-    '18/11/2026: The Call for Research Paper is Online'; the call page
-    (icdcs2027.icdcs.org/calls/call-for-research-papers/) is blocked here (curl 403,
-    WebFetch DNS-blocked, hotcrp blocked) and not in the search index. Leads only (ccf-
-    deadlines PR #3379, 2026-11-19, cites that page): abstract 2027-01-06 / paper
-    2027-01-13 AoE, early reject 2027-03-11, acceptance 2027-04-18. A human should open
-    the call page and add the entry now (Melbourne, July 5-8, 2027).
-
 - name: CLOUD
   ccfddl: cloud
   cfp: https://services.conferences.computer.org/
