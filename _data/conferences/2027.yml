@@ -182,6 +182,19 @@
   sub: [ SYS ]
   note: Last of three rounds; held as part of ACM FCRC 2027.
 
+- title: SIGOPS ATC
+  year: 2027
+  id: atc27
+  full_name: ACM SIGOPS Annual Technical Conference
+  link: https://atc.sigops.org/2027/
+  deadline: "2027-01-19 23:59:59"
+  timezone: AoE
+  notification: "2027-04-27"
+  place: Rennes, France
+  date: June 28 - July 1, 2027
+  sub: [ SYS ]
+  note: No extensions. ATC moves back to a January deadline and a summer conference this year (2026's deadline was in June). Author response from 2027-04-03. The 2027 page shows no separate abstract registration; ATC 2026 took abstracts with the full paper.
+
 - title: HotOS
   year: 2027
   id: hotos27

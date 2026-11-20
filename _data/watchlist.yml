@@ -21,14 +21,6 @@
   status: >
     As of 2026-11-08: Unchanged: no CFP (Vancouver, Nov 30-Dec 3, 2027).
 
-- name: SIGOPS ATC
-  ccfddl: atc
-  cfp: https://sigops.org/s/conferences/atc/
-  sub: [ SYS ]
-  status: >
-    As of 2026-11-08: Unchanged: no CFP (ATC 2026 in Hong Kong, Nov 16-18, 2026, not yet
-    held).
-
 - name: FAST
   ccfddl: fast
   cfp: https://www.usenix.org/conferences/calls-for-papers
@@ -361,3 +353,58 @@
     created 2025-12-02). ASPLOS 2027 (Heraklion, Apr 11-15) workshop decisions due
     2026-11-20.
 
+- name: ISCA
+  ccfddl: isca
+  cfp: https://iscaconf.org/
+  sub: [ ARCH, SYS ]
+  status: >
+    As of 2026-11-20: ISCA 2027 (Atlanta, FCRC) closed 2026-11-16 (industry track 2026-12-13). No ISCA 2028 call yet.
+
+- name: DAC
+  ccfddl: dac
+  cfp: https://www.dac.com/
+  sub: [ ARCH ]
+  status: >
+    As of 2026-11-20: DAC 2027 research manuscripts closed 2026-11-18. No DAC 2028 call yet.
+
+- name: MMSys
+  ccfddl: mmsys
+  cfp: https://acmmmsys.org/
+  sub: [ SYS, NET ]
+  status: >
+    As of 2026-11-20: Both MMSys 2027 rounds closed (2026-09-17, 2026-11-19). No MMSys 2028 call yet.
+
+- name: ICDE
+  ccfddl: icde
+  cfp: https://icde2027.github.io/
+  sub: [ DB ]
+  status: >
+    As of 2026-11-20: Both ICDE 2027 rounds closed (2026-06-11, 2026-11-11). The ICDE 2027 site mentions a Round 1 of ICDE 2028 but gives no date.
+
+- name: SIGMOD
+  ccfddl: sigmod
+  cfp: https://sigmod.org/
+  sub: [ DB ]
+  status: >
+    As of 2026-11-20: All SIGMOD 2027 rounds closed (last 2026-10-17). No SIGMOD 2028 site or call yet; round 1 has recently been in mid-January.
+
+- name: MLSys
+  ccfddl: mlsys
+  cfp: https://mlsys.org/
+  sub: [ MLSYS, SYS ]
+  status: >
+    As of 2026-11-20: MLSys 2027 closed 2026-10-30. No MLSys 2028 call yet.
+
+- name: RTAS
+  ccfddl: rtas
+  cfp: https://2027.rtas.org/
+  sub: [ SYS ]
+  status: >
+    As of 2026-11-20: RTAS 2027 closed 2026-11-05. No RTAS 2028 call yet.
+
+- name: SenSys
+  ccfddl: sensys
+  cfp: https://sensys.acm.org/
+  sub: [ SYS, NET ]
+  status: >
+    As of 2026-11-20: Both SenSys 2027 deadlines closed (2026-06-05, 2026-11-05). No SenSys 2028 call yet.

@@ -25,7 +25,7 @@ date came from — check it before you rely on one.
 
 ## What's covered
 
-38 deadlines, all for 2027 editions (last checked 2026-11-08). A struck-through paper deadline has already closed. The site
+39 deadlines, all for 2027 editions (last checked 2026-11-20). A struck-through paper deadline has already closed. The site
 hides closed deadlines, but they stay in the data files and in this table as the record of
 the cycle.
 
@@ -42,11 +42,12 @@ Regenerate this table with `python3 scripts/upcoming.py --markdown`.
 | [SIGMETRICS (Fall round) 2027](https://www.sigmetrics.org/sigmetrics2027/pages/cfp.html) | — | ~~2026-10-09~~ | AoE | 2026-12-09 | June 7-11, 2027 | Atlanta, GA, USA | A* | ✓ | 최우수 | 3 |
 | [RTAS 2027](https://2027.rtas.org/) | — | ~~2026-11-05~~ | AoE | 2027-01-28 | May 17-20, 2027 | Boulder, CO, USA | A | ✓ | 최우수 | 2 |
 | [SenSys (2nd deadline) 2027](https://sensys.acm.org/2027/) | 2026-10-29 | ~~2026-11-05~~ | AoE | 2027-01-28 | May 17-20, 2027 | Boulder, CO, USA | Merged | ✓ | 우수 | 3 |
-| [MMSys (Round 2) 2027](https://2027.acmmmsys.org/deadlines.html) | 2026-11-12 | 2026-11-19 | AoE | 2026-12-22 | March 30 - April 2, 2027 | Ghent, Belgium | A | — | 우수 | — |
+| [MMSys (Round 2) 2027](https://2027.acmmmsys.org/deadlines.html) | 2026-11-12 | ~~2026-11-19~~ | AoE | 2026-12-22 | March 30 - April 2, 2027 | Ghent, Belgium | A | — | 우수 | — |
 | [DSN 2027](https://dsn2027-berlin.github.io/call-for-contributions/) | 2026-11-25 | 2026-12-02 | AoE | 2027-03-18 | June 22-25, 2027 | Berlin, Germany | A | — | 우수 | 2 |
 | [Middleware (Winter cycle) 2027](https://middleware-conf.github.io/2027/call-for-papers/) | 2026-11-27 | 2026-12-04 | AoE | 2027-03-29 | December 13-17, 2027 | Kyoto, Japan | A | — | 우수 | 2 |
 | [OSDI 2027](https://www.usenix.org/conference/osdi27/call-for-papers) | 2026-12-01 | 2026-12-08 | America/New_York | 2027-03-16 | July 7-9, 2027 | Baltimore, MD, USA | A* | ✓ | 최우수 | 4 |
 | [SIGMETRICS (Winter round) 2027](https://www.sigmetrics.org/sigmetrics2027/pages/cfp.html) | 2027-01-04 | 2027-01-11 | AoE | 2027-03-10 | June 7-11, 2027 | Atlanta, GA, USA | A* | ✓ | 최우수 | 3 |
+| [SIGOPS ATC 2027](https://atc.sigops.org/2027/) | — | 2027-01-19 | AoE | 2027-04-27 | June 28 - July 1, 2027 | Rennes, France | A | next tier | 최우수 | 3 |
 | [HotOS 2027](https://sigops.org/s/conferences/hotos/2027/cfp.html) | — | 2027-02-01 | AoE | 2027-04-09 | May 24-26, 2027 | Burghausen, Germany | A | — | — | — |
 | [CHEOPS 2027](https://cheops-workshop.github.io/) | 2027-01-29 | 2027-02-05 | AoE | 2027-03-05 | April 19, 2027 | Rabat, Morocco | — | — | — | — |
 | [Middleware (Summer cycle) 2027](https://middleware-conf.github.io/2027/call-for-papers/) | 2027-05-28 | 2027-06-04 | AoE | 2027-09-13 | December 13-17, 2027 | Kyoto, Japan | A | — | 우수 | 2 |
@@ -57,8 +58,8 @@ Regenerate this table with `python3 scripts/upcoming.py --markdown`.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [DATE 2027](https://www.date-conference.com/date-2027-call-papers) | 2026-09-13 | ~~2026-09-20~~ | AoE | 2026-11-23 | March 22-24, 2027 | Dresden, Germany | A | — | 우수 | 2 |
 | [FPGA 2027](https://www.isfpga.org/call-for-papers/) | 2026-10-01 | ~~2026-10-08~~ | AoE | 2026-12-08 | March 2027 | California, USA | A | — | 우수 | — |
-| [ISCA 2027](https://iscaconf.org/isca2027/submit/callforpapers.php) | 2026-11-09 | 2026-11-16 | AoE | 2027-03-26 | June 5-9, 2027 | Atlanta, GA, USA | A* | ✓ | 최우수 | 4 |
-| [DAC 2027](https://dac.com/2027/program/research-manuscript-submissions) | 2026-11-11 | 2026-11-18 | America/Los_Angeles | 2027-03-08 | July 11-14, 2027 | San Jose, CA, USA | A* | ✓ | 최우수 | 3 |
+| [ISCA 2027](https://iscaconf.org/isca2027/submit/callforpapers.php) | 2026-11-09 | ~~2026-11-16~~ | AoE | 2027-03-26 | June 5-9, 2027 | Atlanta, GA, USA | A* | ✓ | 최우수 | 4 |
+| [DAC 2027](https://dac.com/2027/program/research-manuscript-submissions) | 2026-11-11 | ~~2026-11-18~~ | America/Los_Angeles | 2027-03-08 | July 11-14, 2027 | San Jose, CA, USA | A* | ✓ | 최우수 | 3 |
 | [ISPASS 2027](https://ispass.org/2027/cfp/) | 2026-12-11 | 2026-12-18 | AoE | 2027-03-08 | May 9-11, 2027 | New York City, NY, USA | B | — | 우수 | 1 |
 | [CF 2027](https://www.computingfrontiers.org/2027/) | 2027-01-18 | 2027-01-25 | AoE | 2027-03-15 | May 25-27, 2027 | Trento, Italy | — | — | — | — |
 
@@ -84,7 +85,7 @@ Regenerate this table with `python3 scripts/upcoming.py --markdown`.
 | [EDBT (Cycle 3) 2027](https://edbticdt2027.github.io/contents/important_dates.html) | — | ~~2026-10-07~~ | America/Los_Angeles | 2026-12-05 | April 6-9, 2027 | Lille, France | B | — | 우수 | 2 |
 | [SIGMOD (Round 4) 2027](https://2027.sigmod.org/calls_papers_important_dates.shtml) | 2026-10-10 | ~~2026-10-17~~ | AoE | 2027-01-19 | June 13-19, 2027 | Huntington Beach, CA, USA | A* | ✓ | 최우수 | 4 |
 | [VLDB (November round) 2027](https://www.vldb.org/2027/important-dates.html) | 2026-10-25 | ~~2026-11-01~~ | America/Los_Angeles | 2026-12-15 | August 23-27, 2027 | Athens, Greece | A* | ✓ | 최우수 | 4 |
-| [ICDE (Round 2) 2027](https://icde2027.github.io/important-dates.html) | — | 2026-11-11 | America/Los_Angeles | 2027-02-10 | May 17-21, 2027 | Copenhagen, Denmark | A* | next tier | 최우수 | 3 |
+| [ICDE (Round 2) 2027](https://icde2027.github.io/important-dates.html) | — | ~~2026-11-11~~ | America/Los_Angeles | 2027-02-10 | May 17-21, 2027 | Copenhagen, Denmark | A* | next tier | 최우수 | 3 |
 | [DASFAA 2027](https://dasfaa2027.github.io/CallforResearchTrack/list.htm) | — | 2026-11-25 | AoE | 2027-01-25 | May 27-30, 2027 | Shenyang, China | B | — | 우수 | 1 |
 | [VLDB (December round) 2027](https://www.vldb.org/2027/important-dates.html) | 2026-11-25 | 2026-12-01 | America/Los_Angeles | 2027-01-15 | August 23-27, 2027 | Athens, Greece | A* | ✓ | 최우수 | 4 |
 | [PODS (Cycle 2) 2027](https://2027.sigmod.org/calls_papers_pods_research.shtml) | 2026-12-03 | 2026-12-10 | AoE | 2027-02-08 | June 13-19, 2027 | Huntington Beach, CA, USA | A* | next tier | 최우수 | 3 |
@@ -96,19 +97,19 @@ Regenerate this table with `python3 scripts/upcoming.py --markdown`.
 
 | Conference | Abstract | Paper | Timezone | Notification | Conference dates | Venue | CORE | CSRankings | KIISE | BK21 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [IMC (Cycle 1) 2027](https://conferences.sigcomm.org/imc/2027/cfp/) | 2026-11-10 | 2026-11-17 | AoE | 2027-02-25 | October 25-29, 2027 | Atlanta, GA, USA | A | ✓ | 우수 | 2 |
+| [IMC (Cycle 1) 2027](https://conferences.sigcomm.org/imc/2027/cfp/) | 2026-11-10 | ~~2026-11-17~~ | AoE | 2027-02-25 | October 25-29, 2027 | Atlanta, GA, USA | A | ✓ | 우수 | 2 |
 | [SIGCOMM 2027](https://conferences.sigcomm.org/sigcomm/2027/submission/) | — | 2027-02-02 | AoE | — | August 8-12, 2027 | Bangkok, Thailand | A* | ✓ | 최우수 | 4 |
 | [IMC (Cycle 2) 2027](https://conferences.sigcomm.org/imc/2027/cfp/) | 2027-03-31 | 2027-04-07 | AoE | 2027-07-22 | October 25-29, 2027 | Atlanta, GA, USA | A | ✓ | 우수 | 2 |
 <!-- END conference-table -->
 
 ### Not yet listed
 
-44 conferences are tracked but have no open entry — either their next CFP is not out, or every
+51 conferences are tracked but have no open entry — either their next CFP is not out, or every
 round of their 2027 edition has closed and the next edition has not opened. They live in
 [`_data/watchlist.yml`](_data/watchlist.yml) with the page to confirm against and what is known so
 far. Several have announced a venue and dates while withholding deadlines:
 
-| Conference | Known as of 2026-11-08 |
+| Conference | Known as of 2026-11-20 |
 | --- | --- |
 | ICPE 2027 | Gothenburg, May 24-28, 2027. Site is up and mentions an upcoming deadline; trackers say abstract 11-09 / paper 11-16, but the official important-dates page could not be read from here. **Likely open — confirm on [icpe2027.spec.org](https://icpe2027.spec.org/).** |
 | HPDC 2027 | ACM FCRC, Atlanta, June 5-11, 2027. |
@@ -122,13 +123,13 @@ far. Several have announced a venue and dates while withholding deadlines:
 
 The rest have nothing announced for their next edition:
 
-- **System**: SIGOPS ATC, SoCC, APSys, CLOUD, MASCOTS, SYSTOR, VEE, EMSOFT,
-  RTSS, HotStorage, DIMES, PLOS, and the next EuroSys
+- **System**: SoCC, APSys, CLOUD, MASCOTS, SYSTOR, VEE, EMSOFT, RTSS, HotStorage, DIMES,
+  PLOS, and the next EuroSys, MMSys, SenSys and RTAS
 - **Architecture**: MICRO, ASPLOS, HPCA, PACT, IISWC, ICCAD, ISLPED, CASES, CODES+ISSS,
-  NVMSA, GPGPU, and the next DATE and FPGA
+  NVMSA, GPGPU, and the next ISCA, DAC, DATE and FPGA
 - **HPC**: SC, PPoPP, CLUSTER, and the next IPDPS
-- **ML System**: EuroMLSys
-- **Database**: BigData, CIDR (2028), and the next EDBT
+- **ML System**: EuroMLSys, and the next MLSys
+- **Database**: BigData, CIDR (2028), and the next SIGMOD, ICDE and EDBT
 - **Network**: HotNets
 
 EMSOFT, CASES and CODES+ISSS share one set of deadlines through Embedded Systems Week, so they

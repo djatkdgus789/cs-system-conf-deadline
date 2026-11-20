@@ -137,23 +137,31 @@ def dataset_editions(dataset_dir: str) -> dict:
     return out
 
 
+# Zone names the dataset uses that are not IANA names or our own aliases.
+DATASET_ZONES = {"PT": "America/Los_Angeles", "ET": "America/New_York", "CT": "America/Chicago"}
+
+
 def last_closed_edition(series: dict, now: datetime) -> dict | None:
-    """The most recent edition whose deadlines are all known and all past."""
+    """The most recent edition whose main deadline has passed.
+
+    Its rounds that have already closed are the base. A round still open in
+    that edition (ISCA 2027's industry track, say) is left out rather than
+    disqualifying the edition. Editions with an unparseable date or zone are
+    skipped.
+    """
     for conf in sorted(series.get("confs") or [], key=lambda c: c["year"], reverse=True):
-        rounds = []
-        for item in conf.get("timeline") or []:
-            dl = parse(item.get("deadline"))
-            if dl is None:
-                rounds = []
-                break
-            tz = resolve_tz(conf.get("timezone", "AoE"))
-            if tz is None or dl.replace(tzinfo=tz) > now:
-                rounds = []
-                break
-            rounds.append(item)
-        if rounds:
-            return {"year": conf["year"], "timezone": conf.get("timezone", "AoE"),
-                    "rounds": rounds, "source": f"ccf-deadlines ({conf.get('link', '')})"}
+        zone = conf.get("timezone", "AoE")
+        zone = DATASET_ZONES.get(zone, zone)
+        tz = resolve_tz(zone)
+        timeline = conf.get("timeline") or []
+        dates = [parse(item.get("deadline")) for item in timeline]
+        if tz is None or not timeline or any(d is None for d in dates):
+            continue
+        if dates[0].replace(tzinfo=tz) > now:
+            continue  # the edition's first deadline is still ahead: not a past edition
+        rounds = [item for item, d in zip(timeline, dates) if d.replace(tzinfo=tz) <= now]
+        return {"year": conf["year"], "timezone": zone,
+                "rounds": rounds, "source": f"ccf-deadlines ({conf.get('link', '')})"}
     return None
 
 
@@ -169,6 +177,10 @@ ROUND_NAMES = {
     "NSDI": ["Spring", "Fall"],
     "EDBT": ["Cycle 1", "Cycle 2", "Cycle 3"],
     "IMC": ["Cycle 1", "Cycle 2"],
+    "SIGMOD": ["Round 1", "Round 2", "Round 3", "Round 4"],
+    "MMSys": ["Round 1", "Round 2"],
+    "SenSys": ["1st deadline", "2nd deadline"],
+    "ICDE": ["Round 1", "Round 2"],
 }
 
 

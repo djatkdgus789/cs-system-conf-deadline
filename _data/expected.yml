@@ -8,20 +8,8 @@
 # moved forward one year, and is shown on the site with "(Expected)" after the
 # countdown. Real CFP dates go in _data/conferences/ instead.
 #
-# Generated 2026-11-08 from ccfddl/ccf-deadlines and the MANUAL table.
+# Generated 2026-11-20 from ccfddl/ccf-deadlines and the MANUAL table.
 
-- title: ICPE
-  year: 2027
-  id: icpe27x
-  expected: true
-  link: https://icpe2027.spec.org/
-  abstract_deadline: '2026-11-03 23:59:59'
-  deadline: '2026-11-10 23:59:59'
-  timezone: AoE
-  sub:
-  - SYS
-  based_on: 'ICPE 2026: 2025-11-10 23:59:59 (AoE)'
-  based_on_source: ICPE 2026 research-track important dates (before its extension)
 - title: ICDCS
   year: 2027
   id: icdcs27x
@@ -43,7 +31,7 @@
   abstract_deadline: '2026-12-05 23:59:59'
   deadline: '2026-12-12 23:59:59'
   timezone: AoE
-  sub: &id001
+  sub: &id002
   - NET
   based_on: 'CoNEXT 2026: 2025-12-12 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://conferences.sigcomm.org/co-next/2026/#!/home)
@@ -59,6 +47,18 @@
   - HPC
   based_on: 'GPGPU 2026: 2026-01-14 23:59:59 (AoE)'
   based_on_source: GPGPU 2026 call (with ASPLOS '26), before its extension
+- title: SIGMOD (Round 1)
+  year: 2028
+  id: sigmod28r1x
+  expected: true
+  link: https://sigmod.org/
+  abstract_deadline: '2027-01-10 23:59:59'
+  deadline: '2027-01-17 23:59:59'
+  timezone: AoE
+  sub: &id001
+  - DB
+  based_on: 'SIGMOD 2027: 2026-01-17 23:59:59 (AoE)'
+  based_on_source: ccf-deadlines (https://2027.sigmod.org/)
 - title: EDBT (Cycle 1)
   year: 2028
   id: edbt28r1x
@@ -66,7 +66,7 @@
   link: https://edbticdt2027.github.io/
   deadline: '2027-02-04 13:00:00'
   timezone: AoE
-  sub: &id002
+  sub: &id003
   - DB
   based_on: 'EDBT 2027: 2026-02-04 13:00:00 (AoE)'
   based_on_source: ccf-deadlines (https://edbticdt2027.github.io/)
@@ -90,7 +90,7 @@
   abstract_deadline: '2027-02-06 23:59:59'
   deadline: '2027-02-13 23:59:59'
   timezone: AoE
-  sub: &id003
+  sub: &id004
   - SYS
   based_on: 'SoCC 2026: 2026-02-13 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://acmsocc.org/2026/)
@@ -149,7 +149,7 @@
   link: https://www.usenix.org/conferences/calls-for-papers
   deadline: '2027-03-17 23:59:59'
   timezone: AoE
-  sub: &id005
+  sub: &id006
   - SYS
   based_on: 'FAST 2027: 2026-03-17 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://www.usenix.org/conference/fast27)
@@ -244,11 +244,22 @@
   link: https://www.asplos-conference.org/
   deadline: '2027-04-15 23:59:59'
   timezone: AoE
-  sub: &id004
+  sub: &id005
   - ARCH
   - SYS
   based_on: 'ASPLOS 2027: 2026-04-15 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://www.asplos-conference.org/asplos2027/cfp/)
+- title: SIGMOD (Round 2)
+  year: 2028
+  id: sigmod28r2x
+  expected: true
+  link: https://sigmod.org/
+  abstract_deadline: '2027-04-10 23:59:59'
+  deadline: '2027-04-17 23:59:59'
+  timezone: AoE
+  sub: *id001
+  based_on: 'SIGMOD 2027: 2026-04-17 23:59:59 (AoE)'
+  based_on_source: ccf-deadlines (https://2027.sigmod.org/)
 - title: NVMSA
   year: 2027
   id: nvmsa27x
@@ -268,7 +279,7 @@
   abstract_deadline: '2027-04-16 23:59:59'
   deadline: '2027-04-23 23:59:59'
   timezone: UTC-4
-  sub: &id006
+  sub: &id007
   - SYS
   - NET
   based_on: 'NSDI 2027: 2026-04-23 23:59:59 (UTC-4)'
@@ -317,7 +328,7 @@
   abstract_deadline: '2027-05-07 23:59:59'
   deadline: '2027-05-14 23:59:59'
   timezone: AoE
-  sub: &id007
+  sub: &id008
   - SYS
   based_on: 'EuroSys 2027: 2026-05-14 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://2027.eurosys.org/)
@@ -398,7 +409,7 @@
   abstract_deadline: '2027-05-29 23:59:59'
   deadline: '2027-06-05 23:59:59'
   timezone: AoE
-  sub: *id001
+  sub: *id002
   based_on: 'CoNEXT 2026: 2026-06-05 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://conferences.sigcomm.org/co-next/2026/#!/home)
 - title: HotStorage
@@ -412,6 +423,19 @@
   - SYS
   based_on: 'HotStorage 2026: 2026-06-05 23:59:59 (AoE)'
   based_on_source: HotStorage 2026 call for papers, before its extension
+- title: SenSys (1st deadline)
+  year: 2028
+  id: sensys28r1x
+  expected: true
+  link: https://sensys.acm.org/
+  abstract_deadline: '2027-05-29 23:59:59'
+  deadline: '2027-06-05 23:59:59'
+  timezone: AoE
+  sub: &id009
+  - SYS
+  - NET
+  based_on: 'SenSys 2027: 2026-06-05 23:59:59 (AoE)'
+  based_on_source: ccf-deadlines (https://sensys.acm.org/2027/)
 - title: EDBT (Cycle 2)
   year: 2028
   id: edbt28r2x
@@ -419,20 +443,20 @@
   link: https://edbticdt2027.github.io/
   deadline: '2027-06-10 12:00:00'
   timezone: AoE
-  sub: *id002
+  sub: *id003
   based_on: 'EDBT 2027: 2026-06-10 12:00:00 (AoE)'
   based_on_source: ccf-deadlines (https://edbticdt2027.github.io/)
-- title: SIGOPS ATC
-  year: 2027
-  id: sigopsatc27x
+- title: ICDE (Round 1)
+  year: 2028
+  id: icde28r1x
   expected: true
-  link: https://sigops.org/s/conferences/atc/
-  deadline: '2027-06-11 11:59:59'
-  timezone: UTC+0
-  sub:
-  - SYS
-  based_on: 'SIGOPS ATC 2026: 2026-06-11 11:59:59 (UTC+0)'
-  based_on_source: ccf-deadlines (https://sigops.org/s/conferences/atc/2026/index.html)
+  link: https://icde2027.github.io/
+  deadline: '2027-06-11 17:00:00'
+  timezone: America/Los_Angeles
+  sub: &id010
+  - DB
+  based_on: 'ICDE 2027: 2026-06-11 17:00:00 (America/Los_Angeles)'
+  based_on_source: ccf-deadlines (https://icde2027.github.io/)
 - title: SoCC (second round)
   year: 2027
   id: socc27r2x
@@ -441,7 +465,7 @@
   abstract_deadline: '2027-07-07 23:59:59'
   deadline: '2027-07-14 23:59:59'
   timezone: AoE
-  sub: *id003
+  sub: *id004
   based_on: 'SoCC 2026: 2026-07-14 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://acmsocc.org/2026/)
 - title: HotNets
@@ -456,6 +480,17 @@
   - NET
   based_on: 'HotNets 2026: 2026-07-16 23:59:59 (UTC-12)'
   based_on_source: ccf-deadlines (https://conferences.sigcomm.org/hotnets/2026/)
+- title: SIGMOD (Round 3)
+  year: 2028
+  id: sigmod28r3x
+  expected: true
+  link: https://sigmod.org/
+  abstract_deadline: '2027-07-10 23:59:59'
+  deadline: '2027-07-17 23:59:59'
+  timezone: AoE
+  sub: *id001
+  based_on: 'SIGMOD 2027: 2026-07-17 23:59:59 (AoE)'
+  based_on_source: ccf-deadlines (https://2027.sigmod.org/)
 - title: HPCA
   year: 2028
   id: hpca28x
@@ -509,7 +544,7 @@
   link: https://www.asplos-conference.org/
   deadline: '2027-09-09 23:59:59'
   timezone: AoE
-  sub: *id004
+  sub: *id005
   based_on: 'ASPLOS 2027: 2026-09-09 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://www.asplos-conference.org/asplos2027/cfp/)
 - title: FAST (Fall)
@@ -519,7 +554,7 @@
   link: https://www.usenix.org/conferences/calls-for-papers
   deadline: '2027-09-15 23:59:59'
   timezone: AoE
-  sub: *id005
+  sub: *id006
   based_on: 'FAST 2027: 2026-09-15 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://www.usenix.org/conference/fast27)
 - title: NSDI (Fall)
@@ -530,21 +565,34 @@
   abstract_deadline: '2027-09-10 23:59:59'
   deadline: '2027-09-17 23:59:59'
   timezone: UTC-4
-  sub: *id006
+  sub: *id007
   based_on: 'NSDI 2027: 2026-09-17 23:59:59 (UTC-4)'
   based_on_source: ccf-deadlines (https://www.usenix.org/conference/nsdi27)
+- title: MMSys (Round 1)
+  year: 2028
+  id: mmsys28r1x
+  expected: true
+  link: https://acmmmsys.org/
+  abstract_deadline: '2027-09-17 23:59:59'
+  deadline: '2027-09-17 23:59:59'
+  timezone: AoE
+  sub: &id011
+  - SYS
+  - NET
+  based_on: 'MMSys 2027: 2026-09-17 23:59:59 (AoE)'
+  based_on_source: ccf-deadlines (https://2027.acmmmsys.org)
 - title: DATE
   year: 2028
   id: date28x
   expected: true
   link: https://www.date-conference.com/
-  abstract_deadline: '2027-09-13 23:59:59'
-  deadline: '2027-09-20 23:59:59'
+  abstract_deadline: '2027-09-13 23:59:00'
+  deadline: '2027-09-20 23:59:00'
   timezone: AoE
   sub:
   - ARCH
-  based_on: 'DATE 2027: 2026-09-20 23:59:59 (AoE)'
-  based_on_source: ccf-deadlines (https://www.date-conference.com/date-2027-call-papers)
+  based_on: 'DATE 2027: 2026-09-20 23:59:00 (AoE)'
+  based_on_source: ccf-deadlines (https://www.date-conference.com/call-for-papers)
 - title: EuroSys (Fall)
   year: 2028
   id: eurosys28r2x
@@ -553,7 +601,7 @@
   abstract_deadline: '2027-09-17 23:59:59'
   deadline: '2027-09-24 23:59:59'
   timezone: AoE
-  sub: *id007
+  sub: *id008
   based_on: 'EuroSys 2027: 2026-09-24 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://2027.eurosys.org/)
 - title: EDBT (Cycle 3)
@@ -563,7 +611,7 @@
   link: https://edbticdt2027.github.io/
   deadline: '2027-10-07 12:00:00'
   timezone: AoE
-  sub: *id002
+  sub: *id003
   based_on: 'EDBT 2027: 2026-10-07 12:00:00 (AoE)'
   based_on_source: ccf-deadlines (https://edbticdt2027.github.io/)
 - title: FPGA
@@ -590,3 +638,94 @@
   - HPC
   based_on: 'IPDPS 2027: 2026-10-08 23:59:59 (AoE)'
   based_on_source: ccf-deadlines (https://www.ipdps.org/)
+- title: SIGMOD (Round 4)
+  year: 2028
+  id: sigmod28r4x
+  expected: true
+  link: https://sigmod.org/
+  abstract_deadline: '2027-10-10 23:59:59'
+  deadline: '2027-10-17 23:59:59'
+  timezone: AoE
+  sub: *id001
+  based_on: 'SIGMOD 2027: 2026-10-17 23:59:59 (AoE)'
+  based_on_source: ccf-deadlines (https://2027.sigmod.org/)
+- title: MLSys
+  year: 2028
+  id: mlsys28x
+  expected: true
+  link: https://mlsys.org/
+  deadline: '2027-10-30 21:00:00'
+  timezone: UTC
+  sub:
+  - MLSYS
+  - SYS
+  based_on: 'MLSys 2027: 2026-10-30 21:00:00 (UTC)'
+  based_on_source: ccf-deadlines (https://mlsys.org/)
+- title: RTAS
+  year: 2028
+  id: rtas28x
+  expected: true
+  link: https://2027.rtas.org/
+  deadline: '2027-11-05 23:59:59'
+  timezone: AoE
+  sub:
+  - SYS
+  based_on: 'RTAS 2027: 2026-11-05 23:59:59 (AoE)'
+  based_on_source: ccf-deadlines (https://2027.rtas.org/)
+- title: SenSys (2nd deadline)
+  year: 2028
+  id: sensys28r2x
+  expected: true
+  link: https://sensys.acm.org/
+  abstract_deadline: '2027-10-29 23:59:59'
+  deadline: '2027-11-05 23:59:59'
+  timezone: AoE
+  sub: *id009
+  based_on: 'SenSys 2027: 2026-11-05 23:59:59 (AoE)'
+  based_on_source: ccf-deadlines (https://sensys.acm.org/2027/)
+- title: ICDE (Round 2)
+  year: 2028
+  id: icde28r2x
+  expected: true
+  link: https://icde2027.github.io/
+  deadline: '2027-11-11 17:00:00'
+  timezone: America/Los_Angeles
+  sub: *id010
+  based_on: 'ICDE 2027: 2026-11-11 17:00:00 (America/Los_Angeles)'
+  based_on_source: ccf-deadlines (https://icde2027.github.io/)
+- title: ISCA
+  year: 2028
+  id: isca28x
+  expected: true
+  link: https://iscaconf.org/
+  abstract_deadline: '2027-11-09 23:59:59'
+  deadline: '2027-11-16 23:59:59'
+  timezone: AoE
+  sub:
+  - ARCH
+  - SYS
+  based_on: 'ISCA 2027: 2026-11-16 23:59:59 (AoE)'
+  based_on_source: ccf-deadlines (https://iscaconf.org/isca2027/)
+- title: DAC
+  year: 2028
+  id: dac28x
+  expected: true
+  link: https://www.dac.com/
+  abstract_deadline: '2027-11-11 17:00:00'
+  deadline: '2027-11-18 17:00:00'
+  timezone: UTC-8
+  sub:
+  - ARCH
+  based_on: 'DAC 2027: 2026-11-18 17:00:00 (UTC-8)'
+  based_on_source: ccf-deadlines (https://dac.com/2027/authors/call-for-contributions)
+- title: MMSys (Round 2)
+  year: 2028
+  id: mmsys28r2x
+  expected: true
+  link: https://acmmmsys.org/
+  abstract_deadline: '2027-11-19 23:59:59'
+  deadline: '2027-11-19 23:59:59'
+  timezone: AoE
+  sub: *id011
+  based_on: 'MMSys 2027: 2026-11-19 23:59:59 (AoE)'
+  based_on_source: ccf-deadlines (https://2027.acmmmsys.org)
