@@ -133,15 +133,6 @@
     PPoPP 2027 closed 2026-08-03 (notification 2026-10-26). No PPoPP 2028 CFP as of
     2026-11-08 (ppopp28.sigplan.org not indexed).
 
-- name: HPDC
-  ccfddl: hpdc
-  cfp: https://www.hpdc.org/
-  sub: [ HPC ]
-  status: >
-    HPDC 2027 is at ACM FCRC 2027, Atlanta (June 5-11, 2027). As of 2026-11-08 still no
-    HPDC 2027 site or CFP (hpdc.sci.utah.edu tops out at 2026); ACM's deadline calendar
-    lists 'HPDC '27' on 2027-01-31 (unverified lead, no CFP).
-
 - name: ICPP
   ccfddl: icpp
   cfp: https://www.icpp-conf.org/
@@ -245,18 +236,6 @@
   status: >
     As of 2026-11-08: no EDBT/ICDT 2028 CFP, host or site (2027's cycle 1 was
     2026-02-04, so a call may appear soon).
-
-- name: ICPE
-  ccfddl: null
-  cfp: https://icpe2027.spec.org/
-  sub: [ SYS ]
-  status: >
-    As of 2026-11-08: Not confirmed: official icpe2027.spec.org/important-dates/
-    unreadable (host blocked) and unindexed; site, SPEC news (2026-09-04) and Call for
-    Contributions page confirm the CFP is out (Gothenburg, May 24-28, 2027). Leads:
-    research abstract 2026-11-09 / paper 2026-11-16 AoE, notification 2027-01-25.
-    Abstract deadline is 2026-11-09 - a human should open the official page (or allow
-    icpe2027.spec.org in the network settings) and add it now.
 
 - name: EMSOFT
   ccfddl: emsoft

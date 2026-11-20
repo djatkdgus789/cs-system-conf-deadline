@@ -70,18 +70,6 @@
   - DB
   based_on: 'EDBT 2027: 2026-02-04 13:00:00 (AoE)'
   based_on_source: ccf-deadlines (https://edbticdt2027.github.io/)
-- title: HPDC
-  year: 2027
-  id: hpdc27x
-  expected: true
-  link: https://www.hpdc.org/
-  abstract_deadline: '2027-01-29 23:59:59'
-  deadline: '2027-02-05 23:59:59'
-  timezone: AoE
-  sub:
-  - HPC
-  based_on: 'HPDC 2026: 2026-02-05 23:59:59 (AoE)'
-  based_on_source: ccf-deadlines (https://hpdc.sci.utah.edu/2026/)
 - title: SoCC (first round)
   year: 2027
   id: socc27r1x

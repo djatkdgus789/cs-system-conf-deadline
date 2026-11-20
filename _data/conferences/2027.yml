@@ -113,6 +113,20 @@
   sub: [ SYS, NET ]
   note: Second of two rounds. The first round closed on 2026-06-05. Early notification 2026-12-17; full review results 2027-01-28 (shown).
 
+- title: ICPE
+  year: 2027
+  id: icpe27
+  full_name: ACM/SPEC International Conference on Performance Engineering
+  link: https://icpe2027.spec.org/important-dates/
+  abstract_deadline: "2026-11-09 23:59:59"
+  deadline: "2026-11-16 23:59:59"
+  timezone: AoE
+  notification: "2027-01-25"
+  place: Gothenburg, Sweden
+  date: May 24-28, 2027
+  sub: [ SYS ]
+  note: Research track. "All deadlines are Anywhere on Earth (AoE)."
+
 - title: MMSys (Round 2)
   year: 2027
   id: mmsys27r2
@@ -379,6 +393,20 @@
   date: June 5-11, 2027
   sub: [ HPC, ARCH ]
   note: Single submission cycle, held as part of ACM FCRC 2027. Final decisions shown; early rejects 2027-02-11.
+
+- title: HPDC
+  year: 2027
+  id: hpdc27
+  full_name: ACM International Symposium on High-Performance Parallel and Distributed Computing
+  link: https://hpdc.sci.utah.edu/2027/
+  abstract_deadline: "2027-01-11 23:59:59"
+  deadline: "2027-01-18 23:59:59"
+  timezone: AoE
+  notification: "2027-03-30"
+  place: Atlanta, GA, USA
+  date: June 7-10, 2027
+  sub: [ HPC ]
+  note: Part of ACM FCRC 2027; main conference June 7-9, workshops June 10. Abstract registration required; firm paper deadline. The page gives dates but no time or timezone - end of day AoE, the latest reading, is shown, so submit earlier to be safe.
 
 # Database ------------------------------------------------------------------
 

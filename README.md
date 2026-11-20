@@ -25,7 +25,7 @@ date came from — check it before you rely on one.
 
 ## What's covered
 
-39 deadlines, all for 2027 editions (last checked 2026-11-20). A struck-through paper deadline has already closed. The site
+41 deadlines, all for 2027 editions (last checked 2026-11-20). A struck-through paper deadline has already closed. The site
 hides closed deadlines, but they stay in the data files and in this table as the record of
 the cycle.
 
@@ -42,6 +42,7 @@ Regenerate this table with `python3 scripts/upcoming.py --markdown`.
 | [SIGMETRICS (Fall round) 2027](https://www.sigmetrics.org/sigmetrics2027/pages/cfp.html) | — | ~~2026-10-09~~ | AoE | 2026-12-09 | June 7-11, 2027 | Atlanta, GA, USA | A* | ✓ | 최우수 | 3 |
 | [RTAS 2027](https://2027.rtas.org/) | — | ~~2026-11-05~~ | AoE | 2027-01-28 | May 17-20, 2027 | Boulder, CO, USA | A | ✓ | 최우수 | 2 |
 | [SenSys (2nd deadline) 2027](https://sensys.acm.org/2027/) | 2026-10-29 | ~~2026-11-05~~ | AoE | 2027-01-28 | May 17-20, 2027 | Boulder, CO, USA | Merged | ✓ | 우수 | 3 |
+| [ICPE 2027](https://icpe2027.spec.org/important-dates/) | 2026-11-09 | ~~2026-11-16~~ | AoE | 2027-01-25 | May 24-28, 2027 | Gothenburg, Sweden | B | — | — | — |
 | [MMSys (Round 2) 2027](https://2027.acmmmsys.org/deadlines.html) | 2026-11-12 | ~~2026-11-19~~ | AoE | 2026-12-22 | March 30 - April 2, 2027 | Ghent, Belgium | A | — | 우수 | — |
 | [DSN 2027](https://dsn2027-berlin.github.io/call-for-contributions/) | 2026-11-25 | 2026-12-02 | AoE | 2027-03-18 | June 22-25, 2027 | Berlin, Germany | A | — | 우수 | 2 |
 | [Middleware (Winter cycle) 2027](https://middleware-conf.github.io/2027/call-for-papers/) | 2026-11-27 | 2026-12-04 | AoE | 2027-03-29 | December 13-17, 2027 | Kyoto, Japan | A | — | 우수 | 2 |
@@ -76,6 +77,7 @@ Regenerate this table with `python3 scripts/upcoming.py --markdown`.
 | [IPDPS 2027](http://www.ipdps.org/ipdps2027/2027-call-for-papers.html) | 2026-10-01 | ~~2026-10-08~~ | AoE | 2027-02-02 | June 1-5, 2027 | Seattle, WA, USA | A | — | 우수 | 2 |
 | [CCGrid 2027](https://hpcclab.org/ccgrid27-call-for-papers/) | 2026-11-24 | 2026-12-01 | AoE | 2027-02-01 | May 24-27, 2027 | Dallas-Fort Worth, TX, USA | B | — | 우수 | 1 |
 | [ICS 2027](https://klab-ai3.github.io/ics2027/calls-cfp.html) | 2026-12-01 | 2026-12-07 | AoE | 2027-03-12 | June 5-11, 2027 | Atlanta, GA, USA | A | ✓ | 우수 | 2 |
+| [HPDC 2027](https://hpdc.sci.utah.edu/2027/) | 2027-01-11 | 2027-01-18 | AoE | 2027-03-30 | June 7-10, 2027 | Atlanta, GA, USA | A | ✓ | 우수 | 2 |
 
 ### Database (`DB`)
 
@@ -104,15 +106,13 @@ Regenerate this table with `python3 scripts/upcoming.py --markdown`.
 
 ### Not yet listed
 
-51 conferences are tracked but have no open entry — either their next CFP is not out, or every
+49 conferences are tracked but have no open entry — either their next CFP is not out, or every
 round of their 2027 edition has closed and the next edition has not opened. They live in
 [`_data/watchlist.yml`](_data/watchlist.yml) with the page to confirm against and what is known so
 far. Several have announced a venue and dates while withholding deadlines:
 
 | Conference | Known as of 2026-11-20 |
 | --- | --- |
-| ICPE 2027 | Gothenburg, May 24-28, 2027. Site is up and mentions an upcoming deadline; trackers say abstract 11-09 / paper 11-16, but the official important-dates page could not be read from here. **Likely open — confirm on [icpe2027.spec.org](https://icpe2027.spec.org/).** |
-| HPDC 2027 | ACM FCRC, Atlanta, June 5-11, 2027. |
 | SOSP 2027 | Vancouver, Canada, November 30 - December 3, 2027. |
 | Euro-Par 2027 | Groningen, the Netherlands, August 23-27, 2027. Site up, no call yet. |
 | CoNEXT 2027 | Rio de Janeiro, December 6-9, 2027 (to be confirmed). Trackers give a December cycle (paper 12-04) and a June cycle, but the official CFP could not be read from here. |
